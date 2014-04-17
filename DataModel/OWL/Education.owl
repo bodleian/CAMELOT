@@ -1,0 +1,735 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://vocab.ox.ac.uk/camelot/Education#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://vocab.ox.ac.uk/camelot/Education#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ClassList"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ClassRegistration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Disputation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EducationalPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Entry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Graduate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lecturer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="List"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Matriculation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MatriculationRegister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Mentor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PersonalTestimony"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PersonalTestimonyActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Praeses"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Professor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProfessorExtraordinary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProfessorOrdinary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PromotionToDegree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Rector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Register"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Respondent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Study"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Teaching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TeachingInstitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Testifier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tutor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="University"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="UniversityMatriculation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="authorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="graduateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEntry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasEntryIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGraduate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPraeses"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRespondent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasStudent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTeacher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTestimony"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTutor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isEntryFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="testimonyOf"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Author"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Author"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="authorOf"/>
+            <Class IRI="http://purl.org/ontology/bibo/Document"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ClassList"/>
+        <Class IRI="Register"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ClassRegistration"/>
+        <Class IRI="Matriculation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Disputation"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EducationalPost"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EducationalPost"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/org#postIn"/>
+            <Class IRI="University"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Entry"/>
+        <Class IRI="http://purl.org/ontology/bibo/DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Graduate"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Graduate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="graduateOf"/>
+            <Class IRI="University"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Lecturer"/>
+        <Class IRI="EducationalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="List"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Matriculation"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MatriculationRegister"/>
+        <Class IRI="Register"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Mentor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PersonalTestimonyActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Praeses"/>
+        <Class IRI="Mentor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Praeses"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasRespondent"/>
+            <Class IRI="Respondent"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Professor"/>
+        <Class IRI="EducationalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Professor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.w3.org/ns/org#postIn"/>
+            <Class IRI="University"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProfessorExtraordinary"/>
+        <Class IRI="Professor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProfessorOrdinary"/>
+        <Class IRI="Professor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PromotionToDegree"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Rector"/>
+        <Class IRI="EducationalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Register"/>
+        <Class IRI="List"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Respondent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Respondent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasPraeses"/>
+            <Class IRI="Praeses"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Student"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Student"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasTeacher"/>
+            <Class IRI="Teacher"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Student"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasTutor"/>
+            <Class IRI="Tutor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Study"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Teacher"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Teacher"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasStudent"/>
+            <Class IRI="Student"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Teaching"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TeachingInstitution"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Testifier"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Testifier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasTestimony"/>
+            <Class IRI="PersonalTestimony"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Tutor"/>
+        <Class IRI="Teacher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="University"/>
+        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="UniversityMatriculation"/>
+        <Class IRI="Matriculation"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Graduate"/>
+        <Class IRI="Student"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Graduate"/>
+        <Class IRI="Teacher"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Praeses"/>
+        <Class IRI="Respondent"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Student"/>
+        <Class IRI="Teacher"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasEntry"/>
+        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasTutor"/>
+        <ObjectProperty IRI="hasTeacher"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="authorOf"/>
+        <ObjectProperty IRI="hasAuthor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGraduate"/>
+        <ObjectProperty IRI="graduateOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasEntry"/>
+        <ObjectProperty IRI="isEntryFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPraeses"/>
+        <ObjectProperty IRI="hasRespondent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasTeacher"/>
+        <ObjectProperty IRI="hasStudent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasStudent"/>
+        <ObjectProperty IRI="hasTutor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasTestimony"/>
+        <ObjectProperty IRI="testimonyOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="graduateOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAuthor"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEntry"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEntryIn"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGraduate"/>
+        <Class IRI="University"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPraeses"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRespondent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasStudent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTeacher"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTestimony"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTutor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isEntryFor"/>
+        <Class IRI="Entry"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="testimonyOf"/>
+        <Class IRI="PersonalTestimony"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="graduateOf"/>
+        <Class IRI="University"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAuthor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAuthor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEntry"/>
+        <Class IRI="Entry"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEntryIn"/>
+        <Class IRI="http://purl.org/ontology/bibo/ReferenceSource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEntryIn"/>
+        <Class IRI="List"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGraduate"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPraeses"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRespondent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasStudent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTeacher"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTestimony"/>
+        <Class IRI="PersonalTestimony"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTutor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isEntryFor"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="testimonyOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Author</IRI>
+        <Literal datatypeIRI="&xsd;string">A writer of a book, article, or document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>ClassList</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A list of the candidates who have taken an examination, showing the class or mark achieved by each.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>ClassRegistration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A matriculation activity that involves adding candidates who have taken an examination, to a class list, showing the class or mark achieved by each.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Disputation</IRI>
+        <Literal datatypeIRI="&xsd;string">Formal academic debate  
+source: http://www.oxforddictionaries.com/definition/english/disputation
+
+In the scholastic system of education of the Middle Ages, disputations (in Latin: disputationes, singular: disputatio) offered a formalized method of debate designed to uncover and establish truths in theology and in sciences. Fixed rules governed the process: they demanded dependence on traditional written authorities and the thorough understanding of each argument on each side.
+source https://en.wikipedia.org/wiki/Disputation
+
+Also see https://en.wikipedia.org/wiki/Praeses#Old_German_academic_use </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EducationalPost</IRI>
+        <Literal datatypeIRI="&xsd;string">A post in an educational organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Entry</IRI>
+        <Literal datatypeIRI="&xsd;string">An item written or printed in a diary, list, account book, or reference book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Graduate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who has successfully completed a course of study or training, especially a person who has been awarded an undergraduate or first academic degree.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Lecturer</IRI>
+        <Literal datatypeIRI="&xsd;string">A person who gives lectures, especially (Brit.) as an occupation at a university or college of higher education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>List</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A number of connected items or names written or printed consecutively, typically one below the other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Matriculation</IRI>
+        <Literal datatypeIRI="&xsd;string">From https://en.wikipedia.org/wiki/Matriculation:
+
+Matriculation, in the broadest sense, means to be registered or added to a list, from the Latin matricula – little list. The most common meaning refers to the formal process of entering a university or of becoming eligible to enter by fulfilling certain academic requirements.
+
+In Scottish heraldry, a matriculation is a registration of armorial bearings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MatriculationRegister</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An official list or record of names of people who have participated in the activity of matriculation at a university, the formal process of entering a university or of becoming eligible to enter by fulfilling certain academic requirements.
+
+source: https://en.wikipedia.org/wiki/Matriculation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Mentor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An experienced and trusted adviser.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PersonalTestimony</IRI>
+        <Literal datatypeIRI="&xsd;string">A solemn written or oral statement as to the truth of a matter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PersonalTestimonyActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity of a solemn written or oral statement as to the truth of a matter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Praeses</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is the faculty moderator of an academic disputation, normally proposing a thesis and participating in the ensuing disputation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Praeses</IRI>
+        <IRI>http://id.loc.gov/vocabulary/relators/pra</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Professor</IRI>
+        <Literal datatypeIRI="&xsd;string">A university academic of the highest rank.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ProfessorExtraordinary</IRI>
+        <Literal datatypeIRI="&xsd;string">In Germany, post of professor without a university chair. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ProfessorOrdinary</IRI>
+        <Literal datatypeIRI="&xsd;string">Post of Professor in Germany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PromotionToDegree</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The receiving or conferring of an academic degree.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Rector</IRI>
+        <Literal datatypeIRI="&xsd;string">The head of certain universities, colleges, and schools.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Register</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An official list or record of names or items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Respondent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person or organization who makes an answer to the courts pursuant to an application for redress (usually in an equity proceeding) or a candidate for a degree who defends or opposes a thesis provided by the praeses in an academic disputation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Respondent</IRI>
+        <IRI>http://id.loc.gov/vocabulary/relators/rsp</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Student</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is studying at a university or other place of higher education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Study</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Teacher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who imparts knowledge to or instructs someone as to how to do something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Teaching</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity of giving instruction, especially in an elementary or secondary school or a university.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TeachingInstitution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An organisation where the activity of imparting knowledge to or instructing (someone) as to how to do something is conducted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Testifier</IRI>
+        <Literal datatypeIRI="&xsd;string">A person who gives a testimony, a solemn written or oral statement as to the truth of a matter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Tutor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A private teacher, typically one who teaches a single pupil or a very small group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>University</IRI>
+        <Literal datatypeIRI="&xsd;string">A high-level educational institution in which students study for degrees and academic research is done.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>UniversityMatriculation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The formal process of entering a university or of becoming eligible to enter by fulfilling certain academic requirements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>authorOf</IRI>
+        <Literal datatypeIRI="&xsd;string">Object property linking a person with the work that he/she has authored.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>graduateOf</IRI>
+        <Literal datatypeIRI="&xsd;string">Object property linking a person to the university he/she has graduated from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasAuthor</IRI>
+        <Literal datatypeIRI="&xsd;string">An object property linking a book or piece of writing  to the person or organization that has authored it. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGraduate</IRI>
+        <Literal datatypeIRI="&xsd;string">Object property linking a university with a person that has graduated from it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasPraeses</IRI>
+        <Literal datatypeIRI="&xsd;string">An object property linking a person acting as a Respondent with a person acting the role of Praeses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasRespondent</IRI>
+        <Literal datatypeIRI="&xsd;string">An object property linking a person acting in the role of Praeses with a person acting the role of Respondent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasTestimony</IRI>
+        <Literal datatypeIRI="&xsd;string">Object property linking a person with his/her personal testimony.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>testimonyOf</IRI>
+        <Literal datatypeIRI="&xsd;string">Object property linking a personal testimony with the person who testified.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,861 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://vocab.ox.ac.uk/camelot/Ecclesiastic#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://vocab.ox.ac.uk/camelot/Ecclesiastic#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="Baptism"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BaptismalCandidate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bishop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Chapter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Church"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Confessee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Confessor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConfirmationCandidate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Congregation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Convert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Council"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DisqualifiedFromEcclesiasticalOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EcclesiasticalAdministrativeOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EcclesiasticalOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EcclesiasticalOrganisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Godchild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Godfather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Godmother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Godparent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HoldEcclesiasticalOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MembershipEcclesiasticalBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Minister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MonasticOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Officiant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ordination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Preach"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Priest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Religion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ReligiousConfirmation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ReligiousConversion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ReligousConfession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Synod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="baptised"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="baptisedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="confessedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="confirmed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="confirmedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="convertedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="convertedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="disqualifiedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasBaptismalRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasContextRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGodchild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGodparent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReligiousConfessionRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReligiousConfirmationRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReligiousConversionRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReligiousIdentity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRoleInBaptism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRoleInContext"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRoleInReligiousConfession"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRoleInReligiousConfirmation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isRoleInReligiousConversion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="preachedAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="receivedConfessionFrom"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Baptism"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BaptismalCandidate"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Bishop"/>
+        <Class IRI="EcclesiasticalOffice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Chapter"/>
+        <Class IRI="EcclesiasticalOrganisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Church"/>
+        <Class IRI="EcclesiasticalOrganisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Confessee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Confessor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConfirmationCandidate"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Congregation"/>
+        <Class IRI="EcclesiasticalOrganisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Convert"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Council"/>
+        <Class IRI="EcclesiasticalOrganisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DisqualifiedFromEcclesiasticalOffice"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EcclesiasticalAdministrativeOffice"/>
+        <Class IRI="EcclesiasticalOffice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EcclesiasticalOffice"/>
+        <Class IRI="Office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EcclesiasticalOrganisation"/>
+        <Class IRI="http://xmlns.com/foaf/0.1/Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Godchild"/>
+        <Class IRI="BaptismalCandidate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Godfather"/>
+        <Class IRI="Godparent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Godmother"/>
+        <Class IRI="Godparent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Godparent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HoldEcclesiasticalOffice"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MembershipEcclesiasticalBody"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Minister"/>
+        <Class IRI="Office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MonasticOffice"/>
+        <Class IRI="Office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Office"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Officiant"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ordination"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Preach"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Priest"/>
+        <Class IRI="EcclesiasticalOffice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ReligiousConfirmation"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ReligiousConversion"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ReligousConfession"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Synod"/>
+        <Class IRI="EcclesiasticalOrganisation"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasBaptismalRole"/>
+        <ObjectProperty IRI="hasContextRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasReligiousConfessionRole"/>
+        <ObjectProperty IRI="hasContextRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasReligiousConfirmationRole"/>
+        <ObjectProperty IRI="hasContextRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasReligiousConversionRole"/>
+        <ObjectProperty IRI="hasContextRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isRoleInBaptism"/>
+        <ObjectProperty IRI="isRoleInContext"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isRoleInReligiousConfession"/>
+        <ObjectProperty IRI="isRoleInContext"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isRoleInReligiousConfirmation"/>
+        <ObjectProperty IRI="isRoleInContext"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isRoleInReligiousConversion"/>
+        <ObjectProperty IRI="isRoleInContext"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="baptisedBy"/>
+        <ObjectProperty IRI="baptised"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="receivedConfessionFrom"/>
+        <ObjectProperty IRI="confessedTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="confirmed"/>
+        <ObjectProperty IRI="confirmedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasBaptismalRole"/>
+        <ObjectProperty IRI="isRoleInBaptism"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="isRoleInContext"/>
+        <ObjectProperty IRI="hasContextRole"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGodchild"/>
+        <ObjectProperty IRI="hasGodparent"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="baptised"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="baptisedBy"/>
+        <Class IRI="BaptismalCandidate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="confessedTo"/>
+        <Class IRI="Confessee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="confirmed"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="confirmedBy"/>
+        <Class IRI="ConfirmationCandidate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="convertedFrom"/>
+        <Class IRI="Convert"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="convertedTo"/>
+        <Class IRI="Convert"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="disqualifiedFrom"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasBaptismalRole"/>
+        <Class IRI="Baptism"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGodchild"/>
+        <Class IRI="Godparent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGodparent"/>
+        <Class IRI="Godchild"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReligiousConfessionRole"/>
+        <Class IRI="ReligousConfession"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReligiousConfirmationRole"/>
+        <Class IRI="ReligiousConfirmation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReligiousConversionRole"/>
+        <Class IRI="ReligiousConversion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasReligiousIdentity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInBaptism"/>
+        <Class IRI="BaptismalCandidate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInBaptism"/>
+        <Class IRI="Godfather"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInBaptism"/>
+        <Class IRI="Godmother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInBaptism"/>
+        <Class IRI="Godparent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInBaptism"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInReligiousConfession"/>
+        <Class IRI="Confessee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInReligiousConfession"/>
+        <Class IRI="Confessor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInReligiousConfirmation"/>
+        <Class IRI="ConfirmationCandidate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInReligiousConfirmation"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isRoleInReligiousConversion"/>
+        <Class IRI="Convert"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="preachedAt"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="receivedConfessionFrom"/>
+        <Class IRI="Confessor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="baptised"/>
+        <Class IRI="BaptismalCandidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="baptisedBy"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="confessedTo"/>
+        <Class IRI="Confessor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="confirmed"/>
+        <Class IRI="ConfirmationCandidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="confirmedBy"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="convertedFrom"/>
+        <Class IRI="Church"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="convertedTo"/>
+        <Class IRI="Church"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="disqualifiedFrom"/>
+        <Class IRI="Office"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="disqualifiedFrom"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBaptismalRole"/>
+        <Class IRI="BaptismalCandidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBaptismalRole"/>
+        <Class IRI="Godparent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBaptismalRole"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGodchild"/>
+        <Class IRI="Godchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGodparent"/>
+        <Class IRI="Godparent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReligiousConfessionRole"/>
+        <Class IRI="Confessor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReligiousConfirmationRole"/>
+        <Class IRI="ConfirmationCandidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReligiousConfirmationRole"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReligiousConversionRole"/>
+        <Class IRI="Convert"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReligiousIdentity"/>
+        <Class IRI="Religion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRoleInBaptism"/>
+        <Class IRI="Baptism"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRoleInReligiousConfession"/>
+        <Class IRI="ReligousConfession"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRoleInReligiousConfirmation"/>
+        <Class IRI="ReligiousConfirmation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isRoleInReligiousConversion"/>
+        <Class IRI="ReligiousConversion"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="preachedAt"/>
+        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="receivedConfessionFrom"/>
+        <Class IRI="Confessee"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Baptism</IRI>
+        <Literal datatypeIRI="&xsd;string">The Christian religious rite of sprinkling water on to a person’s forehead or of immersing them in water, symbolizing purification or regeneration and admission to the Christian Church. In many denominations, baptism is performed on young children and is accompanied by name-giving.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BaptismalCandidate</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who is admitted to membership of a Christian church.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Bishop</IRI>
+        <Literal datatypeIRI="&xsd;string">A senior member of the Christian clergy, usually in charge of a diocese and empowered to confer holy orders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Chapter</IRI>
+        <Literal datatypeIRI="&xsd;string">The governing body of a religious community</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Church</IRI>
+        <Literal datatypeIRI="&xsd;string">A particular Christian organization with its own clergy, buildings, and distinctive doctrines.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Confessee</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who repents their sins and (in the Christian Church) seeks forgiveness from God.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Confessor</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a priest who hears confessions and gives absolution and spiritual counsel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConfirmationCandidate</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who is confirmed during the religious rite or sacrament of confirmation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Congregation</IRI>
+        <Literal datatypeIRI="&xsd;string">A group of people assembled for religious worship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Convert</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who participates in a conversion of religious identity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Council</IRI>
+        <Literal datatypeIRI="&xsd;string">An advisory, deliberative, or administrative body of people formally constituted and meeting regularly.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DisqualifiedFromEcclesiasticalOffice</IRI>
+        <Literal datatypeIRI="&xsd;string">Activity where a person is disqualified ie declared ineligible for an ecclesiastical office.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EcclesiasticalAdministrativeOffice</IRI>
+        <Literal datatypeIRI="&xsd;string">An administrative position of authority or service in an ecclesiastical organisation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EcclesiasticalOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A position of authority or service in an ecclesiastical organisation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EcclesiasticalOrganisation</IRI>
+        <Literal datatypeIRI="&xsd;string">An organisation related to the Christian Church.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Godchild</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who is presented at baptism by a godparent who promises to take responsibility for their religious education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Godparent</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who presents a person at baptism and promises to take responsibility for their religious education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HoldEcclesiasticalOffice</IRI>
+        <Literal datatypeIRI="&xsd;string">The activity of a person holding an ecclesiastical office, i.e. a position of authority or service, typically one of a public nature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MembershipEcclesiasticalBody</IRI>
+        <Literal datatypeIRI="&xsd;string">The activity of a person being a member of an ecclesiastical body.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Minister</IRI>
+        <Literal datatypeIRI="&xsd;string">A member of the clergy, especially in the Presbyterian and Nonconformist Churches.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MonasticOffice</IRI>
+        <Literal datatypeIRI="&xsd;string">A position of authority or service in a monastic organisation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Office</IRI>
+        <Literal datatypeIRI="&xsd;string">A position of authority or service, typically one of a public nature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Officiant</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who performs a religious rite or presides over a religious service or ceremony.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Ordination</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The action of making (someone) a priest or minister; confer holy orders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Preach</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Deliver a sermon or religious address to an assembled group of people, typically in church.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Priest</IRI>
+        <Literal datatypeIRI="&xsd;string">An ordained minister of the Catholic, Orthodox, or Anglican Church, authorized to perform certain rites and administer certain sacraments. http://www.oxforddictionaries.com/definition/english/priest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Religion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A particular system of faith and worship.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ReligiousConfirmation</IRI>
+        <Literal datatypeIRI="&xsd;string">Confirmation is a rite of initiation in several Christian denominations, normally carried out through anointing, the laying on of hands, and prayer, for the purpose of bestowing the Gift of the Holy Spirit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ReligiousConversion</IRI>
+        <Literal datatypeIRI="&xsd;string">The adoption, wholesale, of a set of beliefs identified with one particular religious denomination to the exclusion of others. Religious conversion marks a transformation of religious identity and is symbolized by special rituals.
+
+https://en.wikipedia.org/wiki/Religious_conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ReligousConfession</IRI>
+        <Literal datatypeIRI="&xsd;string">Confession is the acknowledgment of sin (or one&apos;s sinfulness) or wrongs. It is a religious practice in a number of faith traditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Synod</IRI>
+        <Literal datatypeIRI="&xsd;string">An assembly of the clergy and sometimes also the laity in a diocese or other division of a particular Church.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>baptised</IRI>
+        <Literal datatypeIRI="&xsd;string">Associates an officiant with the baptismal candidate that he/she baptised.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>baptisedBy</IRI>
+        <Literal datatypeIRI="&xsd;string">Associates a baptismal candidate with the officiant who conducted the baptism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>confessedTo</IRI>
+        <Literal datatypeIRI="&xsd;string">Associates a penitent with a person that the penitent confessed to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>confirmed</IRI>
+        <Literal datatypeIRI="&xsd;string">Associates an officiant with the confirmation candidate that he confirmed in a religious confirmation activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>confirmedBy</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifies the officiant of a confirmation candidate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>convertedFrom</IRI>
+        <Literal datatypeIRI="&xsd;string">Association between a convert and the church that he/she converted from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>convertedTo</IRI>
+        <Literal datatypeIRI="&xsd;string">Association between a convert and the church that he/she converted to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>disqualifiedFrom</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifiying an office, activity or competition for which a person has been declared ineligible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasBaptismalRole</IRI>
+        <Literal datatypeIRI="&xsd;string">A property linking the activity of Baptism with roles that are associated with it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasContextRole</IRI>
+        <Literal datatypeIRI="&xsd;string">A property linking an activity with roles that are associated with it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGodchild</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifies the godchild of a godparent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGodparent</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifies the godparent of a godchild</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasReligiousConfessionRole</IRI>
+        <Literal datatypeIRI="&xsd;string">A property linking the activity of religious confession with roles that are associated with it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasReligiousConfirmationRole</IRI>
+        <Literal datatypeIRI="&xsd;string">A property linking the activity of religious confirmation with roles that are associated with it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasReligiousConversionRole</IRI>
+        <Literal datatypeIRI="&xsd;string">A property linking the activity of religious conversion with roles that are associated with it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasReligiousIdentity</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifies the religious identity of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRoleInBaptism</IRI>
+        <Literal datatypeIRI="&xsd;string">Property to associate a role with the activity of baptism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRoleInContext</IRI>
+        <Literal datatypeIRI="&xsd;string">Property to associate a role with a context or activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRoleInReligiousConfession</IRI>
+        <Literal datatypeIRI="&xsd;string">Property to associate a role with the activity of religious confession.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRoleInReligiousConfirmation</IRI>
+        <Literal datatypeIRI="&xsd;string">Property to associate a role with the activity of religious confirmation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>isRoleInReligiousConversion</IRI>
+        <Literal datatypeIRI="&xsd;string">Property to associate a role with the activity of religious conversion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>preachedAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Linking a person who preached with the location where he/she preached.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>receivedConfessionFrom</IRI>
+        <Literal datatypeIRI="&xsd;string">This property is used to associate a priest who in the role of confessor receives a confession from a penitent.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://vocab.ox.ac.uk/camelot/LocationHistory#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://vocab.ox.ac.uk/camelot/LocationHistory#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="BiographicalLocationRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Displacement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Emmigration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Exile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Immigration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Residence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Travel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Visit"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="BiographicalLocationRole"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Displacement"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Emmigration"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Exile"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Immigration"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Residence"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Travel"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Visit"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Emigrant"/>
+        <Class IRI="BiographicalLocationRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Exile"/>
+        <Class IRI="BiographicalLocationRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Immigrant"/>
+        <Class IRI="BiographicalLocationRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Refugee"/>
+        <Class IRI="BiographicalLocationRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Resident"/>
+        <Class IRI="BiographicalLocationRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+        <Class IRI="BiographicalLocationRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+        <Class IRI="BiographicalLocationRole"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Displacement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The enforced departure of people from their homes, typically because of war, persecution, or natural disaster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Emmigration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity of leaving one&apos;s own country to settle permanently in another; moving abroad.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Exile</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The state of being barred from one&apos;s native country, typically for political or punitive reasons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Immigration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity of of coming to live permanently in a foreign country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Residence</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity of living in a particular place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Travel</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity of making a journey, typically of some length.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Visit</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity of going to see a person or place as a guest, tourist, etc.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

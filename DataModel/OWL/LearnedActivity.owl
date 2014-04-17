@@ -1,0 +1,389 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://vocab.ox.ac.uk/camelot/LearnedActivity#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://vocab.ox.ac.uk/camelot/LearnedActivity#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="AuthoringActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AuthoringActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContributionActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContributionActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CreationActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CreationActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Dedication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DedicationActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DedicationActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EditingActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EditingActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HoldOfficeLearnedOrganisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LearnedActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MembershipLearnedOrganisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OfficeLearnedOrganisation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PrintingActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PrintingActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PublishingActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PublishingActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Research"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResearchActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ReviewActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ReviewActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Salon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SalonRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SocialGathering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TranslationActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TranslationActivityRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/org#MembershipLearnedOrganisationRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="dedicationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDedication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="partOf"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="ContributionActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Contribute"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="CreationActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Create"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="AuthoringActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AuthoringActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ContributionActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ContributionActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CreationActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CreationActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Dedication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="dedicationOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Dedication"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="dedicationOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/ItemWork#Item"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DedicationActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DedicationActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EditingActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EditingActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HoldOfficeLearnedOrganisation"/>
+        <Class IRI="http://www.w3.org/ns/org#HoldOffice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LearnedActivityRole"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MembershipLearnedOrganisation"/>
+        <Class IRI="http://www.w3.org/ns/org#Membership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OfficeLearnedOrganisation"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#Office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PrintingActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PrintingActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PublishingActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PublishingActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Research"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResearchActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ReviewActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ReviewActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Salon"/>
+        <Class IRI="SocialGathering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SalonRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SocialGathering"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TranslationActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TranslationActivityRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#President"/>
+        <Class IRI="OfficeLearnedOrganisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#Secretary"/>
+        <Class IRI="OfficeLearnedOrganisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#Treasurer"/>
+        <Class IRI="OfficeLearnedOrganisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Attendee"/>
+        <Class IRI="SalonRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
+        <Class IRI="AuthoringActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contributor"/>
+        <Class IRI="ContributionActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Creator"/>
+        <Class IRI="CreationActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+        <Class IRI="DedicationActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicator"/>
+        <Class IRI="DedicationActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Editor"/>
+        <Class IRI="EditingActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Editor"/>
+        <Class IRI="ReviewActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Engraver"/>
+        <Class IRI="ContributionActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ilustrator"/>
+        <Class IRI="ContributionActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Member"/>
+        <Class IRI="http://www.w3.org/ns/org#MembershipLearnedOrganisationRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Printer"/>
+        <Class IRI="PrintingActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Publisher"/>
+        <Class IRI="PublishingActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Researcher"/>
+        <Class IRI="ResearchActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Translator"/>
+        <Class IRI="TranslationActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/org#MembershipLearnedOrganisationRole"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/org#Reviewer"/>
+        <Class IRI="ReviewActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/prov#Contribute"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <DisjointUnion>
+        <Class IRI="PublishingActivity"/>
+        <Class IRI="AuthoringActivity"/>
+        <Class IRI="PrintingActivity"/>
+        <Class IRI="ReviewActivity"/>
+    </DisjointUnion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPart"/>
+        <ObjectProperty IRI="partOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="dedicationOf"/>
+        <Class IRI="Dedication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDedication"/>
+        <ObjectUnionOf>
+            <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
+            <Class IRI="http://vocab.ox.ac.uk/ItemWork#Item"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="dedicationOf"/>
+        <ObjectUnionOf>
+            <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
+            <Class IRI="http://vocab.ox.ac.uk/ItemWork#Item"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDedication"/>
+        <Class IRI="Dedication"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DedicationActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An activity that involves an address or inscription (of a literary work, for example) to another as a mark of respect or affection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>OfficeLearnedOrganisation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An office is a learned organisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Salon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A regular social gathering, especially of writers and artists</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
