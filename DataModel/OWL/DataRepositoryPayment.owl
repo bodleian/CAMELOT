@@ -1,0 +1,554 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.vocab.ox.ac.uk/camelot/DataRepositoryPayment#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.vocab.ox.ac.uk/camelot/DataRepositoryPayment#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.w3.org/ns/prov#</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The purpose of this data model is to describe payment activities with respect to a data repository.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Buyer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DataDeposition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DataPackage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DataSilo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DataSiloGeneral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Depositor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Fund"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Grant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="OwnershipActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Payee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Payer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Payment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PaymentActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Seller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Transaction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="dataPackageOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="depositorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="deposits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAllowedDepositor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDataPackage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDepositor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFundingSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPayee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPayment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ownerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="payeeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="payerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="paymentFor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="dataSizePaidFor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasPaymentIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="hasSiloIdentifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="paymentAmount"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Payment1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PaymentAct"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Tanya"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Depositor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="depositorOf"/>
+            <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Depositor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="deposits"/>
+            <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Owner"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="ownerOf"/>
+            <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Payee"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="payeeOf"/>
+            <Class IRI="Payment"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Payer"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="payerOf"/>
+            <Class IRI="Payment"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Payment"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="paymentFor"/>
+            <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="Buyer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DataDeposition"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DataPackage"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DataPackage"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="dataPackageOf"/>
+            <Class IRI="DataSilo"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DataSilo"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DataSilo"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasDataPackage"/>
+            <Class IRI="DataPackage"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DataSiloGeneral"/>
+        <Class IRI="DataSilo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Depositor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Fund"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Grant"/>
+        <Class IRI="Fund"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Owner"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="OwnershipActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Payee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Payer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Payment"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PaymentActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Seller"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Transaction"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <NamedIndividual IRI="Tanya"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="payeeOf"/>
+        <NamedIndividual IRI="Tanya"/>
+        <NamedIndividual IRI="Payment1"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAllowedDepositor"/>
+        <ObjectProperty IRI="hasDepositor"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="dataPackageOf"/>
+        <ObjectProperty IRI="hasDataPackage"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="depositorOf"/>
+        <ObjectProperty IRI="hasDepositor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="ownerOf"/>
+        <ObjectProperty IRI="hasOwner"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="payeeOf"/>
+        <ObjectProperty IRI="hasPayee"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="payerOf"/>
+        <ObjectProperty IRI="hasPayer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPayment"/>
+        <ObjectProperty IRI="paymentFor"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="dataPackageOf"/>
+        <Class IRI="DataPackage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="depositorOf"/>
+        <Class IRI="Depositor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="depositorOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="deposits"/>
+        <Class IRI="Depositor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="deposits"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAllowedDepositor"/>
+        <Class IRI="DataSilo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDataPackage"/>
+        <Class IRI="DataSilo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDepositor"/>
+        <Class IRI="DataSilo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFundingSource"/>
+        <Class IRI="Payment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasOwner"/>
+        <Class IRI="DataSilo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPayee"/>
+        <Class IRI="Payment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPayer"/>
+        <Class IRI="Payment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPayment"/>
+        <Class IRI="DataSilo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ownerOf"/>
+        <Class IRI="Owner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ownerOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="payeeOf"/>
+        <Class IRI="Payee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="payeeOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="payerOf"/>
+        <Class IRI="Payer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="payerOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="paymentFor"/>
+        <Class IRI="Payment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="dataPackageOf"/>
+        <Class IRI="DataSilo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="depositorOf"/>
+        <Class IRI="DataSilo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="deposits"/>
+        <Class IRI="DataPackage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAllowedDepositor"/>
+        <Class IRI="Depositor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAllowedDepositor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDataPackage"/>
+        <Class IRI="DataPackage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDepositor"/>
+        <Class IRI="Depositor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDepositor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFundingSource"/>
+        <Class IRI="Fund"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOwner"/>
+        <Class IRI="Owner"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOwner"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPayee"/>
+        <Class IRI="Payee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPayee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPayer"/>
+        <Class IRI="Payer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPayer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPayment"/>
+        <Class IRI="Payment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ownerOf"/>
+        <Class IRI="DataSilo"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="payeeOf"/>
+        <Class IRI="Payment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="payerOf"/>
+        <Class IRI="Payment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="paymentFor"/>
+        <Class IRI="DataPackage"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="paymentFor"/>
+        <Class IRI="DataSilo"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasPaymentIdentifier"/>
+        <DataProperty IRI="hasIdentifier"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="hasSiloIdentifier"/>
+        <DataProperty IRI="hasIdentifier"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="dataSizePaidFor"/>
+        <Class IRI="Payment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasPaymentIdentifier"/>
+        <Class IRI="Payment"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="hasSiloIdentifier"/>
+        <Class IRI="DataSilo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="paymentAmount"/>
+        <Class IRI="Payment"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="dataSizePaidFor"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="paymentAmount"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DataDeposition</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity of depositing data, ie putting data in a specific place for safekeeping.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DataPackage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A set amount of data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DataSilo</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A data storage unit that operates in isolation from others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Depositor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who gives or entrusts something to an entity for safekeeping.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Fund</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A sum of money saved or made available for a particular purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Grant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A sum of money given by a government or other organization for a particular purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who owns something, ie that someone or something belongs or relates to the person mentioned.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Payer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who pays money for something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Payment</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An amount paid or payable.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PaymentActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity or process of paying someone or something or of being paid</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
