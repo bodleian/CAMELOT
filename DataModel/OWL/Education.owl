@@ -21,8 +21,29 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">The Educational Activity Ontology describes the following educational activities:
+
+* Matriculation
+* Inclusion in a Class List
+* Disputation
+* Personal Testimony
+* Promotion to Degree
+* Study
+* Teaching Activity </Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://purl.org/ontology/bibo/Thesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AcademicSubject"/>
+    </Declaration>
     <Declaration>
         <Class IRI="Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AwardingBody"/>
     </Declaration>
     <Declaration>
         <Class IRI="ClassList"/>
@@ -47,6 +68,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="List"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Matriculant"/>
     </Declaration>
     <Declaration>
         <Class IRI="Matriculation"/>
@@ -115,6 +139,12 @@
         <Class IRI="UniversityMatriculation"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.w3.org/2006/vcard/ns#Name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="authorOf"/>
     </Declaration>
     <Declaration>
@@ -136,6 +166,9 @@
         <ObjectProperty IRI="hasPraeses"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasRegister"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasRespondent"/>
     </Declaration>
     <Declaration>
@@ -154,18 +187,84 @@
         <ObjectProperty IRI="isEntryFor"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="registerOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="testimonyOf"/>
     </Declaration>
-    <SubClassOf>
-        <Class IRI="Author"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/2006/vcard/ns#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="http://www.w3.org/2006/vcard/ns#hasValue"/>
+    </Declaration>
+    <EquivalentClasses>
         <Class IRI="Author"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="authorOf"/>
             <Class IRI="http://purl.org/ontology/bibo/Document"/>
         </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Graduate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="graduateOf"/>
+            <Class IRI="University"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Matriculant"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasEntryIn"/>
+            <Class IRI="MatriculationRegister"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Praeses"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasRespondent"/>
+            <Class IRI="Respondent"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Respondent"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasPraeses"/>
+            <Class IRI="Praeses"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Student"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasTeacher"/>
+            <Class IRI="Teacher"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Teacher"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasStudent"/>
+            <Class IRI="Student"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Testifier"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasTestimony"/>
+            <Class IRI="PersonalTestimony"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://purl.org/ontology/bibo/Thesis"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Author"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AwardingBody"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ClassList"/>
@@ -199,19 +298,16 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Graduate"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="graduateOf"/>
-            <Class IRI="University"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Lecturer"/>
         <Class IRI="EducationalPost"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="List"/>
         <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Matriculant"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Matriculation"/>
@@ -232,13 +328,6 @@
     <SubClassOf>
         <Class IRI="Praeses"/>
         <Class IRI="Mentor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Praeses"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="hasRespondent"/>
-            <Class IRI="Respondent"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Professor"/>
@@ -276,29 +365,8 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Respondent"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="hasPraeses"/>
-            <Class IRI="Praeses"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Student"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Student"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="hasTeacher"/>
-            <Class IRI="Teacher"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Student"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="hasTutor"/>
-            <Class IRI="Tutor"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Study"/>
@@ -307,13 +375,6 @@
     <SubClassOf>
         <Class IRI="Teacher"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Teacher"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="hasStudent"/>
-            <Class IRI="Student"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Teaching"/>
@@ -326,13 +387,6 @@
     <SubClassOf>
         <Class IRI="Testifier"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Testifier"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="hasTestimony"/>
-            <Class IRI="PersonalTestimony"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Tutor"/>
@@ -379,25 +433,29 @@
         <ObjectProperty IRI="graduateOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasEntry"/>
-        <ObjectProperty IRI="isEntryFor"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="hasPraeses"/>
         <ObjectProperty IRI="hasRespondent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasRegister"/>
+        <ObjectProperty IRI="registerOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasTeacher"/>
         <ObjectProperty IRI="hasStudent"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasStudent"/>
-        <ObjectProperty IRI="hasTutor"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="hasTestimony"/>
         <ObjectProperty IRI="testimonyOf"/>
     </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="authorOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="graduateOf"/>
+        <Class IRI="Graduate"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="graduateOf"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
@@ -420,7 +478,19 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasPraeses"/>
+        <Class IRI="Respondent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPraeses"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRegister"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRespondent"/>
+        <Class IRI="Praeses"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasRespondent"/>
@@ -428,11 +498,23 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasStudent"/>
+        <Class IRI="Teacher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasStudent"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasTeacher"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTeacher"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTestimony"/>
+        <Class IRI="Testifier"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasTestimony"/>
@@ -447,20 +529,28 @@
         <Class IRI="Entry"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="registerOf"/>
+        <Class IRI="Register"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="testimonyOf"/>
         <Class IRI="PersonalTestimony"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="authorOf"/>
+        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="graduateOf"/>
         <Class IRI="University"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAuthor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
+        <Class IRI="Author"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAuthor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasEntry"/>
@@ -476,11 +566,27 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGraduate"/>
+        <Class IRI="Graduate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGraduate"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasPraeses"/>
+        <Class IRI="Praeses"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPraeses"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRegister"/>
+        <Class IRI="Register"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRespondent"/>
+        <Class IRI="Respondent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasRespondent"/>
@@ -488,7 +594,15 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasStudent"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasStudent"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTeacher"/>
+        <Class IRI="Teacher"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasTeacher"/>
@@ -507,13 +621,31 @@
         <Class abbreviatedIRI="owl:Thing"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="registerOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="testimonyOf"/>
+        <Class IRI="Testifier"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="testimonyOf"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AcademicSubject</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A branch of knowledge studied or taught in a school, college, or university.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Author</IRI>
         <Literal datatypeIRI="&xsd;string">A writer of a book, article, or document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AwardingBody</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of an agent that gives an award.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -560,6 +692,11 @@ Also see https://en.wikipedia.org/wiki/Praeses#Old_German_academic_use </Literal
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>List</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A number of connected items or names written or printed consecutively, typically one below the other.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Matriculant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who has matriculated or been registered on a list or roll, usually at a school.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
