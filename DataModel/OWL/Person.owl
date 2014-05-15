@@ -25,6 +25,17 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">The Person Ontology contains definitions for Person, Adult, Child, Male, Female, Woman, Man, and defines the relationships between them.</Literal>
     </Annotation>
+    
+    
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime"></Literal>
+    </Annotation>
+   
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Person Ontology</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="Adult"/>
     </Declaration>
@@ -46,13 +57,8 @@
     <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
-    </Declaration>
-    <EquivalentClasses>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
-    </EquivalentClasses>
+   
+   
     <SubClassOf>
         <Class IRI="Man"/>
         <Class IRI="Male"/>

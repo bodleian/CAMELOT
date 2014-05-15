@@ -1,0 +1,62 @@
+<xhtml xmlns:xd="http://www.pnp-software.com/XSLTdoc" xmlns="http://www.w3.org/2002/07/owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <head>
+      <link rel="stylesheet" href="style.css"></link>
+   </head>
+   <body>
+      <h1>Creative Work and its Instantiation Ontology</h1>
+      <h2>http://vocab.ox.ac.uk/CreativeWork#</h2>
+      <div class="FileDescription">
+         <p></p>
+      </div>
+      <div class="list">
+         <h2>Activity </h2>
+         <ol></ol>
+         <h2>Role</h2>
+         <ol></ol>
+         <h2>Other</h2>
+         <ol>
+            <li>
+               <p><em>CreativeWork<sup></sup></em>A work that is a distinct intellectual or artistic creation and is the product of
+                  creative effort.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{CreativeWork} hasManifestation  {Manifestation} </li>
+               <li>{CreativeWork} hasTheme  {Theme} </li>
+               <li> {Manifestation}  manifestationOf {CreativeWork}</li>
+               <li> {Theme}  themeOf {CreativeWork}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Instance<sup></sup></em>An example or single occurrence of a manifestation of a creative work.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Instance} instanceOf  {Manifestation} </li>
+               <li> {Manifestation}  hasInstance {Instance}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Manifestation<sup></sup></em>A version or incarnation of a creative work
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Manifestation} hasInstance  {Instance} </li>
+               <li>{Manifestation} manifestationOf  {CreativeWork} </li>
+               <li> {CreativeWork}  hasManifestation {Manifestation}</li>
+               <li> {Instance}  instanceOf {Manifestation}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Theme<sup></sup></em>An idea that recurs in or pervades a work of art or literature.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Theme} themeOf  {CreativeWork} </li>
+               <li> {CreativeWork}  hasTheme {Theme}</li>
+            </ul>
+            <ol></ol>
+         </ol>
+      </div>
+   </body>
+</xhtml>

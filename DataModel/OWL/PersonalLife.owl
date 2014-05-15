@@ -21,14 +21,85 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+   
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Personal Life Ontology</Literal>
+    </Annotation>
+    
     <Declaration>
         <Class IRI="Birth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BirthMother"/>
     </Declaration>
     <Declaration>
         <Class IRI="Death"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MajorLifeEventRole"/>
+        <Class IRI="Deceased"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Husband"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Marriage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Mother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Spouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Wife"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="childOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="fatherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasHusband"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSpouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasWife"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="marriedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="motherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="parentOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
@@ -47,21 +118,170 @@
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="BirthMother"/>
+        <Class IRI="Mother"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Death"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="MajorLifeEventRole"/>
+        <Class IRI="Deceased"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Father"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Father"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="fatherOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Husband"/>
+        <Class IRI="Spouse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Husband"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasWife"/>
+            <Class IRI="Wife"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Husband"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="marriedTo"/>
+            <Class IRI="Wife"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Marriage"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Mother"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Mother"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="motherOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Spouse"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Spouse"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="marriedTo"/>
+            <ObjectUnionOf>
+                <Class IRI="Husband"/>
+                <Class IRI="Wife"/>
+            </ObjectUnionOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wife"/>
+        <Class IRI="Spouse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wife"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasHusband"/>
+            <Class IRI="Husband"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wife"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="marriedTo"/>
+            <Class IRI="Husband"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
-        <Class IRI="MajorLifeEventRole"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="childOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
-        <Class IRI="MajorLifeEventRole"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasChild"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="parentOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="childOf"/>
+        <ObjectProperty IRI="hasParent"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasChild"/>
+        <ObjectProperty IRI="parentOf"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasSpouse"/>
+        <ObjectProperty IRI="marriedTo"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="fatherOf"/>
+        <ObjectProperty IRI="parentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFather"/>
+        <ObjectProperty IRI="hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasHusband"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMother"/>
+        <ObjectProperty IRI="hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasWife"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="motherOf"/>
+        <ObjectProperty IRI="parentOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasChild"/>
+        <ObjectProperty IRI="childOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasWife"/>
+        <ObjectProperty IRI="hasHusband"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="parentOf"/>
+        <ObjectProperty IRI="hasParent"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
         <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
@@ -82,29 +302,265 @@
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
     </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasSpouse"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="marriedTo"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="childOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="childOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fatherOf"/>
+        <Class IRI="Father"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fatherOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fatherOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasChild"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasChild"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFather"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFather"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasHusband"/>
+        <Class IRI="Wife"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasHusband"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasHusband"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMother"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMother"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasParent"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasParent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSpouse"/>
+        <Class IRI="Spouse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSpouse"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasWife"/>
+        <Class IRI="Husband"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasWife"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasWife"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="marriedTo"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="marriedTo"/>
+        <ObjectUnionOf>
+            <Class IRI="Husband"/>
+            <Class IRI="Wife"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="motherOf"/>
+        <Class IRI="Mother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="motherOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="motherOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="parentOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="parentOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
         <Class IRI="Birth"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="Death"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://www.w3.org/ns/org#hasDeath"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="Deceased"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://www.w3.org/ns/org#hasDeath"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="childOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="childOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="fatherOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="fatherOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasChild"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasChild"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFather"/>
+        <Class IRI="Father"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFather"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasHusband"/>
+        <Class IRI="Husband"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasHusband"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Man"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasHusband"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMother"/>
+        <Class IRI="Mother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMother"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParent"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSpouse"/>
+        <Class IRI="Spouse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSpouse"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasWife"/>
+        <Class IRI="Wife"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasWife"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Sex#Woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasWife"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="marriedTo"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="marriedTo"/>
+        <ObjectUnionOf>
+            <Class IRI="Husband"/>
+            <Class IRI="Wife"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="motherOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="motherOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
-        <Class IRI="http://xmlns.com/foaf/0.1/Person"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
-        <Class IRI="Death"/>
+        <Class IRI="Deceased"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
@@ -121,8 +577,58 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BirthMother</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A woman in relation to a child or children to whom she has given birth.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Death</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The activity of dying or being killed; the end of the life of a person or organism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Deceased</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is recently dead.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Father</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A man in relation to his child or children.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Husband</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A married man considered in relation to his wife.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Marriage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The formal union of a man and a woman, typically as recognized by law, by which they become husband and wife.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Mother</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a woman in relation to a child or children to whom she has given birth, or adopted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Spouse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A husband or wife, considered in relation to their partner.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Wife</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A married woman considered in relation to her husband.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Child</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person in relation to his/her parents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Parent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person&apos;s father or mother.</Literal>
     </AnnotationAssertion>
 </Ontology>
 

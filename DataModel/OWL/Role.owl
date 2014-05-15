@@ -21,8 +21,29 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Role Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime"></Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="AcademicSupervisor"/>
+    </Declaration>
     <Declaration>
         <Class IRI="Acquaintance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AdministratorOfAcademicInstitution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AdministratorOfInstitution"/>
     </Declaration>
     <Declaration>
         <Class IRI="Advocate"/>
@@ -32,6 +53,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Backer"/>
     </Declaration>
     <Declaration>
         <Class IRI="Buyer"/>
@@ -49,10 +73,25 @@
         <Class IRI="Collaborator"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Colleague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Conrector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Contractee"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Contributor"/>
     </Declaration>
     <Declaration>
+        <Class IRI="CorrespondenceIntermediary"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Correspondent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Counsellor"/>
     </Declaration>
     <Declaration>
         <Class IRI="Creator"/>
@@ -68,6 +107,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="Dedicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Disqualified"/>
     </Declaration>
     <Declaration>
         <Class IRI="DisqualifiedFromOffice"/>
@@ -88,13 +133,19 @@
         <Class IRI="Engraver"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Exile"/>
+        <Class IRI="ExiledPerson"/>
     </Declaration>
     <Declaration>
         <Class IRI="Father"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Friend"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Funder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FundsRecipient"/>
     </Declaration>
     <Declaration>
         <Class IRI="Gift"/>
@@ -112,6 +163,9 @@
         <Class IRI="Host"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Housemate"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Ilustrator"/>
     </Declaration>
     <Declaration>
@@ -121,13 +175,25 @@
         <Class IRI="Inscriber"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Instigator"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Intermediary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Interviewee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Interviewer"/>
     </Declaration>
     <Declaration>
         <Class IRI="LetterAuthor"/>
     </Declaration>
     <Declaration>
         <Class IRI="LetterRecipient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LetterSender"/>
     </Declaration>
     <Declaration>
         <Class IRI="Member"/>
@@ -157,6 +223,9 @@
         <Class IRI="Recipient"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Rector"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Refugee"/>
     </Declaration>
     <Declaration>
@@ -169,13 +238,31 @@
         <Class IRI="Reviewer"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Ruler"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Saloniste"/>
     </Declaration>
     <Declaration>
         <Class IRI="Seller"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Sender"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Signatory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Subrector"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Supervisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Trader"/>
     </Declaration>
     <Declaration>
         <Class IRI="Translator"/>
@@ -193,7 +280,16 @@
         <Class IRI="Witness"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="academicSupervisorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="advocateOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="attendeeOf"/>
@@ -202,7 +298,22 @@
         <ObjectProperty IRI="authorOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="backerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="buyerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="buysFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="chairOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="childOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="collaboratorOn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="contributorOf"/>
@@ -214,7 +325,16 @@
         <ObjectProperty IRI="dedicateeOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="dedicatorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="disqualifiedFrom"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="emigrantFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="engraverOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="exileFrom"/>
@@ -223,7 +343,28 @@
         <ObjectProperty IRI="fatherOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="friendOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="funderOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="giverOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="givesGiftTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="guestOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAcademicSupervisor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAcquaintance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAdvocate"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasAttendee"/>
@@ -232,13 +373,28 @@
         <ObjectProperty IRI="hasAuthor"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasBacker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasBuyer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasChair"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasChild"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasCollaborator"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasColleague"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasContributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCorrespondent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasCreator"/>
@@ -247,22 +403,64 @@
         <ObjectProperty IRI="hasDedicatee"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasDedicator"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasEmployee"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasEmployer"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasEngraver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasExiledPerson"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasFather"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasGiven"/>
+        <ObjectProperty IRI="hasFunder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGiver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGuest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasHost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasIllustrator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInscriber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasIntermediary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasLetterRecipient"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasMember"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPatron"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasPrinter"/>
@@ -277,10 +475,40 @@
         <ObjectProperty IRI="hasReviewer"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasSeller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSupervisor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTransmissionWith"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasVisitor"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasWitness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hostOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="illustratorOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="immigrantTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="inscriberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="intermediaryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="interviewedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="interviews"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="memberOf"/>
@@ -289,13 +517,43 @@
         <ObjectProperty IRI="motherOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="movesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="ownerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="parentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="participantOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="patronOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="printerOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="publisherOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="receivesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="receivesGiftFrom"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="recipientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recipientOfFunds"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recipientOfGift"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recipientOfLetter"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="refugeeOf"/>
@@ -304,20 +562,56 @@
         <ObjectProperty IRI="residentOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="residesWith"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="reviewerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sellerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sellsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="senderOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="senderOfLetter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sendsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="supervisorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="traderOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="tradesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="travelsFrom"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="travelsTo"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="travelsWith"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="visitorTo"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="visits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="witnessOf"/>
+    </Declaration>
     <EquivalentClasses>
-        <Class IRI="Child"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="childOf"/>
-            <Class IRI="Parent"/>
-        </ObjectMinCardinality>
+        <Class IRI="Conrector"/>
+        <Class IRI="Subrector"/>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="Contributor"/>
@@ -327,23 +621,28 @@
         <Class IRI="Creator"/>
         <Class IRI="http://www.w3.org/ns/prov#Creator"/>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="Printer"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="printerOf"/>
-            <Class IRI="http://vocab.ox.ac.uk/ItemWork#Item"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="Publisher"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="publisherOf"/>
-            <Class IRI="http://vocab.ox.ac.uk/ItemWork#Item"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="AcademicSupervisor"/>
+        <Class IRI="Supervisor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AcademicSupervisor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="academicSupervisorOf"/>
+            <Class IRI="Student"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="Acquaintance"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdministratorOfAcademicInstitution"/>
+        <Class IRI="AdministratorOfInstitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdministratorOfInstitution"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Advocate"/>
@@ -358,15 +657,12 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Author"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="authorOf"/>
-            <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="Backer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Buyer"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+        <Class IRI="Trader"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="CalledToBar"/>
@@ -381,6 +677,13 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Child"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="childOf"/>
+            <Class IRI="Parent"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Collaborator"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -392,19 +695,39 @@
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Contributor"/>
+        <Class IRI="Colleague"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Colleague"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasColleague"/>
+            <Class IRI="Colleague"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Conrector"/>
+        <Class IRI="AdministratorOfAcademicInstitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Contractee"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Contributor"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="contributorOf"/>
-            <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
-        </ObjectSomeValuesFrom>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CorrespondenceIntermediary"/>
+        <Class IRI="Intermediary"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Correspondent"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Counsellor"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Creator"/>
@@ -427,23 +750,24 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="DisqualifiedFromOffice"/>
+        <Class IRI="Director"/>
+        <Class IRI="AdministratorOfInstitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Disqualified"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DisqualifiedFromOffice"/>
+        <Class IRI="Disqualified"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Editor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Emigrant"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Emigrant"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="emigrantFrom"/>
-            <Class IRI="http://www.w3.org/ns/prov#Location"/>
-        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Employee"/>
@@ -472,15 +796,8 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Exile"/>
+        <Class IRI="ExiledPerson"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Exile"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="exileFrom"/>
-            <Class IRI="http://www.w3.org/ns/prov#Location"/>
-        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Father"/>
@@ -494,8 +811,16 @@
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Funder"/>
+        <Class IRI="Friend"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Funder"/>
+        <Class IRI="Backer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FundsRecipient"/>
+        <Class IRI="Recipient"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Gift"/>
@@ -521,8 +846,33 @@
         <Class IRI="Visitor"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Guest"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="guestOf"/>
+            <Class IRI="Host"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Host"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Host"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hostOf"/>
+            <Class IRI="Guest"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Housemate"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Housemate"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="residesWith"/>
+            <Class IRI="Housemate"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Ilustrator"/>
@@ -533,18 +883,23 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Immigrant"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="immigrantTo"/>
-            <Class IRI="http://www.w3.org/ns/prov#Location"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Inscriber"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Instigator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Intermediary"/>
+        <Class IRI="Instigator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Interviewee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Interviewer"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -552,22 +907,20 @@
         <Class IRI="Author"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="LetterAuthor"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="authorOf"/>
-            <Class IRI="http://purl.org/ontology/bibo/Letter"/>
-        </ObjectMinCardinality>
+        <Class IRI="LetterRecipient"/>
+        <Class IRI="Correspondent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="LetterRecipient"/>
         <Class IRI="Recipient"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="LetterRecipient"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="recipientOf"/>
-            <Class IRI="http://purl.org/ontology/bibo/Letter"/>
-        </ObjectMinCardinality>
+        <Class IRI="LetterSender"/>
+        <Class IRI="Correspondent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LetterSender"/>
+        <Class IRI="Sender"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Member"/>
@@ -593,12 +946,26 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Parent"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasChild"/>
+            <Class IRI="Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Parent"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="parentOf"/>
+            <Class IRI="Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Participant"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Patron"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+        <Class IRI="Backer"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Printer"/>
@@ -613,15 +980,12 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Refugee"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+        <Class IRI="Rector"/>
+        <Class IRI="AdministratorOfInstitution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Refugee"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="refugeeOf"/>
-            <Class IRI="http://www.w3.org/ns/prov#Location"/>
-        </ObjectMinCardinality>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Researcher"/>
@@ -632,14 +996,11 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Resident"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="residentOf"/>
-            <Class IRI="http://www.w3.org/ns/prov#Location"/>
-        </ObjectMinCardinality>
+        <Class IRI="Reviewer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Reviewer"/>
+        <Class IRI="Ruler"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -648,10 +1009,30 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Seller"/>
+        <Class IRI="Trader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sender"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Signatory"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Student"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Subrector"/>
+        <Class IRI="AdministratorOfAcademicInstitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Supervisor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Trader"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -663,31 +1044,36 @@
         <Class IRI="Traveller"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="TravelCompanion"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="travelsWith"/>
+            <Class IRI="TravelCompanion"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Traveller"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Traveller"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="travelsTo"/>
-            <Class IRI="http://www.w3.org/ns/prov#Location"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Visitor"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Visitor"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="visitorTo"/>
-            <Class IRI="http://www.w3.org/ns/prov#Location"/>
-        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Witness"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/prov#Contributor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/prov#Creator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Guest"/>
+        <Class IRI="Host"/>
+    </DisjointClasses>
     <DisjointUnion>
         <Class IRI="Parent"/>
         <Class IRI="Father"/>
@@ -697,18 +1083,146 @@
         <ObjectProperty IRI="http://purl.org/dc/terms/contributor"/>
         <ObjectProperty IRI="hasContributor"/>
     </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="childOf"/>
+        <ObjectProperty IRI="hasParent"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasChild"/>
+        <ObjectProperty IRI="parentOf"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="academicSupervisorOf"/>
+        <ObjectProperty IRI="supervisorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="attendeeOf"/>
+        <ObjectProperty IRI="participantOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="buyerOf"/>
+        <ObjectProperty IRI="traderOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="buysFrom"/>
+        <ObjectProperty IRI="tradesWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="fatherOf"/>
+        <ObjectProperty IRI="parentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="funderOf"/>
+        <ObjectProperty IRI="backerOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="giverOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="givesGiftTo"/>
+        <ObjectProperty IRI="hasTransmissionWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAcademicSupervisor"/>
+        <ObjectProperty IRI="hasSupervisor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAttendee"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasEmployee"/>
-        <ObjectProperty IRI="hasMember"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasFather"/>
+        <ObjectProperty IRI="hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFunder"/>
+        <ObjectProperty IRI="hasBacker"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGiver"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasLetterRecipient"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMother"/>
+        <ObjectProperty IRI="hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPatron"/>
+        <ObjectProperty IRI="hasBacker"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasRecipient"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="motherOf"/>
+        <ObjectProperty IRI="parentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="patronOf"/>
+        <ObjectProperty IRI="backerOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="receivesFrom"/>
+        <ObjectProperty IRI="hasTransmissionWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="receivesGiftFrom"/>
+        <ObjectProperty IRI="receivesFrom"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="recipientOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recipientOfFunds"/>
+        <ObjectProperty IRI="recipientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recipientOfGift"/>
+        <ObjectProperty IRI="recipientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recipientOfLetter"/>
+        <ObjectProperty IRI="recipientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="sellerOf"/>
+        <ObjectProperty IRI="traderOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="sellsTo"/>
+        <ObjectProperty IRI="tradesWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="senderOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="senderOfLetter"/>
+        <ObjectProperty IRI="senderOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="sendsTo"/>
+        <ObjectProperty IRI="hasTransmissionWith"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasAcademicSupervisor"/>
+        <ObjectProperty IRI="academicSupervisorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasAdvocate"/>
+        <ObjectProperty IRI="advocateOf"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="attendeeOf"/>
         <ObjectProperty IRI="hasAttendee"/>
@@ -716,6 +1230,22 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="authorOf"/>
         <ObjectProperty IRI="hasAuthor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="backerOf"/>
+        <ObjectProperty IRI="hasBacker"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="buyerOf"/>
+        <ObjectProperty IRI="hasBuyer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="sellsTo"/>
+        <ObjectProperty IRI="buysFrom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="chairOf"/>
+        <ObjectProperty IRI="hasChair"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasChild"/>
@@ -730,16 +1260,52 @@
         <ObjectProperty IRI="creatorOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="dedicateeOf"/>
+        <ObjectProperty IRI="hasDedicatee"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="dedicatorOf"/>
+        <ObjectProperty IRI="hasDedicator"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="engraverOf"/>
+        <ObjectProperty IRI="hasEngraver"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="exileFrom"/>
+        <ObjectProperty IRI="hasExiledPerson"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="hasFather"/>
         <ObjectProperty IRI="fatherOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="giverOf"/>
-        <ObjectProperty IRI="hasGiven"/>
+        <ObjectProperty IRI="funderOf"/>
+        <ObjectProperty IRI="hasFunder"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasEmployer"/>
-        <ObjectProperty IRI="hasEmployee"/>
+        <ObjectProperty IRI="hasGiver"/>
+        <ObjectProperty IRI="giverOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGuest"/>
+        <ObjectProperty IRI="guestOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasHost"/>
+        <ObjectProperty IRI="hostOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasIllustrator"/>
+        <ObjectProperty IRI="illustratorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasInscriber"/>
+        <ObjectProperty IRI="inscriberOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="intermediaryOf"/>
+        <ObjectProperty IRI="hasIntermediary"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="memberOf"/>
@@ -748,6 +1314,22 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="motherOf"/>
         <ObjectProperty IRI="hasMother"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasOwner"/>
+        <ObjectProperty IRI="ownerOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="parentOf"/>
+        <ObjectProperty IRI="hasParent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="participantOf"/>
+        <ObjectProperty IRI="hasParticipant"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasPatron"/>
+        <ObjectProperty IRI="patronOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="printerOf"/>
@@ -765,245 +1347,631 @@
         <ObjectProperty IRI="reviewerOf"/>
         <ObjectProperty IRI="hasReviewer"/>
     </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="sellerOf"/>
+        <ObjectProperty IRI="hasSeller"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="supervisorOf"/>
+        <ObjectProperty IRI="hasSupervisor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="visits"/>
+        <ObjectProperty IRI="hasVisitor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="witnessOf"/>
+        <ObjectProperty IRI="hasWitness"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="interviews"/>
+        <ObjectProperty IRI="interviewedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="receivesFrom"/>
+        <ObjectProperty IRI="sendsTo"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="friendOf"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasAcquaintance"/>
+    </SymmetricObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="hasCollaborator"/>
     </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasColleague"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasCorrespondent"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasTransmissionWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="residesWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="tradesWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="travelsWith"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="academicSupervisorOf"/>
+        <Class IRI="AcademicSupervisor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="advocateOf"/>
+        <Class IRI="Advocate"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="attendeeOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Attendee"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="authorOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+        <Class IRI="Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="backerOf"/>
+        <Class IRI="Backer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="buyerOf"/>
+        <Class IRI="Buyer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="buysFrom"/>
+        <Class IRI="Buyer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="chairOf"/>
+        <Class IRI="Chair"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="childOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="collaboratorOn"/>
+        <Class IRI="Collaborator"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="contributorOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="contributorOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Contributor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="creatorOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
+        <Class IRI="Creator"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="creatorOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="dedicateeOf"/>
+        <Class IRI="Dedicatee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="dedicatorOf"/>
+        <Class IRI="Dedicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="disqualifiedFrom"/>
+        <Class IRI="Disqualified"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="emigrantFrom"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Emigrant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="engraverOf"/>
+        <Class IRI="Engraver"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="exileFrom"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="ExiledPerson"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="fatherOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Father"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasAuthor"/>
-        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+        <ObjectProperty IRI="friendOf"/>
+        <Class IRI="Friend"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasAuthor"/>
-        <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
+        <ObjectProperty IRI="funderOf"/>
+        <Class IRI="Funder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="giverOf"/>
+        <Class IRI="Giver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="givesGiftTo"/>
+        <Class IRI="GiftGiver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="guestOf"/>
+        <Class IRI="Guest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAcademicSupervisor"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAcquaintance"/>
+        <Class IRI="Acquaintance"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasChild"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Parent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasCollaborator"/>
-        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+        <Class IRI="Collaborator"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasCreator"/>
-        <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
+        <ObjectProperty IRI="hasColleague"/>
+        <Class IRI="Colleague"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCorrespondent"/>
+        <Class IRI="Correspondent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasEmployee"/>
+        <Class IRI="Employer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasEmployer"/>
-        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+        <Class IRI="Employee"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasFather"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFunder"/>
+        <Class IRI="Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGuest"/>
+        <Class IRI="Host"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasHost"/>
+        <Class IRI="Guest"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasMother"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasPrinter"/>
-        <Class IRI="http://vocab.ox.ac.uk/ItemWork#Item"/>
+        <ObjectProperty IRI="hasParent"/>
+        <Class IRI="Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasPublisher"/>
-        <Class IRI="http://vocab.ox.ac.uk/ItemWork#Item"/>
+        <ObjectProperty IRI="hostOf"/>
+        <Class IRI="Host"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasVisitor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+        <ObjectProperty IRI="illustratorOf"/>
+        <Class IRI="Ilustrator"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="immigrantTo"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Immigrant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="inscriberOf"/>
+        <Class IRI="Inscriber"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="intermediaryOf"/>
+        <Class IRI="Intermediary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="interviewedBy"/>
+        <Class IRI="Interviewee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="interviews"/>
+        <Class IRI="Interviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="memberOf"/>
+        <Class IRI="Member"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="motherOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Mother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ownerOf"/>
+        <Class IRI="Owner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="parentOf"/>
+        <Class IRI="Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="participantOf"/>
+        <Class IRI="Participant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="patronOf"/>
+        <Class IRI="Patron"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="printerOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="printerOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Printer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="publisherOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
+        <Class IRI="Publisher"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="publisherOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="receivesFrom"/>
+        <Class IRI="Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="receivesGiftFrom"/>
+        <Class IRI="Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recipientOf"/>
+        <Class IRI="Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recipientOfFunds"/>
+        <Class IRI="FundsRecipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recipientOfGift"/>
+        <Class IRI="Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="recipientOfLetter"/>
+        <Class IRI="LetterRecipient"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="refugeeOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Refugee"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="residentOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Resident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="residesWith"/>
+        <Class IRI="Housemate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="reviewerOf"/>
+        <Class IRI="Reviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sellerOf"/>
+        <Class IRI="Seller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sellsTo"/>
+        <Class IRI="Seller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="senderOf"/>
+        <Class IRI="Sender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="senderOfLetter"/>
+        <Class IRI="LetterSender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sendsTo"/>
+        <Class IRI="Sender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="traderOf"/>
+        <Class IRI="Trader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="tradesWith"/>
+        <Class IRI="Trader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="travelsFrom"/>
+        <Class IRI="Traveller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="travelsTo"/>
+        <Class IRI="Traveller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="travelsWith"/>
+        <Class IRI="TravelCompanion"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="visitorTo"/>
-        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+        <Class IRI="Visitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="visits"/>
+        <Class IRI="Visitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="witnessOf"/>
+        <Class IRI="Witness"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="authorOf"/>
-        <Class IRI="http://purl.org/ontology/bibo/Document"/>
+        <ObjectProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Class IRI="Contributor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="authorOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
+        <ObjectProperty IRI="academicSupervisorOf"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="buysFrom"/>
+        <Class IRI="Seller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="childOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="contributorOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="creatorOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/ItemWork#CreativeWork"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="emigrantFrom"/>
-        <Class IRI="http://www.w3.org/ns/prov#Location"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="exileFrom"/>
-        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+        <Class IRI="Parent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="fatherOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="friendOf"/>
+        <Class IRI="Friend"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="funderOf"/>
+        <Class IRI="Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="givesGiftTo"/>
+        <Class IRI="Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="guestOf"/>
+        <Class IRI="Host"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAcademicSupervisor"/>
+        <Class IRI="AcademicSupervisor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAcquaintance"/>
+        <Class IRI="Acquaintance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAdvocate"/>
+        <Class IRI="Advocate"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAttendee"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Attendee"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAuthor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+        <Class IRI="Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBacker"/>
+        <Class IRI="Backer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBuyer"/>
+        <Class IRI="Buyer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasChair"/>
+        <Class IRI="Chair"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasChild"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasCollaborator"/>
-        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+        <Class IRI="Collaborator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasColleague"/>
+        <Class IRI="Colleague"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasContributor"/>
+        <Class IRI="Contributor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCorrespondent"/>
+        <Class IRI="Correspondent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasCreator"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
+        <Class IRI="Creator"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasCreator"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="hasDedicatee"/>
+        <Class IRI="Dedicatee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDedicator"/>
+        <Class IRI="Dedicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEmployee"/>
+        <Class IRI="Employee"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasEmployer"/>
-        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+        <Class IRI="Employer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasFather"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="hasEngraver"/>
+        <Class IRI="Engraver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasExiledPerson"/>
+        <Class IRI="ExiledPerson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFunder"/>
+        <Class IRI="Funder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGiver"/>
+        <Class IRI="Giver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGuest"/>
+        <Class IRI="Guest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasHost"/>
+        <Class IRI="Host"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasIllustrator"/>
+        <Class IRI="Ilustrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasInscriber"/>
+        <Class IRI="Inscriber"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasIntermediary"/>
+        <Class IRI="Intermediary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasLetterRecipient"/>
+        <Class IRI="LetterRecipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMember"/>
+        <Class IRI="Member"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMother"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Mother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasOwner"/>
+        <Class IRI="Owner"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParent"/>
+        <Class IRI="Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasParticipant"/>
+        <Class IRI="Participant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPatron"/>
+        <Class IRI="Patron"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasPrinter"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasPrinter"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Printer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasPublisher"/>
-        <Class IRI="http://www.w3.org/ns/prov#Organization"/>
+        <Class IRI="Printer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasPublisher"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="hasRecipient"/>
+        <Class IRI="Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasReviewer"/>
+        <Class IRI="Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSeller"/>
+        <Class IRI="Seller"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSupervisor"/>
+        <Class IRI="Supervisor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasVisitor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Agent"/>
+        <Class IRI="Visitor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="immigrantTo"/>
-        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+        <ObjectProperty IRI="hasWitness"/>
+        <Class IRI="Witness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hostOf"/>
+        <Class IRI="Guest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="interviewedBy"/>
+        <Class IRI="Interviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="interviews"/>
+        <Class IRI="Interviewee"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="motherOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="printerOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/ItemWork#Item"/>
+        <ObjectProperty IRI="parentOf"/>
+        <Class IRI="Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="publisherOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/ItemWork#Item"/>
+        <ObjectProperty IRI="receivesFrom"/>
+        <Class IRI="Giver"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="refugeeOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+        <ObjectProperty IRI="receivesGiftFrom"/>
+        <Class IRI="GiftGiver"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="residentOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+        <ObjectProperty IRI="recipientOfGift"/>
+        <Class IRI="Gift"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="visitorTo"/>
-        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+        <ObjectProperty IRI="residesWith"/>
+        <Class IRI="Housemate"/>
     </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sellsTo"/>
+        <Class IRI="Buyer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="supervisorOf"/>
+        <Class IRI="Supervisor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="tradesWith"/>
+        <Class IRI="Trader"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="travelsWith"/>
+        <Class IRI="TravelCompanion"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="travelsFrom"/>
+        <ObjectProperty IRI="travelsTo"/>
+    </DisjointObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AcademicSupervisor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a senior scientist or scholar who, along with their own responsibilities, aids and guides a postgraduate research student, or undergraduate student, in their research project; offering both moral support and scientific insight and guidance. The term is used in several countries for the doctoral advisor of a graduate student.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>AcademicSupervisor</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Supervisor#Academia</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Acquaintance</IRI>
@@ -1026,8 +1994,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Backer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person, institution, or country that supports someone or something, especially financially.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Buyer</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who makes a purchase.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CalledToBar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who is qualified to be allowed to argue in court on behalf of another party</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1038,6 +2016,51 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Child</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person in relation to his/her parents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Collaborator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who works jointly on an activity or project; an associate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Colleague</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person in relation to another person, who are both working within the same institution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Conrector</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Administrator of a school (elementary, secondary), second in hierarchy after Director</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Contractee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A party to a contract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Contributor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person or thing that contributes something, in particular.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CorrespondenceIntermediary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who delivers or forwards a letter to the addressee on behalf of the author of the letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Correspondent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who writes letters on a regular basis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Counsellor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person trained to give guidance on personal or psychological problems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Creator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that brings something into existence.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1055,6 +2078,71 @@
         <IRI>DedicateeOfWork</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of an entity to whom a creative work is dedicated.
 </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Dedicator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who dedicates something to someone or something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Disqualified</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person that is declared ineligible for an office, activity or competition because of an offence or infringement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DisqualifiedFromOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person that is declared ineligible for an office because of an offence or infringement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Editor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is in charge of and determines the final content of a newspaper, magazine, or multi-author book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Emigrant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who leaves their own country in order to settle permanently in another country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Employee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person employed for wages or salary, especially at non-executive level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Employer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person or organization that employs people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Engraver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a skilled worker who can inscribe designs or writing onto a surface by carving or etching</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ExiledPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person who lives away from their native country, either from choice or compulsion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Father</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The family role of a man in relation to his child or children</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Friend</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person with whom one has a bond of mutual affection, typically one exclusive of sexual or family relations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Funder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or organization who provide a person or organization with money for a particular purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FundsRecipient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of something that receives funds</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1082,14 +2170,44 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who receives or entertains other people as guests.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Housemate</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">A person who shares a house with others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Ilustrator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person who draws or creates pictures for magazines, books, advertising, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Immigrant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who comes to live permanently in a country that is not the person&apos;s native country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Inscriber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who writes or carves (words or symbols) on something, especially as a formal or permanent record.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Instigator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who brings about or initiates something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Intermediary</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who acts as a link between people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Interviewee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is interviewed by an interviewer in an interview ie who is questioned, consulted or evaluated by another person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Interviewer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who conducts an interview</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1100,6 +2218,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>LetterRecipient</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that receives a letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LetterSender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person that sends a letter</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1118,8 +2241,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Parent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person&apos;s father or mother.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Participant</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who takes part in something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Patron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who gives financial or other support to a person, organization, or cause.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1128,8 +2261,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Refugee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who has been forced to leave their country in order to escape war, persecution, or natural disaster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Researcher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who undertakes a systematic investigation into and study of materials and sources in order to establish facts and reach new conclusion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Resident</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who lives somewhere permanently or on a long-term basis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Reviewer</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A person who formally assesses something with a view to changing it if necessary.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who writes critical appraisals of books, plays, films, etc. for publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Ruler</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person exercising government or dominion</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1143,8 +2296,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who sends something, especially a letter by post</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Signatory</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a party that has signed an agreement, especially a state that has signed a treaty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Student</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">A person who is studying at a university or other place of higher education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Supervisor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who supervises a person or an activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Trader</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who buys and sells goods, currency, or shares.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1154,12 +2327,62 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>TravelCompanion</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or animal with whom one travels.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who actively travels together with at least one other person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Traveller</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is travelling or who often travels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Visitor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person visiting someone or somewhere, especially socially or as a tourist.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Witness</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who sees an event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>friendOf</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/vocab/relationship/friendOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>givesGiftTo</IRI>
+        <Literal datatypeIRI="&xsd;string">Freely transfer the possession of a gift to (someone)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>hasAcquaintance</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/vocab/relationship/acquaintanceOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasCollaborator</IRI>
+        <Literal datatypeIRI="&xsd;string">Relationship linking two people who are collaborating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>hasCollaborator</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/cerif/frapo/collaboratesWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasColleague</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Relationship between two people who are working within the same organisation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/prov#Contributor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that contributes something, in particular.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/prov#Creator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
     </AnnotationAssertion>
 </Ontology>
 

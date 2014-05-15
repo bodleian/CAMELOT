@@ -1,0 +1,133 @@
+<xhtml xmlns:xd="http://www.pnp-software.com/XSLTdoc" xmlns="http://www.w3.org/2002/07/owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <head>
+      <link rel="stylesheet" href="style.css"></link>
+   </head>
+   <body>
+      <h1>Location History Ontology</h1>
+      <h2>http://vocab.ox.ac.uk/camelot/LocationHistory#</h2>
+      <div class="FileDescription">
+         <p></p>
+      </div>
+      <div class="list">
+         <h2>Activity </h2>
+         <ol>
+            <li>
+               <p><em>Displacement<sup></sup></em>The enforced departure of people from their homes, typically because of war, persecution,
+                  or natural disaster.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Emmigration<sup></sup></em>The activity of leaving one's own country to settle permanently in another; moving
+                  abroad.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Exile<sup></sup></em>The state of being barred from one's native country, typically for political or punitive
+                  reasons.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Immigration<sup></sup></em>The activity of of coming to live permanently in a foreign country.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Residence<sup></sup></em>The activity of living in a particular place.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Travel<sup></sup></em>The activity of making a journey, typically of some length.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Visit<sup></sup></em>The activity of going to see a person or place as a guest, tourist, etc.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+         </ol>
+         <h2>Role</h2>
+         <ol>
+            <li>
+               <p><em>BiographicalLocationRole<sup></sup></em></p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol>
+               <li>
+                  <p><em>Emigrant<sup>(defined at: http://vocab.ox.ac.uk/camelot/Role#Emigrant)</sup></em></p>
+               </li>
+               <ul class="assertion">
+                  <li>{Emigrant} emigrantFrom  {Country} </li>
+               </ul>
+               <ol></ol>
+               <li>
+                  <p><em>Exile<sup>(defined at: http://vocab.ox.ac.uk/camelot/Role#Exile)</sup></em></p>
+               </li>
+               <ul class="assertion">
+                  <li>{Exile} exileFrom  {Country} </li>
+                  <li> {Country}  hasExiledPerson {Exile}</li>
+               </ul>
+               <ol></ol>
+               <li>
+                  <p><em>Immigrant<sup>(defined at: http://vocab.ox.ac.uk/camelot/Role#Immigrant)</sup></em></p>
+               </li>
+               <ul class="assertion"></ul>
+               <ol></ol>
+               <li>
+                  <p><em>Refugee<sup>(defined at: http://vocab.ox.ac.uk/camelot/Role#Refugee)</sup></em></p>
+               </li>
+               <ul class="assertion">
+                  <li>{Refugee} refugeeOf  {Country} </li>
+               </ul>
+               <ol></ol>
+               <li>
+                  <p><em>Resident<sup>(defined at: http://vocab.ox.ac.uk/camelot/Role#Resident)</sup></em></p>
+               </li>
+               <ul class="assertion">
+                  <li>{Resident} residentOf  {Location} </li>
+               </ul>
+               <ol></ol>
+               <li>
+                  <p><em>Traveller<sup>(defined at: http://vocab.ox.ac.uk/camelot/Role#Traveller)</sup></em></p>
+               </li>
+               <ul class="assertion">
+                  <li>{Traveller} travelsFrom  {Location} </li>
+                  <li>{Traveller} travelsTo  {Location} </li>
+               </ul>
+               <ol></ol>
+               <li>
+                  <p><em>Visitor<sup>(defined at: http://vocab.ox.ac.uk/camelot/Role#Visitor)</sup></em></p>
+               </li>
+               <ul class="assertion">
+                  <li>{Visitor} visitorTo  {Location} </li>
+               </ul>
+               <ol></ol>
+            </ol>
+         </ol>
+         <h2>Other</h2>
+         <ol>
+            <li>
+               <p><em>Country<sup></sup></em></p>
+            </li>
+            <ul class="assertion">
+               <li>{Country} hasExiledPerson  {Exile} </li>
+               <li> {Emigrant}  emigrantFrom {Country}</li>
+               <li> {Exile}  exileFrom {Country}</li>
+               <li> {Refugee}  refugeeOf {Country}</li>
+            </ul>
+            <ol></ol>
+         </ol>
+      </div>
+   </body>
+</xhtml>

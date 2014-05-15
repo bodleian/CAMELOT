@@ -16,10 +16,24 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.vocab.ox.ac.uk/camelot/Prosopography#">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Prosopography Ontology</Literal>
+    </Annotation>
     <Import>http://vocab.ox.ac.uk/camelot/Role#</Import>
     <Import>http://vocab.ox.ac.uk/camelot/LearnedActivity#</Import>
     <Import>http://www.w3.org/ns/org#</Import>
@@ -29,10 +43,13 @@
     <Import>http://www.w3.org/ns/prov#</Import>
     <Import>http://vocab.ox.ac.uk/camelot/Education#</Import>
     <Import>http://www.vocab.ox.ac.uk/camelot/SocialContact#</Import>
-    <Import>http://vocab.ox.ac.uk/ItemWork#</Import>
     <Import>http://vocab.ox.ac.uk/camelot/PersonalLife#</Import>
+    <Import>http://vocab.ox.ac.uk/CreativeWork#</Import>
     <Import>http://vocab.ox.ac.uk/camelot/Ecclesiastic#</Import>
     <Import>http://vocab.ox.ac.uk/camelot/Occupation#</Import>
+   
+    
+    
     <EquivalentClasses>
         <Class IRI="http://purl.org/ontology/bibo/Document"/>
         <Class IRI="http://www.vocab.ox.ac.uk/camelot/SocialContact#Document"/>

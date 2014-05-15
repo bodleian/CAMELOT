@@ -21,1049 +21,663 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Declaration>
-        <Class IRI="Acquaintance"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Acquaintanceship"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="AlbumAmicorum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Author"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Buyer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Collaboration"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Collaborator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Contract"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ContractActivity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ContractDocument"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Contractee"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Contributor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Correspondence"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Correspondent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Dedicatee"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Dedication"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="DedicationActivity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="DedicationOfItem"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="DedicationOfWork"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Dedicator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Document"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ExchangeOccasionalVerse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Friend"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Friendship"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Gift"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="GiftGiver"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="GiftGiving"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Giftee"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Giver"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Guest"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Host"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="InclusionAlbumAmicorum"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Inscriber"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Inscription"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Instigator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Intermediary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Introduction"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Journey"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Letter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="LetterAuthor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="LetterRecipient"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="LetterSender"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="LiteraryExchange"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Meeting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="MeetingParticipant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Owner"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Recipient"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Seller"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Sender"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="SocialVisit"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Trade"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Trader"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Transmission"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Transmitter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Traveller"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Verse"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Writing"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/TR/prov-o/#InstantaneousEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/TR/prov-o/#Location"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://purl.org/dc/terms/isPartOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="acquaintanceOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="authorOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="buyerOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="buysFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="collaboratorOn"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="correspondentWith"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="enteredInto"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="friendOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="giverOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="giverOfGift"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="givesGiftTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="guestOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasArrivalDate"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasArrivalLocation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasCollaborator"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasDedicatee"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasDedicateeOfItem"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasDedicateeOfWork"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasDedication"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasDepartureDate"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasDepartureLocation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasGuest"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasHost"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasInscriber"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasInscription"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasMeetingParticipant"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasMet"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasOwner"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasRepresentation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasTransmissionWith"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hostOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="intermediaryOfIntroduction"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="receivesFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="receivesGiftFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="receivesVerseFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="recipientOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="recipientOfGift"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="recipientOfVerse"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="sellerOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="sellsTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="senderOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="senderOfVerse"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="sendsTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="sendsVerseTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="traderOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="tradesWith"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="transmitterOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="travelsWith"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/TR/prov-o/#atLocation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#endedAtTime"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#startedAtTime"/>
-    </Declaration>
-    <SubClassOf>
-        <Class IRI="Acquaintance"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Acquaintanceship"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="AlbumAmicorum"/>
-        <Class IRI="Document"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Author"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Buyer"/>
-        <Class IRI="Trader"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Collaboration"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Collaborator"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ContractActivity"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ContractDocument"/>
-        <Class IRI="Document"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Contractee"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Contributor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Correspondence"/>
-        <Class IRI="Transmission"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Correspondent"/>
-        <Class IRI="Transmitter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Dedicatee"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Dedication"/>
-        <Class IRI="Writing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="DedicationActivity"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="DedicationOfItem"/>
-        <Class IRI="DedicationActivity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="DedicationOfWork"/>
-        <Class IRI="DedicationActivity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Dedicator"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ExchangeOccasionalVerse"/>
-        <Class IRI="LiteraryExchange"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Friend"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Friendship"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Gift"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GiftGiver"/>
-        <Class IRI="Giver"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="GiftGiving"/>
-        <Class IRI="Transmission"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Giftee"/>
-        <Class IRI="Recipient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Giver"/>
-        <Class IRI="Transmitter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Guest"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Host"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="InclusionAlbumAmicorum"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Inscriber"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Inscription"/>
-        <Class IRI="Writing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Instigator"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Intermediary"/>
-        <Class IRI="Instigator"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Introduction"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Journey"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Letter"/>
-        <Class IRI="Document"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="LetterAuthor"/>
-        <Class IRI="Author"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="LetterRecipient"/>
-        <Class IRI="Correspondent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="LetterRecipient"/>
-        <Class IRI="Recipient"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="LetterSender"/>
-        <Class IRI="Correspondent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="LetterSender"/>
-        <Class IRI="Sender"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="LiteraryExchange"/>
-        <Class IRI="Transmission"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Meeting"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="MeetingParticipant"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Owner"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Recipient"/>
-        <Class IRI="Transmitter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Seller"/>
-        <Class IRI="Trader"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Sender"/>
-        <Class IRI="Transmitter"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="SocialVisit"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Trade"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Trader"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Transmission"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Transmitter"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Traveller"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Verse"/>
-        <Class IRI="Writing"/>
-    </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="Guest"/>
-        <Class IRI="Host"/>
-    </DisjointClasses>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="buyerOf"/>
-        <ObjectProperty IRI="traderOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="buysFrom"/>
-        <ObjectProperty IRI="tradesWith"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="giverOf"/>
-        <ObjectProperty IRI="transmitterOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="giverOfGift"/>
-        <ObjectProperty IRI="giverOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="givesGiftTo"/>
-        <ObjectProperty IRI="hasTransmissionWith"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasArrivalDate"/>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#endedAtTime"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasArrivalLocation"/>
-        <ObjectProperty IRI="http://www.w3.org/TR/prov-o/#atLocation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasDedicateeOfItem"/>
-        <ObjectProperty IRI="hasDedicatee"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasDedicateeOfWork"/>
-        <ObjectProperty IRI="hasDedicatee"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasDedication"/>
-        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasDepartureDate"/>
-        <ObjectProperty IRI="http://www.w3.org/ns/prov#startedAtTime"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasDepartureLocation"/>
-        <ObjectProperty IRI="http://www.w3.org/TR/prov-o/#atLocation"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="receivesFrom"/>
-        <ObjectProperty IRI="hasTransmissionWith"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="receivesGiftFrom"/>
-        <ObjectProperty IRI="receivesFrom"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="receivesVerseFrom"/>
-        <ObjectProperty IRI="receivesFrom"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="recipientOf"/>
-        <ObjectProperty IRI="transmitterOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="recipientOfGift"/>
-        <ObjectProperty IRI="recipientOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="recipientOfVerse"/>
-        <ObjectProperty IRI="recipientOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="sellerOf"/>
-        <ObjectProperty IRI="traderOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="sellsTo"/>
-        <ObjectProperty IRI="tradesWith"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="senderOf"/>
-        <ObjectProperty IRI="transmitterOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="senderOfVerse"/>
-        <ObjectProperty IRI="senderOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="sendsTo"/>
-        <ObjectProperty IRI="hasTransmissionWith"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="sendsVerseTo"/>
-        <ObjectProperty IRI="sendsTo"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="tradesWith"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
-        <ObjectProperty IRI="http://purl.org/dc/terms/isPartOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="buysFrom"/>
-        <ObjectProperty IRI="sellsTo"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="giverOf"/>
-        <ObjectProperty IRI="recipientOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="guestOf"/>
-        <ObjectProperty IRI="hasGuest"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="hostOf"/>
-        <ObjectProperty IRI="hasHost"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="receivesFrom"/>
-        <ObjectProperty IRI="sendsTo"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="receivesVerseFrom"/>
-        <ObjectProperty IRI="sendsVerseTo"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="senderOf"/>
-        <ObjectProperty IRI="recipientOf"/>
-    </InverseObjectProperties>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="acquaintanceOf"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="correspondentWith"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="friendOf"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="hasCollaborator"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="hasMet"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="hasTransmissionWith"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="tradesWith"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="travelsWith"/>
-    </SymmetricObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="acquaintanceOf"/>
-        <Class IRI="Acquaintance"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="authorOf"/>
-        <Class IRI="Author"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="buyerOf"/>
-        <Class IRI="Buyer"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="buysFrom"/>
-        <Class IRI="Buyer"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="collaboratorOn"/>
-        <Class IRI="Collaborator"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="correspondentWith"/>
-        <Class IRI="Correspondent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="enteredInto"/>
-        <Class IRI="Contractee"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="friendOf"/>
-        <Class IRI="Friend"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="giverOf"/>
-        <Class IRI="Giver"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="giverOfGift"/>
-        <Class IRI="GiftGiver"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="givesGiftTo"/>
-        <Class IRI="GiftGiver"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="guestOf"/>
-        <Class IRI="Guest"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasArrivalDate"/>
-        <Class IRI="Journey"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasArrivalLocation"/>
-        <Class IRI="Traveller"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasCollaborator"/>
-        <Class IRI="Collaborator"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasDepartureDate"/>
-        <Class IRI="Journey"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasDepartureLocation"/>
-        <Class IRI="Traveller"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasGuest"/>
-        <Class IRI="Host"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasHost"/>
-        <Class IRI="Guest"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasInscriber"/>
-        <Class IRI="Document"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasInscription"/>
-        <Class IRI="Document"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasMeetingParticipant"/>
-        <Class IRI="Meeting"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasOwner"/>
-        <Class IRI="Document"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasRepresentation"/>
-        <Class IRI="Contract"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasTransmissionWith"/>
-        <Class IRI="Transmitter"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hostOf"/>
-        <Class IRI="Host"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="intermediaryOfIntroduction"/>
-        <Class IRI="Intermediary"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="receivesFrom"/>
-        <Class IRI="Recipient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="receivesVerseFrom"/>
-        <Class IRI="Recipient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="recipientOf"/>
-        <Class IRI="Recipient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="recipientOfGift"/>
-        <Class IRI="Giftee"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="recipientOfVerse"/>
-        <Class IRI="Recipient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="sellerOf"/>
-        <Class IRI="Seller"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="sellsTo"/>
-        <Class IRI="Seller"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="senderOf"/>
-        <Class IRI="Sender"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="senderOfVerse"/>
-        <Class IRI="Sender"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="sendsTo"/>
-        <Class IRI="Sender"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="sendsVerseTo"/>
-        <Class IRI="Sender"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="traderOf"/>
-        <Class IRI="Trader"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="tradesWith"/>
-        <Class IRI="Trader"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="transmitterOf"/>
-        <Class IRI="Transmitter"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="travelsWith"/>
-        <Class IRI="Traveller"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="acquaintanceOf"/>
-        <Class IRI="Acquaintance"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="buysFrom"/>
-        <Class IRI="Seller"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="collaboratorOn"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="correspondentWith"/>
-        <Class IRI="Correspondent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="enteredInto"/>
-        <Class IRI="Contract"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="friendOf"/>
-        <Class IRI="Friend"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="giverOfGift"/>
-        <Class IRI="Gift"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="givesGiftTo"/>
-        <Class IRI="Giftee"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="guestOf"/>
-        <Class IRI="Host"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasArrivalLocation"/>
-        <Class IRI="http://www.w3.org/TR/prov-o/#Location"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasCollaborator"/>
-        <Class IRI="Collaborator"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasDedicatee"/>
-        <Class IRI="Dedicatee"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasDedicateeOfItem"/>
-        <Class IRI="Dedicatee"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasDedicateeOfWork"/>
-        <Class IRI="Dedicatee"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasDedication"/>
-        <Class IRI="Dedication"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasDepartureLocation"/>
-        <Class IRI="http://www.w3.org/TR/prov-o/#Location"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasGuest"/>
-        <Class IRI="Guest"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasHost"/>
-        <Class IRI="Host"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasInscriber"/>
-        <Class IRI="Inscriber"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasInscription"/>
-        <Class IRI="Inscription"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasMeetingParticipant"/>
-        <Class IRI="MeetingParticipant"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasOwner"/>
-        <Class IRI="Owner"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasRepresentation"/>
-        <Class IRI="ContractDocument"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasTransmissionWith"/>
-        <Class IRI="Transmitter"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hostOf"/>
-        <Class IRI="Guest"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="intermediaryOfIntroduction"/>
-        <Class IRI="Introduction"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="receivesFrom"/>
-        <Class IRI="Sender"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="receivesVerseFrom"/>
-        <Class IRI="Sender"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="recipientOfGift"/>
-        <Class IRI="Gift"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="recipientOfVerse"/>
-        <Class IRI="Verse"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="sellsTo"/>
-        <Class IRI="Buyer"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="senderOfVerse"/>
-        <Class IRI="Verse"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="sendsTo"/>
-        <Class IRI="Recipient"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="sendsVerseTo"/>
-        <Class IRI="Recipient"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="tradesWith"/>
-        <Class IRI="Trader"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="travelsWith"/>
-        <Class IRI="Traveller"/>
-    </ObjectPropertyRange>
-    <AnnotationAssertion>
+    <Import>http://vocab.ox.ac.uk/camelot/Role#</Import>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Acquaintance</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person one knows slightly, but who is not a close friend</Literal>
-    </AnnotationAssertion>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Social Contact Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime"></Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Acquaintanceship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AlbumAmicorum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Audience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AudienceWithRuler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Collaboration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Contract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContractActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ContractDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Correspondence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Dedication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DedicationActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DedicationOfItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DedicationOfWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ExchangeOccasionalVerse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Friendship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GiftGiving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="InclusionAlbumAmicorum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Inscription"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Interview"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Introduction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Journey"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Letter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LiteraryExchange"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Meeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Salon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SocialContactRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SocialGathering"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SocialVisit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Trade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Transmission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Verse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Writing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="dedicatorOfInstance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="dedicatorOfWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="enteredInto"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="giverOfGift"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasArrivalDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasArrivalLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDedicateeOfInstance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDedicateeOfWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDedication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDedicatorOfInstance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDedicatorOfWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDepartureDate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDepartureLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInscription"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMet"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRepresentation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="intermediaryOfIntroduction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="receivesLetterFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="receivesVerseFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="recipientOfVerse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="senderOfVerse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sendsLetterTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sendsVerseTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o/#atLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#endedAtTime"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#startedAtTime"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Acquaintance"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Collaborator"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contractee"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contributor"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicator"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Friend"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Gift"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inscriber"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Instigator"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewee"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewer"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterAuthor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Owner"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Participant"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ruler"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Trader"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Transmitter"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+        <Class IRI="SocialContactRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Acquaintanceship"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AlbumAmicorum"/>
+        <Class IRI="Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Audience"/>
+        <Class IRI="Interview"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AudienceWithRuler"/>
+        <Class IRI="Audience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Collaboration"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ContractActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ContractDocument"/>
+        <Class IRI="Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Correspondence"/>
+        <Class IRI="Transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Dedication"/>
+        <Class IRI="Writing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DedicationActivity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DedicationOfItem"/>
+        <Class IRI="DedicationActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DedicationOfWork"/>
+        <Class IRI="DedicationActivity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ExchangeOccasionalVerse"/>
+        <Class IRI="LiteraryExchange"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Friendship"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GiftGiving"/>
+        <Class IRI="Transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InclusionAlbumAmicorum"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Inscription"/>
+        <Class IRI="Writing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Interview"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Introduction"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Journey"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Letter"/>
+        <Class IRI="Document"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LiteraryExchange"/>
+        <Class IRI="Transmission"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Meeting"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Salon"/>
+        <Class IRI="SocialGathering"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SocialContactRole"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SocialGathering"/>
+        <Class IRI="Meeting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SocialVisit"/>
+        <Class IRI="Meeting"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Trade"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Transmission"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Verse"/>
+        <Class IRI="Writing"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="dedicatorOfInstance"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#dedicatorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="dedicatorOfWork"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#dedicatorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="giverOfGift"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#giverOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasArrivalDate"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#endedAtTime"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasArrivalLocation"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o/#atLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDedicateeOfInstance"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicatee"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDedicateeOfWork"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicatee"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDedication"/>
+        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDedicatorOfInstance"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicator"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDedicatorOfWork"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicator"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDepartureDate"/>
+        <ObjectProperty IRI="http://www.w3.org/ns/prov#startedAtTime"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDepartureLocation"/>
+        <ObjectProperty IRI="http://www.w3.org/TR/prov-o/#atLocation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="intermediaryOfIntroduction"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#intermediaryOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="receivesLetterFrom"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="receivesVerseFrom"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="recipientOfVerse"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="senderOfVerse"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#senderOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="sendsLetterTo"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sendsTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="sendsVerseTo"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sendsTo"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://purl.org/dc/terms/hasPart"/>
+        <ObjectProperty IRI="http://purl.org/dc/terms/isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasDedicatorOfInstance"/>
+        <ObjectProperty IRI="dedicatorOfInstance"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="dedicatorOfWork"/>
+        <ObjectProperty IRI="hasDedicatorOfWork"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="sendsLetterTo"/>
+        <ObjectProperty IRI="receivesLetterFrom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="receivesVerseFrom"/>
+        <ObjectProperty IRI="sendsVerseTo"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasMet"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAuthor"/>
+        <Class IRI="Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasInscriber"/>
+        <Class IRI="Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasArrivalDate"/>
+        <Class IRI="Journey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDedicateeOfInstance"/>
+        <Class IRI="http://vocab.ox.ac.uk/CreativeWork#Instance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDedicateeOfWork"/>
+        <Class IRI="http://vocab.ox.ac.uk/CreativeWork#CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDedication"/>
+        <Class IRI="Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDedicatorOfInstance"/>
+        <Class IRI="http://vocab.ox.ac.uk/CreativeWork#Instance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDedicatorOfWork"/>
+        <Class IRI="http://vocab.ox.ac.uk/CreativeWork#CreativeWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDepartureDate"/>
+        <Class IRI="Journey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasInscription"/>
+        <Class IRI="Document"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRepresentation"/>
+        <Class IRI="Contract"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="intermediaryOfIntroduction"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Intermediary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="receivesLetterFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterRecipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="receivesVerseFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="senderOfVerse"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Sender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sendsLetterTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterSender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sendsVerseTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Sender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#authorOf"/>
+        <Class IRI="Document"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#collaboratorOn"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasInscriber"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inscriber"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#senderOfLetter"/>
+        <Class IRI="Letter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="dedicatorOfInstance"/>
+        <Class IRI="http://vocab.ox.ac.uk/CreativeWork#Instance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="dedicatorOfWork"/>
+        <Class IRI="http://vocab.ox.ac.uk/CreativeWork#CreativeWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="enteredInto"/>
+        <Class IRI="Contract"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasArrivalLocation"/>
+        <Class IRI="http://www.w3.org/TR/prov-o/#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDedicateeOfInstance"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDedicateeOfWork"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDedication"/>
+        <Class IRI="Dedication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDedicatorOfInstance"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDedicatorOfWork"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDepartureLocation"/>
+        <Class IRI="http://www.w3.org/TR/prov-o/#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasInscription"/>
+        <Class IRI="Inscription"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasRepresentation"/>
+        <Class IRI="ContractDocument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="intermediaryOfIntroduction"/>
+        <Class IRI="Introduction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="receivesLetterFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterSender"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="receivesVerseFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Sender"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="recipientOfVerse"/>
+        <Class IRI="Verse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="senderOfVerse"/>
+        <Class IRI="Verse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sendsLetterTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterRecipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="sendsVerseTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Acquaintanceship</IRI>
@@ -1080,24 +694,19 @@
         <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Autograph_book</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Author</IRI>
-        <Literal datatypeIRI="&xsd;string">The role of a person who is a writer of a book, article, or document.</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Audience</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A formal interview with a person in authority.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Buyer</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who makes a purchase.</Literal>
+        <IRI>AudienceWithRuler</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A formal interview with a ruler i.e. a person exercising government or dominion.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Collaboration</IRI>
         <Literal datatypeIRI="&xsd;string">Activity of working together to do a task and to achieve shared goals</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Collaborator</IRI>
-        <Literal datatypeIRI="&xsd;string">The role of an agent working with other agents to do a task and to achieve shared goals.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1106,13 +715,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>ContractDocument</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A document containing a written representation of a contract</Literal>
+        <IRI>ContractActivity</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity that consists of a written or spoken agreement  that is intended to be enforceable by law.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Contractee</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A party to a contract</Literal>
+        <IRI>ContractDocument</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document containing a written representation of a contract</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1121,48 +730,33 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Correspondent</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">a person who writes and sends letters on a regular basis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Dedicatee</IRI>
-        <Literal datatypeIRI="&xsd;string">Someone or something to which something is dedicated</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Dedication</IRI>
         <Literal datatypeIRI="&xsd;string">An inscription or form of words dedicating a building, book, etc. to a person or deity</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DedicationActivity</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">The activity of addressing or inscribing (a literary work, for example) to another as a mark of respect or affection.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>DedicationOfItem</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">To address or inscribe an item to another as a mark of respect or affection.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>DedicationOfWork</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">To address or inscribe a literary work to another as a mark of respect or affection.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Dedicator</IRI>
-        <Literal datatypeIRI="&xsd;string">The role of a person who dedicates something.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>ExchangeOccasionalVerse</IRI>
-        <Literal datatypeIRI="&xsd;string">An activity where one person authors verse and sends it to another person. </Literal>
+        <Literal datatypeIRI="&xsd;string">The activity of addressing or inscribing (a literary work, for example) to another as a mark of respect or affection.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Friend</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">a person with whom one has a bond of mutual affection, typically one exclusive of sexual or family relations.</Literal>
+        <IRI>DedicationOfItem</IRI>
+        <Literal datatypeIRI="&xsd;string">To address or inscribe an item to another as a mark of respect or affection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DedicationOfWork</IRI>
+        <Literal datatypeIRI="&xsd;string">To address or inscribe a literary work to another as a mark of respect or affection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Document</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ExchangeOccasionalVerse</IRI>
+        <Literal datatypeIRI="&xsd;string">An activity where one person authors verse and sends it to another person. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1170,34 +764,14 @@
         <Literal datatypeIRI="&rdf;PlainLiteral"> a relationship of mutual affection between two or more people. Friendship is a stronger form of interpersonal bond than an association. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>GiftGiver</IRI>
-        <Literal datatypeIRI="&xsd;string">a person who gives a gift</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>GiftGiving</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">This context describes the activity of giving and receiving a gift.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Giftee</IRI>
-        <Literal datatypeIRI="&xsd;string">a person who receives a gift</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Guest</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who is invited to visit someone&apos;s home or attend a particular social occasion.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Host</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who receives or entertains other people as guests.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Inscriber</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">The role of a person who writes or carves (words or symbols) on something, especially as a formal or permanent record., as on a monument or in a book</Literal>
+        <IRI>InclusionAlbumAmicorum</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An activity where a personl includes a creative work in an Album Amicorum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1206,13 +780,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Instigator</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who brings about or initiates something</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Intermediary</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who acts as a link between people in order to try and bring about an agreement; a mediator</Literal>
+        <IRI>Interview</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A formal meeting in which one or more persons question, consult, or evaluate another person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1235,8 +804,13 @@ Travel can also include relatively short stays between successive movements.</Li
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>LetterRecipient</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">a person that receives a letter</Literal>
+        <IRI>Letter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A written, typed, or printed communication, sent in an envelope by post or messenger.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LiteraryExchange</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An activity that involves the exchange between two people of a literary creative work, e.g. a book.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1244,19 +818,14 @@ Travel can also include relatively short stays between successive movements.</Li
         <Literal datatypeIRI="&rdf;PlainLiteral">Activity when two or more people meet, by chance or arrangement</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Recipient</IRI>
-        <Literal datatypeIRI="&xsd;string">The role of a person or thing that receives or is awarded something.</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Salon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A regular social gathering, especially of writers and artists</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Seller</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who sells something.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Sender</IRI>
-        <Literal datatypeIRI="&xsd;string">The role of a person who sends something, especially a letter by post</Literal>
+        <IRI>SocialGathering</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A gathering for the purpose of promoting fellowship</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1269,14 +838,9 @@ Travel can also include relatively short stays between successive movements.</Li
         <Literal datatypeIRI="&rdf;PlainLiteral">Trade is to transfer the ownership of goods from one person or entity to another by getting something in exchange from the buyer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Transmission</IRI>
         <Literal datatypeIRI="&xsd;string">the action or process of transmitting something or the state of being transmitted</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Traveller</IRI>
-        <Literal datatypeIRI="&xsd;string">The role of a person who is travelling or who often travels</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1290,53 +854,13 @@ Travel can also include relatively short stays between successive movements.</Li
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>acquaintanceOf</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/vocab/relationship/acquaintanceOf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>collaboratorOn</IRI>
-        <Literal datatypeIRI="&xsd;string">Activity that an agent collaborates on with others</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>friendOf</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/vocab/relationship/friendOf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>givesGiftTo</IRI>
-        <Literal datatypeIRI="&xsd;string">freely transfer the possession of a gift to (someone)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasCollaborator</IRI>
-        <Literal datatypeIRI="&xsd;string">relationship linking two people who are collaborating</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>hasCollaborator</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/cerif/frapo/collaboratesWith</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>hasDedicateeOfItem</IRI>
+        <IRI>hasDedicateeOfInstance</IRI>
         <Literal datatypeIRI="&xsd;anyURI">http://rdvocab.info/roles/dedicateeOfItem</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>hasMet</IRI>
         <Literal datatypeIRI="&xsd;anyURI">http://purl.org/vocab/relationship/hasMet</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>sendsTo</IRI>
-        <Literal datatypeIRI="&xsd;string">cause to go or be taken to a particular destination; arrange for the delivery of, especially by post.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>transmitterOf</IRI>
-        <Literal datatypeIRI="&xsd;string">cause (something) to pass on from one person or place to another</Literal>
     </AnnotationAssertion>
 </Ontology>
 

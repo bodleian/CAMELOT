@@ -21,34 +21,46 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Political Activity Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime"></Literal>
+    </Annotation>
     <Declaration>
-        <Class IRI="MembershipPoliticalGroup"/>
+        <Class IRI="HoldPoliticalOffice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#HoldPoliticalOffice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#PoliticalActivity"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#RepresentativeAssembly"/>
+        <Class IRI="RepresentativeAssembly"/>
     </Declaration>
     <SubClassOf>
-        <Class IRI="MembershipPoliticalGroup"/>
+        <Class IRI="HoldPoliticalOffice"/>
+        <Class IRI="http://www.w3.org/ns/org#HoldOffice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="RepresentativeAssembly"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#HoldPoliticalOffice"/>
-        <Class IRI="http://www.w3.org/ns/org#PoliticalActivity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#PoliticalActivity"/>
+        <Class IRI="http://www.w3.org/ns/org#HoldOffice"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#RepresentativeAssembly"/>
-        <Class IRI="http://www.w3.org/ns/org#PoliticalActivity"/>
-    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HoldPoliticalOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Activity of someone holding a political office.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>RepresentativeAssembly</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A political institution in which a number of persons representing the population or privileged orders within the population of a state come together to debate, negotiate with the executive (originally the king or other ruler) and legislate. </Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 

@@ -1,0 +1,164 @@
+<xhtml xmlns:xd="http://www.pnp-software.com/XSLTdoc" xmlns="http://www.w3.org/2002/07/owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <head>
+      <link rel="stylesheet" href="style.css"></link>
+   </head>
+   <body>
+      <h1>Personal Life Ontology</h1>
+      <h2>http://vocab.ox.ac.uk/camelot/PersonalLife#</h2>
+      <div class="FileDescription">
+         <p></p>
+      </div>
+      <div class="list">
+         <h2>Activity </h2>
+         <ol>
+            <li>
+               <p><em>Birth<sup></sup></em>The emergence of a baby or other young from the body of its mother and the start of
+                  life as a physically separate being.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Birth} birthOf  {Child}  {Person} </li>
+               <li> {Child}  {Person}  hasBirth {Birth}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Death<sup></sup></em>The activity of dying or being killed; the end of the life of a person or organism.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Death} deathOf  {Deceased}  {Person} </li>
+               <li> {Deceased}  {Person}  hasDeath {Death}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Marriage<sup></sup></em>The formal union of a man and a woman, typically as recognized by law, by which they
+                  become husband and wife.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+         </ol>
+         <h2>Role</h2>
+         <ol>
+            <li>
+               <p><em>Deceased<sup></sup></em>A person who is recently dead.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Deceased} hasDeath  {Death} </li>
+               <li> {Death}  deathOf {Deceased}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Spouse<sup></sup></em>A husband or wife, considered in relation to their partner.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Spouse} hasSpouse  {Spouse}  {Person} </li>
+               <li> {Spouse}  {Person}  hasSpouse {Spouse}</li>
+            </ul>
+            <ol>
+               <li>
+                  <p><em>Husband<sup></sup></em>A married man considered in relation to his wife.
+                  </p>
+               </li>
+               <ul class="assertion">
+                  <li>{Husband} hasWife  {Wife}  {Woman}  {Person} </li>
+                  <li> {Wife}  {Woman}  {Person}  hasHusband {Husband}</li>
+               </ul>
+               <ol></ol>
+               <li>
+                  <p><em>Wife<sup></sup></em>A married woman considered in relation to her husband.
+                  </p>
+               </li>
+               <ul class="assertion">
+                  <li>{Wife} hasHusband  {Husband}  {Man}  {Person} </li>
+                  <li> {Husband}  {Man}  {Person}  hasWife {Wife}</li>
+               </ul>
+               <ol></ol>
+            </ol>
+            <li>
+               <p><em>Child<sup>(defined at: http://vocab.ox.ac.uk/camelot/Role#Child)</sup></em>The role of a person in relation to his/her parents.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Child} childOf  {Parent}  {Person} </li>
+               <li>{Child} hasFather  {Father}  {Person} </li>
+               <li>{Child} hasMother  {Mother}  {Person} </li>
+               <li>{Child} hasParent  {Parent}  {Person} </li>
+               <li>{Child} hasBirth  {Birth} </li>
+               <li> {Father}  {Man}  {Person}  fatherOf {Child}</li>
+               <li> {Parent}  {Person}  hasChild {Child}</li>
+               <li> {Mother}  {Woman}  {Person}  motherOf {Child}</li>
+               <li> {Birth}  birthOf {Child}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Parent<sup>(defined at: http://vocab.ox.ac.uk/camelot/Role#Parent)</sup></em>A person's father or mother.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Parent} hasChild  {Child}  {Person} </li>
+               <li>{Parent} parentOf </li>
+               <li> {Child}  {Person}  childOf {Parent}</li>
+               <li> {Child}  {Person}  hasParent {Parent}</li>
+            </ul>
+            <ol>
+               <li>
+                  <p><em>Father<sup></sup></em>A man in relation to his child or children.
+                  </p>
+               </li>
+               <ul class="assertion">
+                  <li>{Father} fatherOf  {Child}  {Person} </li>
+                  <li> {Child}  {Person}  hasFather {Father}</li>
+               </ul>
+               <ol></ol>
+               <li>
+                  <p><em>Mother<sup></sup></em>a woman in relation to a child or children to whom she has given birth, or adopted.
+                  </p>
+               </li>
+               <ul class="assertion">
+                  <li>{Mother} motherOf  {Child}  {Person} </li>
+                  <li> {Child}  {Person}  hasMother {Mother}</li>
+               </ul>
+               <ol>
+                  <li>
+                     <p><em>BirthMother<sup></sup></em>A woman in relation to a child or children to whom she has given birth.
+                     </p>
+                  </li>
+                  <ul class="assertion"></ul>
+                  <ol></ol>
+               </ol>
+            </ol>
+         </ol>
+         <h2>Other</h2>
+         <ol>
+            <li>
+               <p><em>Father<sup></sup></em>A man in relation to his child or children.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Father} fatherOf  {Child}  {Person} </li>
+               <li> {Child}  {Person}  hasFather {Father}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Mother<sup></sup></em>a woman in relation to a child or children to whom she has given birth, or adopted.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Mother} motherOf  {Child}  {Person} </li>
+               <li> {Child}  {Person}  hasMother {Mother}</li>
+            </ul>
+            <ol>
+               <li>
+                  <p><em>BirthMother<sup></sup></em>A woman in relation to a child or children to whom she has given birth.
+                  </p>
+               </li>
+               <ul class="assertion"></ul>
+               <ol></ol>
+            </ol>
+         </ol>
+      </div>
+   </body>
+</xhtml>

@@ -21,260 +21,516 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Occupation Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Alchemist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ambassador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Anatomist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Antiquary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Apothecary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Architect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Artisan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Assistant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Astrologer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Astronomer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Barrister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Biographer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Bookseller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Chemist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Classicist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CourtPhysician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Diplomat"/>
+    </Declaration>
     <Declaration>
         <Class IRI="DisqualificationFromOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Doctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Dramatist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Editor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EducationalTheorist"/>
     </Declaration>
     <Declaration>
         <Class IRI="Employment"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Engraver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GovernmentOfficial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Herbalist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Historian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Iatrochemist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Illustrator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="InstrumentMaker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Inventor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Judge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Juror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Keeper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Lawyer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LearnedOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LegalAdvocate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LegalPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LetterCarrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Librarian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Linguist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Logician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Mathematician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MedicalPost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MedicalPractitioner"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="MembershipProfessionalBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Merchant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MilitaryOfficer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Musician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NaturalHistorian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NaturalPhilosopher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Naturalist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Nonjuror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Notary"/>
     </Declaration>
     <Declaration>
         <Class IRI="Office"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Orator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Painter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Philosopher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Physician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Poet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PoliticalGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Politician"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="President"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Printer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ProfessionalBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Reviewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Scholar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sculptor"/>
     </Declaration>
     <Declaration>
         <Class IRI="Secretary"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Soldier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Solicitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Surgeon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Theologian"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Translator"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Treasurer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Actor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Alchemist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Ambassador"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Anatomist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Antiquary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Apothecary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Architect"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Artisan"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Assistant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Astrologer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Astronomer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Barrister"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Biographer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Bookseller"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Chemist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Classicist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#CourtPhysician"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Diplomat"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Doctor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Dramatist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Editor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#EducationalTheorist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Engraver"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#GovernmentOfficial"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Herbalist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Historian"/>
+        <Class IRI="Writer"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/ns/org#HoldOffice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Iatrochemist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Illustrator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#InstrumentMaker"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Inventor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Judge"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Juror"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Keeper"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Lawyer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#LearnedOrganization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#LegalAdvocate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#LegalPost"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#LetterCarrier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Librarian"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Linguist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Logician"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Mathematician"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPractitioner"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Merchant"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#MilitaryOfficer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Musician"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#NaturalHistorian"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#NaturalPhilosopher"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Naturalist"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Nonjuror"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Notary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Orator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Painter"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Philosopher"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Physician"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Poet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#PoliticalGroup"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Politician"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Printer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#ProfessionalBody"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Publisher"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Reviewer"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Scholar"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Sculptor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Soldier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Solicitor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Surgeon"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Theologian"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Translator"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Writer"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="disqualifiedFrom"/>
     </Declaration>
     <SubClassOf>
+        <Class IRI="Actor"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Alchemist"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ambassador"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Anatomist"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Antiquary"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Apothecary"/>
+        <Class IRI="MedicalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Architect"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Artisan"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Assistant"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Astrologer"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Astronomer"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Barrister"/>
+        <Class IRI="LegalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Biographer"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Bookseller"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Chemist"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Classicist"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CourtPhysician"/>
+        <Class IRI="MedicalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Diplomat"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="DisqualificationFromOffice"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Doctor"/>
+        <Class IRI="MedicalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Dramatist"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Editor"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EducationalTheorist"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Employment"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Engraver"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GovernmentOfficial"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Herbalist"/>
+        <Class IRI="MedicalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Historian"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Iatrochemist"/>
+        <Class IRI="MedicalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Illustrator"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InstrumentMaker"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Inventor"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Judge"/>
+        <Class IRI="LegalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Juror"/>
+        <Class IRI="LegalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Keeper"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Lawyer"/>
+        <Class IRI="LegalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LearnedOrganization"/>
+        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LegalAdvocate"/>
+        <Class IRI="LegalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LegalPost"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LetterCarrier"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Librarian"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Linguist"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Logician"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Mathematician"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MedicalPost"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MedicalPractitioner"/>
+        <Class IRI="MedicalPost"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="MembershipProfessionalBody"/>
         <Class IRI="http://www.w3.org/ns/org#Membership"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Merchant"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MilitaryOfficer"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Musician"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NaturalHistorian"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NaturalPhilosopher"/>
+        <Class IRI="Naturalist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NaturalPhilosopher"/>
+        <Class IRI="Philosopher"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="NaturalPhilosopher"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Naturalist"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Nonjuror"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Notary"/>
+        <Class IRI="LegalPost"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Office"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Orator"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Painter"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Philosopher"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Physician"/>
+        <Class IRI="MedicalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Poet"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PoliticalGroup"/>
+        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Politician"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
@@ -282,115 +538,59 @@
         <Class IRI="Office"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Printer"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ProfessionalBody"/>
+        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Publisher"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Reviewer"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Scholar"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sculptor"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Secretary"/>
         <Class IRI="Office"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Soldier"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Solicitor"/>
+        <Class IRI="LegalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Surgeon"/>
+        <Class IRI="MedicalPost"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Theologian"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Translator"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Treasurer"/>
         <Class IRI="Office"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Actor"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Alchemist"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Ambassador"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Anatomist"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Antiquary"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Apothecary"/>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Architect"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Artisan"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Assistant"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Astrologer"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Astronomer"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Barrister"/>
-        <Class IRI="http://www.w3.org/ns/org#LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Biographer"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Bookseller"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Chemist"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Classicist"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#CourtPhysician"/>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Diplomat"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Doctor"/>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Dramatist"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Editor"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#EducationalTheorist"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Engraver"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#GovernmentOfficial"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Herbalist"/>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Historian"/>
+        <Class IRI="Writer"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
@@ -398,196 +598,8 @@
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Iatrochemist"/>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Illustrator"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#InstrumentMaker"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Inventor"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Judge"/>
-        <Class IRI="http://www.w3.org/ns/org#LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Juror"/>
-        <Class IRI="http://www.w3.org/ns/org#LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Keeper"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Lawyer"/>
-        <Class IRI="http://www.w3.org/ns/org#LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#LearnedOrganization"/>
-        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#LegalAdvocate"/>
-        <Class IRI="http://www.w3.org/ns/org#LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#LegalPost"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#LetterCarrier"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Librarian"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Linguist"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Logician"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Mathematician"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPractitioner"/>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="http://www.w3.org/ns/org#Membership"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Merchant"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#MilitaryOfficer"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Musician"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#NaturalHistorian"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#NaturalPhilosopher"/>
-        <Class IRI="http://www.w3.org/ns/org#Naturalist"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#NaturalPhilosopher"/>
-        <Class IRI="http://www.w3.org/ns/org#Philosopher"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#NaturalPhilosopher"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Naturalist"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Nonjuror"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Notary"/>
-        <Class IRI="http://www.w3.org/ns/org#LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Orator"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Painter"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Philosopher"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Physician"/>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Poet"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#PoliticalGroup"/>
-        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Politician"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Printer"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#ProfessionalBody"/>
-        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Publisher"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Reviewer"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Scholar"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Sculptor"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Soldier"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Solicitor"/>
-        <Class IRI="http://www.w3.org/ns/org#LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Surgeon"/>
-        <Class IRI="http://www.w3.org/ns/org#MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Theologian"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Translator"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Writer"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -601,13 +613,53 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LearnedOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A formal organization that facilitates the learning of its members</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MembershipProfessionalBody</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Membership of a person to a professional body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Office</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A post that is a position of authority or service, typically one of a public nature.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PoliticalGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A formal organization that has a common political purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ProfessionalBody</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A nonprofit formal organization seeking to further a particular profession, the interests of individuals engaged in that profession, and the public interest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/org#HoldOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The activity of a person holding a public office.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/org#LearnedOrganization</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A formal organisation that facilitates the learning of its members.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.w3.org/ns/org#LegalAdvocate</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person admitted to the Practice of Law who advises clients of their legal rights and argues their cases in court.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/org#PoliticalGroup</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A formal organisation with a common political purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/org#ProfessionalBody</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A nonprofit formal organization seeking to further a particular profession, the interests of individuals engaged in that profession, and the public interest</Literal>
     </AnnotationAssertion>
 </Ontology>
 

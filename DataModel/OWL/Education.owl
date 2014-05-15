@@ -33,6 +33,14 @@
 * Study
 * Teaching Activity </Literal>
     </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime">30/04/2014</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Educational Activity Ontology</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="http://purl.org/ontology/bibo/Thesis"/>
     </Declaration>
@@ -433,12 +441,12 @@
         <ObjectProperty IRI="graduateOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasPraeses"/>
         <ObjectProperty IRI="hasRespondent"/>
+        <ObjectProperty IRI="hasPraeses"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasRegister"/>
         <ObjectProperty IRI="registerOf"/>
+        <ObjectProperty IRI="hasRegister"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasTeacher"/>
@@ -634,6 +642,11 @@
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.org/ontology/bibo/Thesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A long essay or dissertation involving personal research, written by a candidate for a university degree.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AcademicSubject</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A branch of knowledge studied or taught in a school, college, or university.</Literal>
     </AnnotationAssertion>
@@ -653,7 +666,7 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">A list of the candidates who have taken an examination, showing the class or mark achieved by each.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ClassRegistration</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A matriculation activity that involves adding candidates who have taken an examination, to a class list, showing the class or mark achieved by each.</Literal>
     </AnnotationAssertion>
@@ -715,7 +728,7 @@ In Scottish heraldry, a matriculation is a registration of armorial bearings.</L
 source: https://en.wikipedia.org/wiki/Matriculation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Mentor</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">An experienced and trusted adviser.</Literal>
     </AnnotationAssertion>
@@ -795,7 +808,7 @@ source: https://en.wikipedia.org/wiki/Matriculation</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who imparts knowledge to or instructs someone as to how to do something.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Teaching</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The activity of giving instruction, especially in an elementary or secondary school or a university.</Literal>
     </AnnotationAssertion>

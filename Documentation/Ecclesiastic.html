@@ -1,0 +1,319 @@
+<xhtml xmlns:xd="http://www.pnp-software.com/XSLTdoc" xmlns="http://www.w3.org/2002/07/owl#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+   <head>
+      <link rel="stylesheet" href="style.css"></link>
+   </head>
+   <body>
+      <h1>Ecclesiastical Activity Ontology</h1>
+      <h2>http://vocab.ox.ac.uk/camelot/Ecclesiastic#</h2>
+      <div class="FileDescription">
+         <p>The Ecclesiastical Activity Ontology describes entities, activities and the relationships
+            between them for the following ecclesiastical activities:
+            
+            * Baptism
+            * Religoius Confirmation
+            * Religious Confession
+            * Religious Conversion
+            * Membership of an ecclesiastical body
+            * Holding an ecclesiastical office
+            * Disqualification from an ecclesiastical office
+         </p>
+      </div>
+      <div class="list">
+         <h2>Activity </h2>
+         <ol>
+            <li>
+               <p><em>Baptism<sup></sup></em>The Christian religious rite of sprinkling water on to a person&#x2019;s forehead or of immersing
+                  them in water, symbolizing purification or regeneration and admission to the Christian
+                  Church. In many denominations, baptism is performed on young children and is accompanied
+                  by name-giving.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>DisqualifiedFromEcclesiasticalOffice<sup></sup></em>Activity where a person is disqualified ie declared ineligible for an ecclesiastical
+                  office.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>HoldEcclesiasticalOffice<sup></sup></em>The activity of a person holding an ecclesiastical office, i.e. a position of authority
+                  or service, typically one of a public nature.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>MembershipEcclesiasticalBody<sup></sup></em>The activity of a person being a member of an ecclesiastical body.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Ordination<sup></sup></em>The action of making (someone) a priest or minister; confer holy orders.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Preach<sup></sup></em>Deliver a sermon or religious address to an assembled group of people, typically in
+                  church.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>ReligiousConfirmation<sup></sup></em>Confirmation is a rite of initiation in several Christian denominations, normally
+                  carried out through anointing, the laying on of hands, and prayer, for the purpose
+                  of bestowing the Gift of the Holy Spirit.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>ReligiousConversion<sup></sup></em>The adoption, wholesale, of a set of beliefs identified with one particular religious
+                  denomination to the exclusion of others. Religious conversion marks a transformation
+                  of religious identity and is symbolized by special rituals.
+                  
+                  https://en.wikipedia.org/wiki/Religious_conversion
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>ReligousConfession<sup></sup></em>Confession is the acknowledgment of sin (or one's sinfulness) or wrongs. It is a religious
+                  practice in a number of faith traditions.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Membership<sup>(defined at: http://www.w3.org/ns/org#Membership)</sup></em></p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+         </ol>
+         <h2>Role</h2>
+         <ol>
+            <li>
+               <p><em>BaptismalCandidate<sup></sup></em>The role of a person who is admitted to membership of a Christian church.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{BaptismalCandidate} baptisedBy  {Officiant}  {Person} </li>
+               <li> {Officiant}  baptised {BaptismalCandidate}</li>
+            </ul>
+            <ol>
+               <li>
+                  <p><em>Godchild<sup></sup></em>The role of a person who is presented at baptism by a godparent who promises to take
+                     responsibility for their religious education.
+                  </p>
+               </li>
+               <ul class="assertion">
+                  <li>{Godchild} hasGodparent  {Godparent}  {Person} </li>
+                  <li> {Godmother}  {Person}  godmotherOf {Godchild}</li>
+                  <li> {Godparent}  hasGodchild {Godchild}</li>
+               </ul>
+               <ol></ol>
+            </ol>
+            <li>
+               <p><em>Confessee<sup></sup></em>The role of a person who repents their sins and (in the Christian Church) seeks forgiveness
+                  from God.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Confessee} confessedTo  {Confessor}  {Person} </li>
+               <li> {Confessor}  {Person}  receivedConfessionFrom {Confessee}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Confessor<sup></sup></em>The role of a priest who hears confessions and gives absolution and spiritual counsel
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Confessor} receivedConfessionFrom  {Confessee}  {Person} </li>
+               <li> {Confessee}  {Person}  confessedTo {Confessor}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>ConfirmationCandidate<sup></sup></em>The role of a person who is confirmed during the religious rite or sacrament of confirmation
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{ConfirmationCandidate} confirmedBy  {Officiant}  {Person} </li>
+               <li> {Officiant}  confirmed {ConfirmationCandidate}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>DisqualifiedFromOffice<sup></sup></em>The role of a person who has been declared ineligible for an office because of an
+                  offence or infringement
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{DisqualifiedFromOffice} disqualifiedFrom  {Office} </li>
+               <li>{DisqualifiedFromOffice} disqualifiedFromOffice  {Office} </li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>Godparent<sup></sup></em>The role of a person who presents a person at baptism and promises to take responsibility
+                  for their religious education.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Godparent} hasGodchild  {Godchild} </li>
+               <li> {Godchild}  {Person}  hasGodparent {Godparent}</li>
+            </ul>
+            <ol>
+               <li>
+                  <p><em>Godfather<sup></sup></em>A male godparent
+                  </p>
+               </li>
+               <ul class="assertion">
+                  <li>{Godfather} godfatherOf  {Person} </li>
+               </ul>
+               <ol></ol>
+               <li>
+                  <p><em>Godmother<sup></sup></em>A female godparent
+                  </p>
+               </li>
+               <ul class="assertion">
+                  <li>{Godmother} godmotherOf  {Godchild}  {Person} </li>
+                  <li> hasGodmother {Godmother}</li>
+               </ul>
+               <ol></ol>
+            </ol>
+            <li>
+               <p><em>Member<sup></sup></em>The role of an agent belonging to a particular group
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol></ol>
+            <li>
+               <p><em>Officiant<sup></sup></em>The role of a person who performs a religious rite or presides over a religious service
+                  or ceremony.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{Officiant} baptised  {BaptismalCandidate} </li>
+               <li>{Officiant} confirmed  {ConfirmationCandidate} </li>
+               <li> {BaptismalCandidate}  {Person}  baptisedBy {Officiant}</li>
+               <li> {ConfirmationCandidate}  {Person}  confirmedBy {Officiant}</li>
+            </ul>
+            <ol></ol>
+            <li>
+               <p><em>ReligiousConvert<sup></sup></em>The role of a person who participates in a conversion of religious identity
+               </p>
+            </li>
+            <ul class="assertion">
+               <li>{ReligiousConvert} convertFromChurch  {Church} </li>
+               <li>{ReligiousConvert} convertToChurch  {Church} </li>
+            </ul>
+            <ol></ol>
+         </ol>
+         <h2>Other</h2>
+         <ol>
+            <li>
+               <p><em>EcclesiasticalOrganisation<sup></sup></em>An organisation related to the Christian Church.
+               </p>
+            </li>
+            <ul class="assertion"></ul>
+            <ol>
+               <li>
+                  <p><em>Chapter<sup></sup></em>The governing body of a religious community
+                  </p>
+               </li>
+               <ul class="assertion"></ul>
+               <ol></ol>
+               <li>
+                  <p><em>Church<sup></sup></em>A particular Christian organization with its own clergy, buildings, and distinctive
+                     doctrines.
+                  </p>
+               </li>
+               <ul class="assertion">
+                  <li> {ReligiousConvert}  {Person}  convertFromChurch {Church}</li>
+                  <li> {ReligiousConvert}  {Person}  convertToChurch {Church}</li>
+               </ul>
+               <ol></ol>
+               <li>
+                  <p><em>Congregation<sup></sup></em>A group of people assembled for religious worship.
+                  </p>
+               </li>
+               <ul class="assertion"></ul>
+               <ol></ol>
+               <li>
+                  <p><em>Council<sup></sup></em>An advisory, deliberative, or administrative body of people formally constituted and
+                     meeting regularly.
+                  </p>
+               </li>
+               <ul class="assertion"></ul>
+               <ol></ol>
+               <li>
+                  <p><em>Synod<sup></sup></em>An assembly of the clergy and sometimes also the laity in a diocese or other division
+                     of a particular Church.
+                  </p>
+               </li>
+               <ul class="assertion"></ul>
+               <ol></ol>
+            </ol>
+            <li>
+               <p><em>Office<sup></sup></em>A position of authority or service, typically one of a public nature
+               </p>
+            </li>
+            <ul class="assertion">
+               <li> {DisqualifiedFromOffice}  {Person}  disqualifiedFrom {Office}</li>
+               <li> {DisqualifiedFromOffice}  {Person}  disqualifiedFromOffice {Office}</li>
+            </ul>
+            <ol>
+               <li>
+                  <p><em>EcclesiasticalOffice<sup></sup></em>A position of authority or service in an ecclesiastical organisation.
+                  </p>
+               </li>
+               <ul class="assertion"></ul>
+               <ol>
+                  <li>
+                     <p><em>Bishop<sup></sup></em>A senior member of the Christian clergy, usually in charge of a diocese and empowered
+                        to confer holy orders.
+                     </p>
+                  </li>
+                  <ul class="assertion"></ul>
+                  <ol></ol>
+                  <li>
+                     <p><em>EcclesiasticalAdministrativeOffice<sup></sup></em>An administrative position of authority or service in an ecclesiastical organisation.
+                     </p>
+                  </li>
+                  <ul class="assertion"></ul>
+                  <ol></ol>
+                  <li>
+                     <p><em>Priest<sup></sup></em>An ordained minister of the Catholic, Orthodox, or Anglican Church, authorized to
+                        perform certain rites and administer certain sacraments. http://www.oxforddictionaries.com/definition/english/priest
+                     </p>
+                  </li>
+                  <ul class="assertion"></ul>
+                  <ol></ol>
+               </ol>
+               <li>
+                  <p><em>Minister<sup></sup></em>A member of the clergy, especially in the Presbyterian and Nonconformist Churches.
+                  </p>
+               </li>
+               <ul class="assertion"></ul>
+               <ol></ol>
+               <li>
+                  <p><em>MonasticOffice<sup></sup></em>A position of authority or service in a monastic organisation.
+                  </p>
+               </li>
+               <ul class="assertion"></ul>
+               <ol></ol>
+            </ol>
+            <li>
+               <p><em>Religion<sup></sup></em>A particular system of faith and worship.
+               </p>
+            </li>
+            <ul class="assertion">
+               <li> {Person}  hasReligiousIdentity {Religion}</li>
+            </ul>
+            <ol></ol>
+         </ol>
+      </div>
+   </body>
+</xhtml>

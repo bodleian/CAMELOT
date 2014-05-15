@@ -21,8 +21,23 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime">30/04/2014</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Location History Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="BiographicalLocationRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Country"/>
     </Declaration>
     <Declaration>
         <Class IRI="Displacement"/>
@@ -44,6 +59,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Visit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Location"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="BiographicalLocationRole"/>
@@ -105,6 +123,74 @@
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
         <Class IRI="BiographicalLocationRole"/>
     </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#emigrantFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Emigrant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#exileFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Exile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasExiledPerson"/>
+        <Class IRI="Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#refugeeOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#residentOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Resident"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#visitorTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#emigrantFrom"/>
+        <Class IRI="Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#exileFrom"/>
+        <Class IRI="Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasExiledPerson"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Exile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#movesTo"/>
+        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#refugeeOf"/>
+        <Class IRI="Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#residentOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsFrom"/>
+        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsTo"/>
+        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#visitorTo"/>
+        <Class IRI="http://www.w3.org/ns/prov#Location"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Displacement</IRI>
