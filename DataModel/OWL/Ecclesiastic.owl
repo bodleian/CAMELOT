@@ -133,6 +133,9 @@
         <Class IRI="Religion"/>
     </Declaration>
     <Declaration>
+        <Class IRI="ReligiousConfession"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="ReligiousConfirmation"/>
     </Declaration>
     <Declaration>
@@ -140,9 +143,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="ReligiousConvert"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ReligousConfession"/>
     </Declaration>
     <Declaration>
         <Class IRI="Synod"/>
@@ -419,6 +419,10 @@
         <Class IRI="EcclesiasticalOffice"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="ReligiousConfession"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="ReligiousConfirmation"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
@@ -429,10 +433,6 @@
     <SubClassOf>
         <Class IRI="ReligiousConvert"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ReligousConfession"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Synod"/>
@@ -846,6 +846,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ReligiousConfession</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Confession is the acknowledgment of sin (or one&apos;s sinfulness) or wrongs. It is a religious practice in a number of faith traditions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ReligiousConfirmation</IRI>
         <Literal datatypeIRI="&xsd;string">Confirmation is a rite of initiation in several Christian denominations, normally carried out through anointing, the laying on of hands, and prayer, for the purpose of bestowing the Gift of the Holy Spirit.</Literal>
     </AnnotationAssertion>
@@ -860,11 +865,6 @@ https://en.wikipedia.org/wiki/Religious_conversion</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ReligiousConvert</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who participates in a conversion of religious identity</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>ReligousConfession</IRI>
-        <Literal datatypeIRI="&xsd;string">Confession is the acknowledgment of sin (or one&apos;s sinfulness) or wrongs. It is a religious practice in a number of faith traditions.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

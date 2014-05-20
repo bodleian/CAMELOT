@@ -96,11 +96,15 @@
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DisplacedPerson"/>
+        <Class IRI="BiographicalLocationRole"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Emigrant"/>
         <Class IRI="BiographicalLocationRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Exile"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#ExiledPerson"/>
         <Class IRI="BiographicalLocationRole"/>
     </SubClassOf>
     <SubClassOf>
@@ -126,10 +130,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#emigrantFrom"/>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Emigrant"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#exileFrom"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Exile"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasExiledPerson"/>
@@ -162,10 +162,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#exileFrom"/>
         <Class IRI="Country"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasExiledPerson"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Exile"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#movesTo"/>

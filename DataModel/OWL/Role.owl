@@ -112,6 +112,9 @@
         <Class IRI="Director"/>
     </Declaration>
     <Declaration>
+        <Class IRI="DisplacedPerson"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Disqualified"/>
     </Declaration>
     <Declaration>
@@ -754,6 +757,10 @@
         <Class IRI="AdministratorOfInstitution"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="DisplacedPerson"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Disqualified"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -1244,8 +1251,8 @@
         <ObjectProperty IRI="buysFrom"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="chairOf"/>
         <ObjectProperty IRI="hasChair"/>
+        <ObjectProperty IRI="chairOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasChild"/>
@@ -1268,8 +1275,8 @@
         <ObjectProperty IRI="hasDedicator"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="engraverOf"/>
         <ObjectProperty IRI="hasEngraver"/>
+        <ObjectProperty IRI="engraverOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="exileFrom"/>
@@ -1304,8 +1311,8 @@
         <ObjectProperty IRI="inscriberOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="intermediaryOf"/>
         <ObjectProperty IRI="hasIntermediary"/>
+        <ObjectProperty IRI="intermediaryOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="memberOf"/>
@@ -1364,12 +1371,12 @@
         <ObjectProperty IRI="hasWitness"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="interviews"/>
         <ObjectProperty IRI="interviewedBy"/>
+        <ObjectProperty IRI="interviews"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="receivesFrom"/>
         <ObjectProperty IRI="sendsTo"/>
+        <ObjectProperty IRI="receivesFrom"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="friendOf"/>
@@ -2086,6 +2093,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DisplacedPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person that participated in the enforced departure from his/her home, typically because of war, persecution, or natural disaster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Disqualified</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person that is declared ineligible for an office, activity or competition because of an offence or infringement.</Literal>
     </AnnotationAssertion>
@@ -2122,7 +2134,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ExiledPerson</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">a person who lives away from their native country, either from choice or compulsion.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who lives away from their native country, either from choice or compulsion.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
