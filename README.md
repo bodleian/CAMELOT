@@ -14,4 +14,4 @@ All BDLSS projects should be evaluated against the data model - and should eithe
 
 Vocabulary:
 
-Creative Work and its Instantiation Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/CreativeWork.owl2">documentation</a>
+Creative Work and its Instantiation Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/CreativeWork.owl">documentation</a>
