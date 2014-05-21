@@ -16,29 +16,29 @@ Vocabularies:
 
 Creative Work and its Instantiation Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/CreativeWork.owl">documentation</a>
 
-Ecclesiastical Activity Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Ecclesiastic.owl">documentation</a>
+Ecclesiastical Activity Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Ecclesiastic.owl">documentation</a>
 
-Educational Activity Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Education.owl">documentation</a>
+Educational Activity Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Education.owl">documentation</a>
 
-Learned Activity Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/LearnedActivity.owl">documentation</a>
+Learned Activity Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/LearnedActivity.owl">documentation</a>
 
-Location History Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/LocationHistory.owl">documentation</a>
+Location History Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/LocationHistory.owl">documentation</a>
 
-Occupation Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Occupation.owl">documentation</a>
+Occupation Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Occupation.owl">documentation</a>
 
-Person Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Person.owl">documentation</a>
+Person Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Person.owl">documentation</a>
 
-Personal Life Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/PersonalLife.owl">documentation</a>
+Personal Life Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/PersonalLife.owl">documentation</a>
 
-Political Activity Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Politics.owl">documentation</a>
+Political Activity Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Politics.owl">documentation</a>
 
-Role Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Role.owl">documentation</a>
+Role Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Role.owl">documentation</a>
 
-Social Contact Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/SocialContact.owl">documentation</a>
+Social Contact Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/SocialContact.owl">documentation</a>
 
-Social Status Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/SocialStatus.owl">documentation</a>
+Social Status Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/SocialStatus.owl">documentation</a>
 
-Speech Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/ttps://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Speech.owl">documentation</a>
+Speech Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Speech.owl">documentation</a>
 
 
 
