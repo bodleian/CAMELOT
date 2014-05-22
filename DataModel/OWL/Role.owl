@@ -616,10 +616,7 @@
         <Class IRI="Conrector"/>
         <Class IRI="Subrector"/>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="Contributor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Contributor"/>
-    </EquivalentClasses>
+    
     <EquivalentClasses>
         <Class IRI="Creator"/>
         <Class IRI="http://www.w3.org/ns/prov#Creator"/>
@@ -1069,10 +1066,7 @@
         <Class IRI="Witness"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/prov#Contributor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
+   
     <SubClassOf>
         <Class IRI="http://www.w3.org/ns/prov#Creator"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
