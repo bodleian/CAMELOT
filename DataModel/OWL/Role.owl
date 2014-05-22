@@ -617,10 +617,7 @@
         <Class IRI="Subrector"/>
     </EquivalentClasses>
     
-    <EquivalentClasses>
-        <Class IRI="Creator"/>
-        <Class IRI="http://www.w3.org/ns/prov#Creator"/>
-    </EquivalentClasses>
+    
     <SubClassOf>
         <Class IRI="AcademicSupervisor"/>
         <Class IRI="Supervisor"/>
@@ -1067,10 +1064,7 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
    
-    <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/prov#Creator"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
+   
     <DisjointClasses>
         <Class IRI="Guest"/>
         <Class IRI="Host"/>
@@ -2385,11 +2379,7 @@
         <IRI>http://www.w3.org/ns/prov#Contributor</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that contributes something, in particular.</Literal>
     </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/ns/prov#Creator</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral"></Literal>
-    </AnnotationAssertion>
+   
 </Ontology>
 
 
