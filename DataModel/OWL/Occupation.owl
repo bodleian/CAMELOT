@@ -594,7 +594,7 @@
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#HoldOffice"/>
+        <Class IRI="HoldOffice"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
@@ -638,7 +638,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://www.w3.org/ns/org#HoldOffice</IRI>
+        <IRI>HoldOffice</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The activity of a person holding a public office.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
