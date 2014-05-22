@@ -102,16 +102,16 @@
         <ObjectProperty IRI="parentOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
+        <ObjectProperty IRI="birthOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
+        <ObjectProperty IRI="deathOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
+        <ObjectProperty IRI="hasBirth"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasDeath"/>
+        <ObjectProperty IRI="hasDeath"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="Birth"/>
@@ -283,24 +283,24 @@
         <ObjectProperty IRI="hasParent"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
+        <ObjectProperty IRI="birthOf"/>
+        <ObjectProperty IRI="hasBirth"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasDeath"/>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
+        <ObjectProperty IRI="hasDeath"/>
+        <ObjectProperty IRI="deathOf"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
+        <ObjectProperty IRI="hasBirth"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasDeath"/>
+        <ObjectProperty IRI="hasDeath"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
+        <ObjectProperty IRI="birthOf"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
+        <ObjectProperty IRI="deathOf"/>
     </InverseFunctionalObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="hasSpouse"/>
@@ -424,27 +424,27 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
+        <ObjectProperty IRI="birthOf"/>
         <Class IRI="Birth"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
+        <ObjectProperty IRI="deathOf"/>
         <Class IRI="Death"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
+        <ObjectProperty IRI="hasBirth"/>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
+        <ObjectProperty IRI="hasBirth"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasDeath"/>
+        <ObjectProperty IRI="hasDeath"/>
         <Class IRI="Deceased"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasDeath"/>
+        <ObjectProperty IRI="hasDeath"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
@@ -547,27 +547,27 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
+        <ObjectProperty IRI="birthOf"/>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#birthOf"/>
+        <ObjectProperty IRI="birthOf"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
+        <ObjectProperty IRI="deathOf"/>
         <Class IRI="Deceased"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#deathOf"/>
+        <ObjectProperty IRI="deathOf"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasBirth"/>
+        <ObjectProperty IRI="hasBirth"/>
         <Class IRI="Birth"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="http://www.w3.org/ns/org#hasDeath"/>
+        <ObjectProperty IRI="hasDeath"/>
         <Class IRI="Death"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
