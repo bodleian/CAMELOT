@@ -268,7 +268,7 @@
         <Class IRI="Writer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#HoldOffice"/>
+        <Class IRI="HoldOffice"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="disqualifiedFrom"/>
