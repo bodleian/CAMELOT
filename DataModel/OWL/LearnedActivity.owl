@@ -115,7 +115,7 @@
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Translator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Reviewer"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
@@ -168,7 +168,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="HoldOfficeLearnedOrganisation"/>
-        <Class IRI="http://www.w3.org/ns/org#HoldOffice"/>
+        <Class IRI="HoldOffice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="LearnedActivityRole"/>
@@ -263,7 +263,7 @@
         <Class IRI="LearnedActivityRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://www.w3.org/ns/org#Reviewer"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
         <Class IRI="LearnedActivityRole"/>
     </SubClassOf>
     <DisjointUnion>
