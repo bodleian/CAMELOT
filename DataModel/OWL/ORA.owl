@@ -23,7 +23,7 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Oxford Research Archive Ontology</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">ORA Data Repository Ontology</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="Conference"/>
