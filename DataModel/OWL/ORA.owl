@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.vocab.ox.ac.uk/ORA#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.vocab.ox.ac.uk/ORA#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Oxford Research Archive Ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="Conference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConferenceItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConferencePaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ConferencePoster"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DiscussionPaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="JournalArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Patent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PatentApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PostPrintArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PrePrintArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PressArticle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ResearchPaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TechnicalReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WorkingPaper"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Conference"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConferencePaper"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWork#Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConferencePaper"/>
+        <Class IRI="ConferenceItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConferencePoster"/>
+        <Class IRI="ConferenceItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DiscussionPaper"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWork#Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="JournalArticle"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWork#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PostPrintArticle"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWork#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PrePrintArticle"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWork#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PressArticle"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWork#Article"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ResearchPaper"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWork#Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TechnicalReport"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWork#Report"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WorkingPaper"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWork#Paper"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Conference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A formal meeting of people with a shared interest, typically one that takes place over several days.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConferenceItem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A digital object that has been produced for, or as a result of, a conference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConferencePaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A paper presented at an academic conference for researchers to present and discuss their work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>ConferencePoster</IRI>
+        <Literal datatypeIRI="&xsd;string">A poster that has the purpose of presenting research information by an individual or representatives of research teams at a conference with an academic or professional focus. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DiscussionPaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A paper that includes research but tend to be shorter and more selective in its approach, and more analytical and critical, than a research paper.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>DiscussionPaper</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Essay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>JournalArticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An article that is published in a journal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Patent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A patent protects new inventions and covers how things work, what they do, how they do it, what they are made of and how they are made.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PatentApplication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A request pending at a patent office for the grant of a patent for the invention described and claimed by that application.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PostPrintArticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An article that is in the final form post printing of the publication in which it is published.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PrePrintArticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An article in the form before it is published.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PressArticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A written or recorded communication directed at members of the news media for the purpose of announcing something ostensibly newsworthy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ResearchPaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A paper that is intended to uncover a wide variety of sources on a given topic.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>ResearchPaper</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Essay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>TechnicalReport</IRI>
+        <Literal datatypeIRI="&xsd;string">A report that describes the process, progress, or results of technical or scientific research or the state of a technical or scientific research problem. It might also include recommendations and conclusions of the research.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>WorkingPaper</IRI>
+        <Literal datatypeIRI="&xsd;string">A preliminary scientific or technical paper. Often, authors will release working papers to share ideas about a topic or to elicit feedback before submitting to a peer reviewed conference or academic journal. Working papers are often the basis for related works, and may in themselves be cited by peer-review papers.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
