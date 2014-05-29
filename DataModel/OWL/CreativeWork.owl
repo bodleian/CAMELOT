@@ -16,157 +16,475 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://vocab.ox.ac.uk/camelot/CreativeWork#">
-    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://vocab.ox.ac.uk/camelot/ResearchObject#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&xsd;string"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-        <Literal datatypeIRI="&xsd;dateTime"></Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal datatypeIRI="&xsd;string">Creative Work and its Instantiation Ontology</Literal>
-    </Annotation>
     <Declaration>
-        <Class IRI="CreativeWork"/>
+        <Class IRI="http://purl.org/dc/dcmitype/Collection"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Instance"/>
+        <Class IRI="Article"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Manifestation"/>
+        <Class IRI="Book"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Theme"/>
+        <Class IRI="BookChapter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasInstance"/>
+        <Class IRI="BookReview"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasManifestation"/>
+        <Class IRI="BookSection"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasTheme"/>
+        <Class IRI="Booklet"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="instanceOf"/>
+        <Class IRI="Chapter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="manifestationOf"/>
+        <Class IRI="Dataset"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="themeOf"/>
+        <Class IRI="Dissertation"/>
     </Declaration>
+    <Declaration>
+        <Class IRI="EditedBook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EditedVolume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Essay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Journal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Leaflet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Letter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Magazine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Monograph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Newsletter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Newspaper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Pamphlet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Paper"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Periodical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="PolicyBrief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Publication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Report"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Review"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Series"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Thesis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="WrittenWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWorkInstance#CreativeWork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasReview"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="reviewOf"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="BookReview"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="reviewOf"/>
+            <Class IRI="Book"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Journal"/>
+        <ObjectUnionOf>
+            <Class IRI="Magazine"/>
+            <Class IRI="Newspaper"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Monograph"/>
+        <ObjectUnionOf>
+            <Class IRI="Book"/>
+            <Class IRI="Essay"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Pamphlet"/>
+        <ObjectUnionOf>
+            <Class IRI="Booklet"/>
+            <Class IRI="Leaflet"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Periodical"/>
+        <ObjectUnionOf>
+            <Class IRI="Magazine"/>
+            <Class IRI="Newspaper"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Publication"/>
+        <ObjectUnionOf>
+            <Class IRI="Book"/>
+            <Class IRI="Journal"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Review"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="reviewOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWorkInstance#CreativeWork"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="Article"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Book"/>
+        <Class IRI="Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Book"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BookChapter"/>
+        <Class IRI="BookSection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BookChapter"/>
+        <Class IRI="Chapter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BookReview"/>
+        <Class IRI="Review"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Booklet"/>
+        <Class IRI="Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Dataset"/>
+        <Class IRI="http://purl.org/dc/dcmitype/Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Dissertation"/>
+        <Class IRI="Essay"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EditedBook"/>
+        <Class IRI="http://purl.org/dc/dcmitype/Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EditedBook"/>
+        <Class IRI="Book"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EditedVolume"/>
+        <Class IRI="EditedBook"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Essay"/>
+        <Class IRI="Paper"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Essay"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Journal"/>
+        <Class IRI="Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Journal"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Leaflet"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Letter"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Magazine"/>
+        <Class IRI="Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Monograph"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Newsletter"/>
+        <Class IRI="Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Newspaper"/>
+        <Class IRI="Publication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Pamphlet"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Paper"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Periodical"/>
+        <Class IRI="Journal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="PolicyBrief"/>
+        <Class IRI="Report"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Report"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Review"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Series"/>
+        <Class IRI="http://purl.org/dc/dcmitype/Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Series"/>
+        <Class IRI="WrittenWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Thesis"/>
+        <Class IRI="Dissertation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="WrittenWork"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWorkInstance#CreativeWork"/>
+    </SubClassOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="instanceOf"/>
-        <ObjectProperty IRI="hasInstance"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="manifestationOf"/>
-        <ObjectProperty IRI="hasManifestation"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="hasTheme"/>
-        <ObjectProperty IRI="themeOf"/>
+        <ObjectProperty IRI="reviewOf"/>
+        <ObjectProperty IRI="hasReview"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasInstance"/>
-        <Class IRI="Manifestation"/>
+        <ObjectProperty IRI="hasReview"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWorkInstance#CreativeWork"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasManifestation"/>
-        <Class IRI="CreativeWork"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasTheme"/>
-        <Class IRI="CreativeWork"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="instanceOf"/>
-        <Class IRI="Instance"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="manifestationOf"/>
-        <Class IRI="Manifestation"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="themeOf"/>
-        <Class IRI="Theme"/>
+        <ObjectProperty IRI="reviewOf"/>
+        <Class IRI="Review"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasInstance"/>
-        <Class IRI="Instance"/>
+        <ObjectProperty IRI="hasReview"/>
+        <Class IRI="Review"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasManifestation"/>
-        <Class IRI="Manifestation"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasTheme"/>
-        <Class IRI="Theme"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="instanceOf"/>
-        <Class IRI="Manifestation"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="manifestationOf"/>
-        <Class IRI="CreativeWork"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="themeOf"/>
-        <Class IRI="CreativeWork"/>
+        <ObjectProperty IRI="reviewOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/CreativeWorkInstance#CreativeWork"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>CreativeWork</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A work that is a distinct intellectual or artistic creation and is the product of creative effort.</Literal>
+        <IRI>Article</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A written work published in a print or electronic medium. It may be for the purpose of propagating the news, research results, academic analysis or debate.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Instance</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">An example or single occurrence of a manifestation of a creative work.</Literal>
+        <IRI>Book</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A written or printed work consisting of pages glued or sewn together along one side and bound in covers.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Manifestation</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A version or incarnation of a creative work</Literal>
+        <IRI>BookChapter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">One of the main divisions of a book. Chapters can be numbered or titled or both.
+
+source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Theme</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">An idea that recurs in or pervades a work of art or literature.</Literal>
+        <IRI>BookReview</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A critical appraisal of a book published in a newspaper or magazine.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasInstance</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Relating a manifestation to an instance of the manifestation of a creative work.</Literal>
+        <IRI>BookSection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Any of the more or less distinct parts into which a book is or may be divided or from which it is made up.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasTheme</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Relating a creative work to a theme that occurs in the creative work.</Literal>
+        <IRI>Booklet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A small, thin book with paper covers, typically giving information on a particular subject.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>instanceOf</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Relating an instance of a manifestation to the manifestation of a creative work.</Literal>
+        <IRI>Chapter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">One of the main divisions of a piece of writing of relative length, such as a book of prose, poetry, or law. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>manifestationOf</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Relating a manifestation to the creative work that it is a manifestation of.</Literal>
+        <IRI>Dataset</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A collection of related sets of information that is composed of separate elements but can be manipulated as a unit by a computer.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>themeOf</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Relating a theme to a creative work that the theme occurs in.</Literal>
+        <IRI>Dissertation</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A long essay on a particular subject, especially one written for a university degree or diploma.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EditedBook</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A book that features articles or other material on the same subject but by different authors collected together in one book by an editor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EditedVolume</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A collection of scholarly or scientific chapters written by different authors. The chapters in an edited volume are original works. Alternative terms for edited volume are contributed volume, edited collection and multiauthor volume.
+
+source: http://en.wikipedia.org/wiki/Edited_volume </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Essay</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A short piece of writing on a particular subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Image</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A representation of a thing by a person in art or an impression obtained by a device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Journal</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A newspaper or magazine that deals with a particular subject or professional activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Leaflet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A printed sheet of paper containing information or advertising and usually distributed free.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Letter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A written, typed, or printed communication, sent in an envelope by post or messenger.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Magazine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A periodical publication containing articles and illustrations, often on a particular subject or aimed at a particular readership.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Monograph</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A detailed written study in the form of an essay or book, of a single specialized subject or an aspect of it, usually by a single author.
+
+Librarians consider a monograph to be a nonserial publication complete in one volume (book) or a finite number of volumes.
+
+source: https://en.wikipedia.org/wiki/Monograph</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Newsletter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A regularly distributed publication that is generally about one main topic of interest to its subscribers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Newspaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A printed publication (usually issued daily or weekly) consisting of folded unstapled sheets and containing news, articles, advertisements, and correspondence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Pamphlet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A small booklet or leaflet containing information or arguments about a single subject.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Paper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An essay or dissertation, especially one read at an academic lecture or seminar or published in an academic journal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Periodical</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A magazine or newspaper published at regular intervals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PolicyBrief</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A concise summary of a particular issue, the policy options to deal with it, and some recommendations on the best option. 
+
+It is aimed at government policymakers and others who are interested in formulating or influencing policy.
+
+Policy briefs can take different formats. A typical format is a single A4 sheet (210 x 297 mm), containing perhaps 700 words. It has an attractive design, and may have one or more photograph. Longer briefs (up to 8 pages, or 3,000 words) and other formats are also possible.
+
+source: http://www.fao.org/docrep/014/i2195e/i2195e03.pdf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Publication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A book or journal issued for public sale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Report</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An account given of a particular matter, especially in the form of an official document, after thorough investigation or consideration by an appointed person or body.
+
+source: http://www.oxforddictionaries.com/definition/english/report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Review</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A critical appraisal of a book, play, film, etc. published in a newspaper or magazine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Series</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A set of books, periodicals, or other documents published in a common format or under a common title.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Thesis</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A dissertation involving personal research, written by a candidate for a university degree.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>WrittenWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A creative work in the written form.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
