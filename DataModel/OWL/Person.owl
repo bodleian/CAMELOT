@@ -22,22 +22,22 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The Person Ontology contains definitions for Person, Adult, Child, Male, Female, Woman, Man, and defines the relationships between them.</Literal>
-    </Annotation>
-    
-    
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
         <Literal datatypeIRI="&xsd;dateTime"></Literal>
     </Annotation>
-   
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
         <Literal datatypeIRI="&xsd;string">Person Ontology</Literal>
     </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The Person Ontology contains definitions for Person, Adult, Child, Male, Female, Woman, Man, and defines the relationships between them.</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="Adult"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BiologicalSex"/>
     </Declaration>
     <Declaration>
         <Class IRI="Child"/>
@@ -57,34 +57,76 @@
     <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </Declaration>
-   
-   
-    <SubClassOf>
+    <Declaration>
+        <ObjectProperty IRI="hasSex"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="BiologicalSex"/>
+        <ObjectUnionOf>
+            <Class IRI="Female"/>
+            <Class IRI="Male"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="Man"/>
-        <Class IRI="Male"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasSex"/>
+            <Class IRI="Male"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Woman"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasSex"/>
+            <Class IRI="Female"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectUnionOf>
+            <Class IRI="Adult"/>
+            <Class IRI="Child"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="Female"/>
+        <Class IRI="BiologicalSex"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Woman"/>
-        <Class IRI="Female"/>
+        <Class IRI="Male"/>
+        <Class IRI="BiologicalSex"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasSex"/>
+            <Class IRI="BiologicalSex"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <DisjointClasses>
-        <Class IRI="Adult"/>
-        <Class IRI="Child"/>
+        <Class IRI="Female"/>
+        <Class IRI="Male"/>
     </DisjointClasses>
-    <DisjointUnion>
-        <Class IRI="Adult"/>
-        <Class IRI="Man"/>
-        <Class IRI="Woman"/>
-    </DisjointUnion>
-    <DisjointUnion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="hasSex"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSex"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
-        <Class IRI="Adult"/>
-        <Class IRI="Child"/>
-    </DisjointUnion>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSex"/>
+        <Class IRI="BiologicalSex"/>
+    </ObjectPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Adult</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who is fully grown or developed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BiologicalSex</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Reproductive function of humans and most other living things.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

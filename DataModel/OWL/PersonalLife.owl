@@ -10,36 +10,56 @@
 
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://vocab.ox.ac.uk/camelot/PersonalLife#"
+     xml:base="http://www.vocab.ox.ac.uk/camelot/PersonalLife#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     ontologyIRI="http://vocab.ox.ac.uk/camelot/PersonalLife#">
+     ontologyIRI="http://www.vocab.ox.ac.uk/camelot/PersonalLife#">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-   
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
-        <Literal datatypeIRI="&xsd;dateTime"></Literal>
-    </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&xsd;string"></Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Personal Life Ontology</Literal>
     </Annotation>
-    <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal datatypeIRI="&xsd;string">Personal Life Ontology</Literal>
-    </Annotation>
-    
+    <Declaration>
+        <Class IRI="Adoption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AdoptiveFather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AdoptiveMother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ancestor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Aunt"/>
+    </Declaration>
     <Declaration>
         <Class IRI="Birth"/>
     </Declaration>
     <Declaration>
+        <Class IRI="BirthFather"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="BirthMother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Brother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BrotherInLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Cousin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Daughter"/>
     </Declaration>
     <Declaration>
         <Class IRI="Death"/>
@@ -48,10 +68,67 @@
         <Class IRI="Deceased"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Descendent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FamilyRole"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Father"/>
     </Declaration>
     <Declaration>
+        <Class IRI="FatherInLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FirstCousinOnceRemoved"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GrandParent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Grandchild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Granddaughter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Grandfather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Grandmother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Grandson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GreatAunt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GreatGrandParent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GreatGrandchild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GreatGranddaughter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GreatGrandfather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GreatGrandmother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GreatGrandson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="GreatUncle"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Husband"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="InLaw"/>
     </Declaration>
     <Declaration>
         <Class IRI="Marriage"/>
@@ -60,66 +137,410 @@
         <Class IRI="Mother"/>
     </Declaration>
     <Declaration>
+        <Class IRI="MotherInLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Nephew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Niece"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sibling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SisterInLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Son"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Spouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Uncle"/>
     </Declaration>
     <Declaration>
         <Class IRI="Wife"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="childOf"/>
+        <ObjectProperty IRI="adoptiveFatherOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="fatherOf"/>
+        <ObjectProperty IRI="adoptiveMotherOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasChild"/>
+        <ObjectProperty IRI="ancestorOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasFather"/>
+        <ObjectProperty IRI="auntOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasHusband"/>
+        <ObjectProperty IRI="biologicalFatherOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasMother"/>
+        <ObjectProperty IRI="biologicalMotherOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasParent"/>
+        <ObjectProperty IRI="brotherInLawOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasSpouse"/>
+        <ObjectProperty IRI="brotherOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasWife"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="marriedTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="motherOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="parentOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="birthOf"/>
+        <ObjectProperty IRI="daughterOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="deathOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasBirth"/>
+        <ObjectProperty IRI="descendentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="fatherInLawOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="fatherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="grandParentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="grandfatherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="grandmotherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="greatGrandParentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="greatGrandfatherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="greatGrandmotherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAdoptiveFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAdoptiveMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAncestor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasAunt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasBiologicalFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasBiologicalMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasBrother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasBrotherInLaw"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCousin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDaughter"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasDeath"/>
     </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDescendent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFatherinLaw"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGrandParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGrandchild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGranddaughter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGrandfather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGrandmother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGrandson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGreatAunt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGreatGrandParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGreatGrandfather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGreatGrandmother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGreatUncle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasHusband"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasInLaw"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMotherInLaw"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasNephew"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasNiece"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSister"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSisterInLaw"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSpouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasUncle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasWife"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="husbandOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isBloodRelationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isChildOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isGrandchildOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isGranddaughterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isGrandsonOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="motherInLawOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="motherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="nephewOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="nieceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="parentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sisterInLawOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sisterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="sonOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="uncleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="wifeOf"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="Granddaughter"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="daughterOf"/>
+            <ObjectUnionOf>
+                <Class IRI="Daughter"/>
+                <Class IRI="Son"/>
+            </ObjectUnionOf>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Sibling"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasSibling"/>
+            <Class IRI="Sibling"/>
+        </ObjectMinCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+        <Class IRI="Descendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="hasParent"/>
+            <Class IRI="Parent"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Adoption"/>
+        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdoptiveFather"/>
+        <Class IRI="Father"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdoptiveMother"/>
+        <Class IRI="Mother"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ancestor"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ancestor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Aunt"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Aunt"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Aunt"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="Birth"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="BirthFather"/>
+        <Class IRI="Father"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="BirthMother"/>
         <Class IRI="Mother"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Brother"/>
+        <Class IRI="Sibling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Brother"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Brother"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Brother"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasSibling"/>
+            <Class IRI="Sibling"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BrotherInLaw"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BrotherInLaw"/>
+        <Class IRI="InLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BrotherInLaw"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Cousin"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Cousin"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Cousin"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasCousin"/>
+            <Class IRI="Cousin"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Daughter"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Daughter"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Daughter"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="daughterOf"/>
+            <Class IRI="Parent"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Death"/>
@@ -130,15 +551,170 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Descendent"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Descendent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FamilyRole"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Father"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Father"/>
+        <Class IRI="Parent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Father"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="fatherOf"/>
-            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
         </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Father"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasChild"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FatherInLaw"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FatherInLaw"/>
+        <Class IRI="InLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FatherInLaw"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FirstCousinOnceRemoved"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GrandParent"/>
+        <Class IRI="Ancestor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Grandchild"/>
+        <Class IRI="Descendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Granddaughter"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Granddaughter"/>
+        <Class IRI="Grandchild"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Grandfather"/>
+        <Class IRI="GrandParent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Grandfather"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Grandmother"/>
+        <Class IRI="GrandParent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Grandmother"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Grandson"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Grandson"/>
+        <Class IRI="Grandchild"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatAunt"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatAunt"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatAunt"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGrandParent"/>
+        <Class IRI="Ancestor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGrandchild"/>
+        <Class IRI="Descendent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGranddaughter"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGranddaughter"/>
+        <Class IRI="GreatGrandchild"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGrandfather"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGrandfather"/>
+        <Class IRI="GreatGrandParent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGrandmother"/>
+        <Class IRI="GreatGrandParent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGrandmother"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGrandson"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatGrandson"/>
+        <Class IRI="GreatGrandchild"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatUncle"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatUncle"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="GreatUncle"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Husband"/>
@@ -146,16 +722,31 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Husband"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="hasWife"/>
-            <Class IRI="Wife"/>
-        </ObjectMinCardinality>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Husband"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="marriedTo"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasWife"/>
             <Class IRI="Wife"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InLaw"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InLaw"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="InLaw"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasInLaw"/>
+            <Class IRI="InLaw"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -164,184 +755,844 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Mother"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <Class IRI="Parent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Mother"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Mother"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="hasChild"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Mother"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="motherOf"/>
-            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Spouse"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+        <Class IRI="MotherInLaw"/>
+        <Class IRI="InLaw"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Spouse"/>
+        <Class IRI="MotherInLaw"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Nephew"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Nephew"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Nephew"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Nephew"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="marriedTo"/>
-            <ObjectUnionOf>
-                <Class IRI="Husband"/>
-                <Class IRI="Wife"/>
-            </ObjectUnionOf>
+            <ObjectProperty IRI="hasAunt"/>
+            <Class IRI="Aunt"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Wife"/>
-        <Class IRI="Spouse"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Wife"/>
+        <Class IRI="Nephew"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="hasHusband"/>
-            <Class IRI="Husband"/>
+            <ObjectProperty IRI="hasUncle"/>
+            <Class IRI="Uncle"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Wife"/>
+        <Class IRI="Niece"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Niece"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Niece"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Niece"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="marriedTo"/>
-            <Class IRI="Husband"/>
+            <ObjectProperty IRI="hasAunt"/>
+            <Class IRI="Aunt"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="childOf"/>
-            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <Class IRI="Niece"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="hasChild"/>
-            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+            <ObjectProperty IRI="hasUncle"/>
+            <Class IRI="Uncle"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <Class IRI="Parent"/>
+        <Class IRI="Ancestor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Parent"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="parentOf"/>
-            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
         </ObjectMinCardinality>
     </SubClassOf>
-    <EquivalentObjectProperties>
-        <ObjectProperty IRI="childOf"/>
-        <ObjectProperty IRI="hasParent"/>
-    </EquivalentObjectProperties>
-    <EquivalentObjectProperties>
-        <ObjectProperty IRI="hasChild"/>
-        <ObjectProperty IRI="parentOf"/>
-    </EquivalentObjectProperties>
-    <EquivalentObjectProperties>
-        <ObjectProperty IRI="hasSpouse"/>
-        <ObjectProperty IRI="marriedTo"/>
-    </EquivalentObjectProperties>
+    <SubClassOf>
+        <Class IRI="Sibling"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sibling"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sister"/>
+        <Class IRI="Sibling"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sister"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sister"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SisterInLaw"/>
+        <Class IRI="InLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SisterInLaw"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Son"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Son"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Spouse"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Spouse"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Spouse"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasSpouse"/>
+            <Class IRI="Spouse"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Uncle"/>
+        <Class IRI="FamilyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Uncle"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Uncle"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wife"/>
+        <Class IRI="Spouse"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wife"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.vocab.ox.ac.uk/camelot/Person#hasSex"/>
+            <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Wife"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="hasHusband"/>
+            <Class IRI="Husband"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="Brother"/>
+        <Class IRI="Sister"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Husband"/>
+        <Class IRI="Wife"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="adoptiveFatherOf"/>
+        <ObjectProperty IRI="fatherOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="adoptiveMotherOf"/>
+        <ObjectProperty IRI="motherOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="ancestorOf"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="auntOf"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="biologicalFatherOf"/>
+        <ObjectProperty IRI="fatherOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="biologicalMotherOf"/>
+        <ObjectProperty IRI="motherOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="brotherInLawOf"/>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="brotherOf"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="daughterOf"/>
+        <ObjectProperty IRI="isChildOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="descendentOf"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="fatherInLawOf"/>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="fatherOf"/>
         <ObjectProperty IRI="parentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="grandParentOf"/>
+        <ObjectProperty IRI="ancestorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="grandfatherOf"/>
+        <ObjectProperty IRI="grandParentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="grandmotherOf"/>
+        <ObjectProperty IRI="grandParentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="greatGrandParentOf"/>
+        <ObjectProperty IRI="ancestorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="greatGrandfatherOf"/>
+        <ObjectProperty IRI="greatGrandParentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="greatGrandmotherOf"/>
+        <ObjectProperty IRI="greatGrandParentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAdoptiveFather"/>
+        <ObjectProperty IRI="hasFather"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAdoptiveMother"/>
+        <ObjectProperty IRI="hasMother"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAncestor"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasAunt"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasBiologicalFather"/>
+        <ObjectProperty IRI="hasFather"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasBiologicalMother"/>
+        <ObjectProperty IRI="hasMother"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasBrother"/>
+        <ObjectProperty IRI="hasSibling"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasBrotherInLaw"/>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasChild"/>
+        <ObjectProperty IRI="hasDescendent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCousin"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDaughter"/>
+        <ObjectProperty IRI="hasChild"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDescendent"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasFather"/>
         <ObjectProperty IRI="hasParent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFatherinLaw"/>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+        <ObjectProperty IRI="hasCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGrandParent"/>
+        <ObjectProperty IRI="hasAncestor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGrandchild"/>
+        <ObjectProperty IRI="hasDescendent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGranddaughter"/>
+        <ObjectProperty IRI="hasGrandchild"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGrandfather"/>
+        <ObjectProperty IRI="hasGrandParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGrandmother"/>
+        <ObjectProperty IRI="hasGrandParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGrandson"/>
+        <ObjectProperty IRI="hasGrandchild"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGreatAunt"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGreatGrandParent"/>
+        <ObjectProperty IRI="hasAncestor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGreatGrandfather"/>
+        <ObjectProperty IRI="hasGreatGrandParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGreatGrandmother"/>
+        <ObjectProperty IRI="hasGreatGrandParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGreatUncle"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="hasHusband"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="hasSpouse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasInLaw"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasMother"/>
         <ObjectProperty IRI="hasParent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMotherInLaw"/>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasNephew"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasNiece"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasParent"/>
+        <ObjectProperty IRI="hasAncestor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSibling"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSister"/>
+        <ObjectProperty IRI="hasSibling"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSisterInLaw"/>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSon"/>
+        <ObjectProperty IRI="hasChild"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSpouse"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasUncle"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="hasWife"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="hasSpouse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="husbandOf"/>
+        <ObjectProperty IRI="hasSpouse"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isBloodRelationOf"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isChildOf"/>
+        <ObjectProperty IRI="descendentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isGrandchildOf"/>
+        <ObjectProperty IRI="descendentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isGranddaughterOf"/>
+        <ObjectProperty IRI="isGrandchildOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isGrandsonOf"/>
+        <ObjectProperty IRI="isGrandchildOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="motherInLawOf"/>
+        <ObjectProperty IRI="hasInLaw"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="motherOf"/>
         <ObjectProperty IRI="parentOf"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="nephewOf"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="nieceOf"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="parentOf"/>
+        <ObjectProperty IRI="ancestorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="sisterInLawOf"/>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="sisterOf"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="sonOf"/>
+        <ObjectProperty IRI="isChildOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="uncleOf"/>
+        <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="wifeOf"/>
+        <ObjectProperty IRI="hasSpouse"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasChild"/>
-        <ObjectProperty IRI="childOf"/>
+        <ObjectProperty IRI="adoptiveMotherOf"/>
+        <ObjectProperty IRI="hasAdoptiveMother"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasWife"/>
+        <ObjectProperty IRI="ancestorOf"/>
+        <ObjectProperty IRI="hasAncestor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasAunt"/>
+        <ObjectProperty IRI="auntOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasBiologicalFather"/>
+        <ObjectProperty IRI="biologicalFatherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="biologicalMotherOf"/>
+        <ObjectProperty IRI="hasBiologicalMother"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="brotherInLawOf"/>
+        <ObjectProperty IRI="hasBrotherInLaw"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="brotherOf"/>
+        <ObjectProperty IRI="hasBrother"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="daughterOf"/>
+        <ObjectProperty IRI="hasDaughter"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="deathOf"/>
+        <ObjectProperty IRI="hasDeath"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="descendentOf"/>
+        <ObjectProperty IRI="hasDescendent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="fatherInLawOf"/>
+        <ObjectProperty IRI="hasFatherinLaw"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="fatherOf"/>
+        <ObjectProperty IRI="hasFather"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGrandParent"/>
+        <ObjectProperty IRI="grandParentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGrandfather"/>
+        <ObjectProperty IRI="grandfatherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGrandmother"/>
+        <ObjectProperty IRI="grandmotherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGreatGrandParent"/>
+        <ObjectProperty IRI="greatGrandParentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="greatGrandfatherOf"/>
+        <ObjectProperty IRI="hasGreatGrandfather"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGreatGrandmother"/>
+        <ObjectProperty IRI="greatGrandmotherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGrandchild"/>
+        <ObjectProperty IRI="isGrandchildOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="hasHusband"/>
+        <ObjectProperty IRI="husbandOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="motherOf"/>
+        <ObjectProperty IRI="hasMother"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="motherInLawOf"/>
+        <ObjectProperty IRI="hasMotherInLaw"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasNephew"/>
+        <ObjectProperty IRI="nephewOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="nieceOf"/>
+        <ObjectProperty IRI="hasNiece"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="parentOf"/>
         <ObjectProperty IRI="hasParent"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="birthOf"/>
-        <ObjectProperty IRI="hasBirth"/>
+        <ObjectProperty IRI="sisterOf"/>
+        <ObjectProperty IRI="hasSister"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasDeath"/>
-        <ObjectProperty IRI="deathOf"/>
+        <ObjectProperty IRI="sisterInLawOf"/>
+        <ObjectProperty IRI="hasSisterInLaw"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="sonOf"/>
+        <ObjectProperty IRI="hasSon"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasUncle"/>
+        <ObjectProperty IRI="uncleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasWife"/>
+        <ObjectProperty IRI="wifeOf"/>
     </InverseObjectProperties>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="hasBirth"/>
+        <ObjectProperty IRI="deathOf"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="hasDeath"/>
     </FunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="birthOf"/>
+        <ObjectProperty IRI="biologicalFatherOf"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="biologicalMotherOf"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="deathOf"/>
     </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="hasBiologicalFather"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="hasBiologicalMother"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="hasDeath"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasCousin"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasRelation"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasSibling"/>
+    </SymmetricObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="hasSpouse"/>
     </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="marriedTo"/>
-    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="ancestorOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="descendentOf"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="hasAncestor"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="hasDescendent"/>
+    </TransitiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="childOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        <ObjectProperty IRI="adoptiveFatherOf"/>
+        <Class IRI="AdoptiveFather"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="childOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="adoptiveMotherOf"/>
+        <Class IRI="AdoptiveMother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="ancestorOf"/>
+        <Class IRI="Ancestor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="auntOf"/>
+        <Class IRI="Aunt"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="biologicalFatherOf"/>
+        <Class IRI="BirthFather"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="biologicalMotherOf"/>
+        <Class IRI="BirthMother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="brotherInLawOf"/>
+        <Class IRI="BrotherInLaw"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="brotherOf"/>
+        <Class IRI="Brother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="daughterOf"/>
+        <Class IRI="Daughter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="deathOf"/>
+        <Class IRI="Death"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="descendentOf"/>
+        <Class IRI="Descendent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="fatherInLawOf"/>
+        <Class IRI="FatherInLaw"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="fatherOf"/>
         <Class IRI="Father"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="fatherOf"/>
-        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Man"/>
+        <ObjectProperty IRI="grandParentOf"/>
+        <Class IRI="GrandParent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="fatherOf"/>
+        <ObjectProperty IRI="grandfatherOf"/>
+        <Class IRI="Grandfather"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="grandmotherOf"/>
+        <Class IRI="Grandmother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="greatGrandfatherOf"/>
+        <Class IRI="GreatGrandfather"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="greatGrandmotherOf"/>
+        <Class IRI="GreatGrandmother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAdoptiveFather"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAdoptiveMother"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasAncestor"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasChild"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <ObjectProperty IRI="hasAunt"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasBiologicalFather"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasBiologicalMother"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasBrother"/>
+        <Class IRI="Sibling"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasChild"/>
+        <Class IRI="Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCousin"/>
+        <Class IRI="Cousin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDaughter"/>
+        <Class IRI="Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDeath"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDescendent"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasFather"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasFather"/>
+        <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+        <Class IRI="FirstCousinOnceRemoved"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGrandParent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGrandchild"/>
+        <Class IRI="GrandParent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGranddaughter"/>
+        <Class IRI="GrandParent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGrandfather"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGrandmother"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGrandson"/>
+        <Class IRI="GrandParent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGreatAunt"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGreatGrandParent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGreatGrandfather"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGreatGrandmother"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGreatUncle"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -349,35 +1600,53 @@
         <Class IRI="Wife"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasHusband"/>
-        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Woman"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasHusband"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasMother"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        <ObjectProperty IRI="hasInLaw"/>
+        <Class IRI="Spouse"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasMother"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasParent"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        <ObjectProperty IRI="hasNephew"/>
+        <ObjectUnionOf>
+            <Class IRI="Aunt"/>
+            <Class IRI="Uncle"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasNiece"/>
+        <ObjectUnionOf>
+            <Class IRI="Aunt"/>
+            <Class IRI="Uncle"/>
+        </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasParent"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasRelation"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSibling"/>
+        <Class IRI="Sibling"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSister"/>
+        <Class IRI="Sibling"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSon"/>
+        <Class IRI="Parent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasSpouse"/>
         <Class IRI="Spouse"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasSpouse"/>
+        <ObjectProperty IRI="hasUncle"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -385,110 +1654,254 @@
         <Class IRI="Husband"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasWife"/>
-        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Man"/>
+        <ObjectProperty IRI="husbandOf"/>
+        <Class IRI="Husband"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasWife"/>
+        <ObjectProperty IRI="isBloodRelationOf"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="marriedTo"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="isChildOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="marriedTo"/>
-        <ObjectUnionOf>
-            <Class IRI="Husband"/>
-            <Class IRI="Wife"/>
-        </ObjectUnionOf>
+        <ObjectProperty IRI="isGrandchildOf"/>
+        <Class IRI="Grandchild"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isGranddaughterOf"/>
+        <Class IRI="Granddaughter"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="isGrandsonOf"/>
+        <Class IRI="Grandson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="motherInLawOf"/>
+        <Class IRI="MotherInLaw"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="motherOf"/>
         <Class IRI="Mother"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="motherOf"/>
-        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Woman"/>
+        <ObjectProperty IRI="nephewOf"/>
+        <Class IRI="Nephew"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="motherOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="parentOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <ObjectProperty IRI="nieceOf"/>
+        <Class IRI="Niece"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="parentOf"/>
+        <Class IRI="Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sisterInLawOf"/>
+        <Class IRI="SisterInLaw"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sisterOf"/>
+        <Class IRI="Sister"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="sonOf"/>
+        <Class IRI="Son"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="uncleOf"/>
+        <Class IRI="Uncle"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="wifeOf"/>
+        <Class IRI="Wife"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="adoptiveFatherOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="adoptiveMotherOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="ancestorOf"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="birthOf"/>
-        <Class IRI="Birth"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="auntOf"/>
+        <ObjectUnionOf>
+            <Class IRI="Nephew"/>
+            <Class IRI="Niece"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="biologicalFatherOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="biologicalMotherOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="brotherOf"/>
+        <Class IRI="Sibling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="daughterOf"/>
+        <Class IRI="Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="deathOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="descendentOf"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="fatherOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="grandParentOf"/>
+        <Class IRI="Grandchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="grandfatherOf"/>
+        <Class IRI="Grandchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="grandmotherOf"/>
+        <Class IRI="Grandchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="greatGrandParentOf"/>
+        <Class IRI="GreatGrandchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="greatGrandfatherOf"/>
+        <Class IRI="GreatGrandchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="greatGrandmotherOf"/>
+        <Class IRI="GreatGrandchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAdoptiveFather"/>
+        <Class IRI="AdoptiveFather"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAdoptiveMother"/>
+        <Class IRI="AdoptiveMother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAncestor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAunt"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBiologicalFather"/>
+        <Class IRI="BirthFather"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBiologicalMother"/>
+        <Class IRI="BirthMother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBrother"/>
+        <Class IRI="Brother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasBrotherInLaw"/>
+        <Class IRI="BrotherInLaw"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasChild"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCousin"/>
+        <Class IRI="Cousin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDaughter"/>
+        <Class IRI="Daughter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDeath"/>
         <Class IRI="Death"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasBirth"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasBirth"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasDeath"/>
-        <Class IRI="Deceased"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasDeath"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="childOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="childOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="fatherOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="fatherOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasChild"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasChild"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="hasDescendent"/>
+        <Class IRI="Descendent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasFather"/>
         <Class IRI="Father"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasFather"/>
+        <ObjectProperty IRI="hasFatherinLaw"/>
+        <Class IRI="FatherInLaw"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+        <Class IRI="FirstCousinOnceRemoved"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGrandParent"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGrandchild"/>
+        <Class IRI="Grandchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGranddaughter"/>
+        <Class IRI="Granddaughter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGrandfather"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGrandmother"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGrandson"/>
+        <Class IRI="Grandson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGreatAunt"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGreatGrandParent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGreatGrandfather"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGreatGrandmother"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Female"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGreatUncle"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasHusband"/>
         <Class IRI="Husband"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasHusband"/>
-        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Man"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasHusband"/>
+        <ObjectProperty IRI="hasInLaw"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -496,89 +1909,428 @@
         <Class IRI="Mother"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasMother"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="hasMotherInLaw"/>
+        <Class IRI="MotherInLaw"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasNephew"/>
+        <Class IRI="Nephew"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasNiece"/>
+        <Class IRI="Niece"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasParent"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <Class IRI="Parent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasParent"/>
+        <ObjectProperty IRI="hasRelation"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSibling"/>
+        <Class IRI="Sibling"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSister"/>
+        <Class IRI="Sister"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSisterInLaw"/>
+        <Class IRI="SisterInLaw"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSon"/>
+        <Class IRI="Son"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasSpouse"/>
         <Class IRI="Spouse"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasSpouse"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="hasUncle"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasWife"/>
         <Class IRI="Wife"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasWife"/>
-        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Sex#Woman"/>
+        <ObjectProperty IRI="husbandOf"/>
+        <Class IRI="Wife"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasWife"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="isChildOf"/>
+        <Class IRI="Parent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="marriedTo"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="isGrandchildOf"/>
+        <Class IRI="GrandParent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="marriedTo"/>
+        <ObjectProperty IRI="isGranddaughterOf"/>
+        <Class IRI="GrandParent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="isGrandsonOf"/>
+        <Class IRI="GrandParent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="motherOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="nephewOf"/>
         <ObjectUnionOf>
-            <Class IRI="Husband"/>
-            <Class IRI="Wife"/>
+            <Class IRI="Aunt"/>
+            <Class IRI="Uncle"/>
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="motherOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        <ObjectProperty IRI="nieceOf"/>
+        <ObjectUnionOf>
+            <Class IRI="Aunt"/>
+            <Class IRI="Uncle"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="motherOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="parentOf"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="birthOf"/>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        <ObjectProperty IRI="sisterOf"/>
+        <Class IRI="Sibling"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="birthOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="sonOf"/>
+        <Class IRI="Parent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="deathOf"/>
-        <Class IRI="Deceased"/>
+        <ObjectProperty IRI="uncleOf"/>
+        <ObjectUnionOf>
+            <Class IRI="Nephew"/>
+            <Class IRI="Niece"/>
+        </ObjectUnionOf>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="deathOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <ObjectProperty IRI="wifeOf"/>
+        <Class IRI="Husband"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasBirth"/>
-        <Class IRI="Birth"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasDeath"/>
-        <Class IRI="Death"/>
-    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="brotherOf"/>
+        <ObjectProperty IRI="sisterOf"/>
+    </DisjointObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="brotherOf"/>
+            <ObjectProperty IRI="hasSpouse"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="brotherInLawOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="brotherOf"/>
+            <ObjectProperty IRI="isChildOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="uncleOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="daughterOf"/>
+            <ObjectProperty IRI="parentOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="isGranddaughterOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="daughterOf"/>
+            <ObjectProperty IRI="hasSibling"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="nieceOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="fatherOf"/>
+            <ObjectProperty IRI="hasSpouse"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="fatherInLawOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasBrother"/>
+            <ObjectProperty IRI="hasWife"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasSisterInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGrandchild"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasDaughter"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGranddaughter"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasSon"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGrandson"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasSpouse"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSister"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasAunt"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGrandParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasFather"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGrandfather"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasMother"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGrandmother"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasBrother"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasUncle"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasBrother"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGreatUncle"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasFather"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGreatGrandfather"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasMother"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGreatGrandmother"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGreatGrandParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSister"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGreatAunt"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasSpouse"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasSon"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasNephew"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasDaughter"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasNiece"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSister"/>
+            <ObjectProperty IRI="hasHusband"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasBrotherInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSpouse"/>
+            <ObjectProperty IRI="hasBrother"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasBrotherInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSpouse"/>
+            <ObjectProperty IRI="hasFather"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFatherinLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSpouse"/>
+            <ObjectProperty IRI="hasParent"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSpouse"/>
+            <ObjectProperty IRI="hasSibling"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSpouse"/>
+            <ObjectProperty IRI="hasMother"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasMotherInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSpouse"/>
+            <ObjectProperty IRI="hasSister"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasSisterInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSpouse"/>
+            <ObjectProperty IRI="hasSister"/>
+            <ObjectProperty IRI="hasHusband"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasBrotherInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSpouse"/>
+            <ObjectProperty IRI="hasBrother"/>
+            <ObjectProperty IRI="hasWife"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasSisterInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="isChildOf"/>
+            <ObjectProperty IRI="parentOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="isGrandchildOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="motherOf"/>
+            <ObjectProperty IRI="hasSpouse"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="motherInLawOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="parentOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="grandParentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="parentOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="greatGrandParentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="sisterOf"/>
+            <ObjectProperty IRI="isChildOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="auntOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="sisterOf"/>
+            <ObjectProperty IRI="hasSpouse"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="sisterInLawOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="sonOf"/>
+            <ObjectProperty IRI="parentOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="isGrandsonOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="sonOf"/>
+            <ObjectProperty IRI="hasSibling"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="nephewOf"/>
+    </SubObjectPropertyOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Birth</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The emergence of a baby or other young from the body of its mother and the start of life as a physically separate being.</Literal>
+        <IRI>Adoption</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A process whereby a person assumes the parenting for another and, in so doing, permanently transfers all rights and responsibilities, along with filiation, from the biological parent or parents.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>BirthMother</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A woman in relation to a child or children to whom she has given birth.</Literal>
+        <IRI>Birth</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The start of life as a physically separate being.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Brother</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: A man or boy in relation to other sons and daughters of his parents</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -592,13 +2344,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FamilyRole</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: Role of an individual within a family unit. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Father</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A man in relation to his child or children.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: The family role of a man in relation to his child or children</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>GrandParent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A parent of one&apos;s father or mother; a grandmother or grandfather.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Granddaughter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A daughter of one&apos;s son or daughter.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Husband</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A married man considered in relation to his wife.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: The role of a married man in relation to his wife.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -608,27 +2375,37 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Mother</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">a woman in relation to a child or children to whom she has given birth, or adopted.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: The family role of a woman in relation to her child or children</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Parent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: A person’s father or mother</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sibling</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: Each of two or more children or offspring having one or both parents in common</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Sister</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: A woman or girl in relation to other daughters and sons of her parents</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Spouse</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A husband or wife, considered in relation to their partner.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: EMLO</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Spouse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: The role of a husband or wife, considered in relation to their partner.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Wife</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A married woman considered in relation to her husband.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://vocab.ox.ac.uk/camelot/Role#Child</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person in relation to his/her parents.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://vocab.ox.ac.uk/camelot/Role#Parent</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A person&apos;s father or mother.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: Definition: The role of a married woman in relation to her husband.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
