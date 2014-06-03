@@ -59,6 +59,9 @@
         <Class IRI="Cousin"/>
     </Declaration>
     <Declaration>
+        <Class IRI="CousinInLaw"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Daughter"/>
     </Declaration>
     <Declaration>
@@ -71,6 +74,9 @@
         <Class IRI="Descendent"/>
     </Declaration>
     <Declaration>
+        <Class IRI="DoubleCousin"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="FamilyRole"/>
     </Declaration>
     <Declaration>
@@ -80,7 +86,13 @@
         <Class IRI="FatherInLaw"/>
     </Declaration>
     <Declaration>
+        <Class IRI="FirstCousin"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="FirstCousinOnceRemoved"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FirstCousinTwiceRemoved"/>
     </Declaration>
     <Declaration>
         <Class IRI="GrandParent"/>
@@ -125,6 +137,9 @@
         <Class IRI="GreatUncle"/>
     </Declaration>
     <Declaration>
+        <Class IRI="HalfCousin"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Husband"/>
     </Declaration>
     <Declaration>
@@ -132,6 +147,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Marriage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MaternalCousin"/>
     </Declaration>
     <Declaration>
         <Class IRI="Mother"/>
@@ -149,6 +167,15 @@
         <Class IRI="Parent"/>
     </Declaration>
     <Declaration>
+        <Class IRI="PaternalCousin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SecondCousin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="SecondCousinOnceRemoved"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Sibling"/>
     </Declaration>
     <Declaration>
@@ -162,6 +189,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="Spouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="StepCousin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ThirdCousin"/>
     </Declaration>
     <Declaration>
         <Class IRI="Uncle"/>
@@ -257,6 +290,9 @@
         <ObjectProperty IRI="hasCousin"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasCousinInLaw"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasDaughter"/>
     </Declaration>
     <Declaration>
@@ -266,13 +302,22 @@
         <ObjectProperty IRI="hasDescendent"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasDoubleCousin"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasFather"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasFatherinLaw"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasFirstCousin"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFirstCousinTwiceRemoved"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasGrandParent"/>
@@ -299,6 +344,9 @@
         <ObjectProperty IRI="hasGreatGrandParent"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasGreatGrandchild"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasGreatGrandfather"/>
     </Declaration>
     <Declaration>
@@ -312,6 +360,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasInLaw"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasMaternalCousin"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasMother"/>
@@ -329,7 +380,16 @@
         <ObjectProperty IRI="hasParent"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasPaternalCousin"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasRelation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSecondCousin"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasSecondCousinOnceRemoved"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasSibling"/>
@@ -345,6 +405,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasSpouse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasThirdCousin"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasUncle"/>
@@ -528,6 +591,10 @@
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="CousinInLaw"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Daughter"/>
         <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
     </SubClassOf>
@@ -557,6 +624,10 @@
     <SubClassOf>
         <Class IRI="Descendent"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DoubleCousin"/>
+        <Class IRI="Cousin"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="FamilyRole"/>
@@ -600,7 +671,15 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="FirstCousin"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="FirstCousinOnceRemoved"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FirstCousinTwiceRemoved"/>
         <Class IRI="Cousin"/>
     </SubClassOf>
     <SubClassOf>
@@ -717,6 +796,10 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="HalfCousin"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Husband"/>
         <Class IRI="Spouse"/>
     </SubClassOf>
@@ -752,6 +835,10 @@
     <SubClassOf>
         <Class IRI="Marriage"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MaternalCousin"/>
+        <Class IRI="Cousin"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Mother"/>
@@ -856,6 +943,18 @@
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="PaternalCousin"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SecondCousin"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="SecondCousinOnceRemoved"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Sibling"/>
         <Class IRI="FamilyRole"/>
     </SubClassOf>
@@ -913,6 +1012,14 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="StepCousin"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ThirdCousin"/>
+        <Class IRI="Cousin"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Uncle"/>
         <Class IRI="FamilyRole"/>
     </SubClassOf>
@@ -953,6 +1060,26 @@
         <Class IRI="Husband"/>
         <Class IRI="Wife"/>
     </DisjointClasses>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="ancestorOf"/>
+        <ObjectProperty IRI="hasDescendent"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasChild"/>
+        <ObjectProperty IRI="parentOf"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasHusband"/>
+        <ObjectProperty IRI="wifeOf"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasParent"/>
+        <ObjectProperty IRI="isChildOf"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="hasWife"/>
+        <ObjectProperty IRI="husbandOf"/>
+    </EquivalentObjectProperties>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="adoptiveFatherOf"/>
         <ObjectProperty IRI="fatherOf"/>
@@ -1066,12 +1193,20 @@
         <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCousinInLaw"/>
+        <ObjectProperty IRI="hasCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="hasDaughter"/>
         <ObjectProperty IRI="hasChild"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasDescendent"/>
         <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDoubleCousin"/>
+        <ObjectProperty IRI="hasCousin"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasFather"/>
@@ -1082,7 +1217,15 @@
         <ObjectProperty IRI="hasInLaw"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFirstCousin"/>
+        <ObjectProperty IRI="hasCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+        <ObjectProperty IRI="hasCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFirstCousinTwiceRemoved"/>
         <ObjectProperty IRI="hasCousin"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
@@ -1118,6 +1261,10 @@
         <ObjectProperty IRI="hasAncestor"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGreatGrandchild"/>
+        <ObjectProperty IRI="hasDescendent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="hasGreatGrandfather"/>
         <ObjectProperty IRI="hasGreatGrandParent"/>
     </SubObjectPropertyOf>
@@ -1136,6 +1283,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasInLaw"/>
         <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasMaternalCousin"/>
+        <ObjectProperty IRI="hasCousin"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasMother"/>
@@ -1158,6 +1309,18 @@
         <ObjectProperty IRI="hasAncestor"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPaternalCousin"/>
+        <ObjectProperty IRI="hasCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSecondCousin"/>
+        <ObjectProperty IRI="hasCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasSecondCousinOnceRemoved"/>
+        <ObjectProperty IRI="hasCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="hasSibling"/>
         <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
@@ -1176,6 +1339,10 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasSpouse"/>
         <ObjectProperty IRI="hasRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasThirdCousin"/>
+        <ObjectProperty IRI="hasCousin"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasUncle"/>
@@ -1270,8 +1437,8 @@
         <ObjectProperty IRI="hasBiologicalMother"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="brotherInLawOf"/>
         <ObjectProperty IRI="hasBrotherInLaw"/>
+        <ObjectProperty IRI="brotherInLawOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="brotherOf"/>
@@ -1290,8 +1457,8 @@
         <ObjectProperty IRI="hasDescendent"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="fatherInLawOf"/>
         <ObjectProperty IRI="hasFatherinLaw"/>
+        <ObjectProperty IRI="fatherInLawOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="fatherOf"/>
@@ -1322,8 +1489,8 @@
         <ObjectProperty IRI="greatGrandmotherOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasGrandchild"/>
         <ObjectProperty IRI="isGrandchildOf"/>
+        <ObjectProperty IRI="hasGrandchild"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasHusband"/>
@@ -1334,8 +1501,8 @@
         <ObjectProperty IRI="hasMother"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="motherInLawOf"/>
         <ObjectProperty IRI="hasMotherInLaw"/>
+        <ObjectProperty IRI="motherInLawOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasNephew"/>
@@ -1354,8 +1521,8 @@
         <ObjectProperty IRI="hasSister"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="sisterInLawOf"/>
         <ObjectProperty IRI="hasSisterInLaw"/>
+        <ObjectProperty IRI="sisterInLawOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="sonOf"/>
@@ -1397,7 +1564,16 @@
         <ObjectProperty IRI="hasCousin"/>
     </SymmetricObjectProperty>
     <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasDoubleCousin"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasFirstCousin"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
         <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasFirstCousinTwiceRemoved"/>
     </SymmetricObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="hasInLaw"/>
@@ -1406,10 +1582,19 @@
         <ObjectProperty IRI="hasRelation"/>
     </SymmetricObjectProperty>
     <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasSecondCousin"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasSecondCousinOnceRemoved"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
         <ObjectProperty IRI="hasSibling"/>
     </SymmetricObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="hasSpouse"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasThirdCousin"/>
     </SymmetricObjectProperty>
     <TransitiveObjectProperty>
         <ObjectProperty IRI="ancestorOf"/>
@@ -1532,6 +1717,10 @@
         <Class IRI="Cousin"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCousinInLaw"/>
+        <Class IRI="CousinInLaw"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasDaughter"/>
         <Class IRI="Parent"/>
     </ObjectPropertyDomain>
@@ -1544,12 +1733,24 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDoubleCousin"/>
+        <Class IRI="DoubleCousin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasFather"/>
         <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFirstCousin"/>
+        <Class IRI="FirstCousin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
         <Class IRI="FirstCousinOnceRemoved"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasFirstCousinTwiceRemoved"/>
+        <Class IRI="FirstCousinTwiceRemoved"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGrandParent"/>
@@ -1584,6 +1785,10 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGreatGrandchild"/>
+        <Class IRI="GreatGrandParent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGreatGrandfather"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyDomain>
@@ -1602,6 +1807,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasInLaw"/>
         <Class IRI="Spouse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasMaternalCousin"/>
+        <Class IRI="MaternalCousin"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasMother"/>
@@ -1623,11 +1832,23 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasParent"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPaternalCousin"/>
+        <Class IRI="PaternalCousin"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasRelation"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSecondCousin"/>
+        <Class IRI="SecondCousin"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasSecondCousinOnceRemoved"/>
+        <Class IRI="SecondCousinOnceRemoved"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasSibling"/>
@@ -1644,6 +1865,10 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasSpouse"/>
         <Class IRI="Spouse"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasThirdCousin"/>
+        <Class IRI="ThirdCousin"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasUncle"/>
@@ -1829,6 +2054,10 @@
         <Class IRI="Cousin"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCousinInLaw"/>
+        <Class IRI="CousinInLaw"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasDaughter"/>
         <Class IRI="Daughter"/>
     </ObjectPropertyRange>
@@ -1841,6 +2070,10 @@
         <Class IRI="Descendent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDoubleCousin"/>
+        <Class IRI="DoubleCousin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasFather"/>
         <Class IRI="Father"/>
     </ObjectPropertyRange>
@@ -1849,8 +2082,16 @@
         <Class IRI="FatherInLaw"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFirstCousin"/>
+        <Class IRI="FirstCousin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
         <Class IRI="FirstCousinOnceRemoved"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasFirstCousinTwiceRemoved"/>
+        <Class IRI="FirstCousinTwiceRemoved"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGrandParent"/>
@@ -1885,6 +2126,10 @@
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGreatGrandchild"/>
+        <Class IRI="GreatGrandchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasGreatGrandfather"/>
         <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Male"/>
     </ObjectPropertyRange>
@@ -1903,6 +2148,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasInLaw"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasMaternalCousin"/>
+        <Class IRI="MaternalCousin"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMother"/>
@@ -1925,8 +2174,20 @@
         <Class IRI="Parent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPaternalCousin"/>
+        <Class IRI="PaternalCousin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasRelation"/>
         <Class IRI="http://www.w3.org/ns/prov#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSecondCousin"/>
+        <Class IRI="SecondCousin"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasSecondCousinOnceRemoved"/>
+        <Class IRI="SecondCousinOnceRemoved"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasSibling"/>
@@ -1947,6 +2208,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasSpouse"/>
         <Class IRI="Spouse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasThirdCousin"/>
+        <Class IRI="ThirdCousin"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasUncle"/>
@@ -2093,6 +2358,61 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
+            <ObjectProperty IRI="hasFather"/>
+            <ObjectProperty IRI="hasFather"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGrandParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasFather"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFirstCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasFather"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasPaternalCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasMother"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFirstCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasMother"/>
+            <ObjectProperty IRI="hasBrother"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFirstCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasMother"/>
+            <ObjectProperty IRI="hasSister"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFirstCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasMother"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasMaternalCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
             <ObjectProperty IRI="hasParent"/>
             <ObjectProperty IRI="hasSister"/>
         </ObjectPropertyChain>
@@ -2140,7 +2460,35 @@
             <ObjectProperty IRI="hasSibling"/>
             <ObjectProperty IRI="hasChild"/>
         </ObjectPropertyChain>
-        <ObjectProperty IRI="hasCousin"/>
+        <ObjectProperty IRI="hasFirstCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasSpouse"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasCousinInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFirstCousinTwiceRemoved"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -2165,6 +2513,69 @@
             <ObjectProperty IRI="hasParent"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="hasGreatGrandParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFirstCousinTwiceRemoved"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasSecondCousinOnceRemoved"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasThirdCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFirstCousinOnceRemoved"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasSecondCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasSecondCousinOnceRemoved"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -2255,6 +2666,15 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="hasSpouse"/>
+            <ObjectProperty IRI="hasParent"/>
+            <ObjectProperty IRI="hasSibling"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasCousinInLaw"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasSpouse"/>
             <ObjectProperty IRI="hasBrother"/>
             <ObjectProperty IRI="hasWife"/>
         </ObjectPropertyChain>
@@ -2334,6 +2754,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CousinInLaw</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A cousin-in-law is the spouse of an individual&apos;s cousin or the cousin of one&apos;s spouse.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Death</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The activity of dying or being killed; the end of the life of a person or organism.</Literal>
     </AnnotationAssertion>
@@ -2341,6 +2766,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Deceased</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who is recently dead.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DoubleCousin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Double cousins arise when two siblings of one family reproduce with two siblings of another family. The resulting children are related to each other through both of their parents and are thus doubly related. Double first cousins share both sets of grandparents in common and have twice the degree of consanguinity of ordinary first cousins. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2354,6 +2784,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FirstCousin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The children of two siblings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FirstCousinOnceRemoved</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Two people for whom a first cousin relationship is one generation removed.
+The child of one&apos;s first cousin; also the first cousin of one&apos;s parent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>FirstCousinTwiceRemoved</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Two people for whom a first cousin relationship is two generations removed.
+The grandchild of one&apos;s first cousin; also the first cousin of one&apos;s grandparent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>GrandParent</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A parent of one&apos;s father or mother; a grandmother or grandfather.</Literal>
     </AnnotationAssertion>
@@ -2361,6 +2808,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Granddaughter</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A daughter of one&apos;s son or daughter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>HalfCousin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Half cousins are the children of two half siblings.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2374,6 +2826,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>MaternalCousin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">specifies whether one individual is a cousin of another through the mother&apos;s side of the family </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Mother</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Definition: The family role of a woman in relation to her child or children</Literal>
     </AnnotationAssertion>
@@ -2381,6 +2838,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Parent</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Definition: A person’s father or mother</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PaternalCousin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">specifies whether one individual is a cousin of another through the father&apos;s side of the family </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SecondCousin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The children of two first cousins.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>SecondCousinOnceRemoved</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Two people for whom a second cousin relationship is one generation removed.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2401,6 +2873,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Spouse</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Definition: The role of a husband or wife, considered in relation to their partner.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>StepCousin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Step-cousins are either stepchildren of an individual&apos;s aunt or uncle or nieces and nephews of one&apos;s step-parent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ThirdCousin</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The grandchildren of two first cousins; also the children of two second cousins.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

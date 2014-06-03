@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.vocab.ox.ac.uk/camelot/PersonalLife#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.vocab.ox.ac.uk/camelot/PersonalLifeTest#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+   
+    <Declaration>
+        <NamedIndividual IRI="Adam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Agatha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Betty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Bill"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Charles"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Corinda"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="David"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Dawn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Emma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Eric"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Felicity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Frank"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="George"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Glen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Gwen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Harry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="Isabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="John"/>
+    </Declaration>
+   
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fatherOf"/>
+        <NamedIndividual IRI="Adam"/>
+        <NamedIndividual IRI="Charles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fatherOf"/>
+        <NamedIndividual IRI="Adam"/>
+        <NamedIndividual IRI="Betty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasWife"/>
+        <NamedIndividual IRI="Adam"/>
+        <NamedIndividual IRI="Agatha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasBrother"/>
+        <NamedIndividual IRI="Betty"/>
+        <NamedIndividual IRI="Charles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasChild"/>
+        <NamedIndividual IRI="Betty"/>
+        <NamedIndividual IRI="David"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFather"/>
+        <NamedIndividual IRI="Betty"/>
+        <NamedIndividual IRI="Adam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasHusband"/>
+        <NamedIndividual IRI="Betty"/>
+        <NamedIndividual IRI="Bill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMother"/>
+        <NamedIndividual IRI="Betty"/>
+        <NamedIndividual IRI="Agatha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="motherOf"/>
+        <NamedIndividual IRI="Betty"/>
+        <NamedIndividual IRI="David"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasDaughter"/>
+        <NamedIndividual IRI="Charles"/>
+        <NamedIndividual IRI="Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFather"/>
+        <NamedIndividual IRI="Charles"/>
+        <NamedIndividual IRI="Adam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMother"/>
+        <NamedIndividual IRI="Charles"/>
+        <NamedIndividual IRI="Agatha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSibling"/>
+        <NamedIndividual IRI="Charles"/>
+        <NamedIndividual IRI="Betty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSister"/>
+        <NamedIndividual IRI="Charles"/>
+        <NamedIndividual IRI="Betty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasWife"/>
+        <NamedIndividual IRI="Charles"/>
+        <NamedIndividual IRI="Corinda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasHusband"/>
+        <NamedIndividual IRI="Corinda"/>
+        <NamedIndividual IRI="Charles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fatherOf"/>
+        <NamedIndividual IRI="David"/>
+        <NamedIndividual IRI="Frank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasChild"/>
+        <NamedIndividual IRI="David"/>
+        <NamedIndividual IRI="Frank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFather"/>
+        <NamedIndividual IRI="David"/>
+        <NamedIndividual IRI="Bill"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMother"/>
+        <NamedIndividual IRI="David"/>
+        <NamedIndividual IRI="Betty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasWife"/>
+        <NamedIndividual IRI="David"/>
+        <NamedIndividual IRI="Dawn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasHusband"/>
+        <NamedIndividual IRI="Dawn"/>
+        <NamedIndividual IRI="David"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="motherOf"/>
+        <NamedIndividual IRI="Dawn"/>
+        <NamedIndividual IRI="Frank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFather"/>
+        <NamedIndividual IRI="Emma"/>
+        <NamedIndividual IRI="Charles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMother"/>
+        <NamedIndividual IRI="Emma"/>
+        <NamedIndividual IRI="Corinda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasParent"/>
+        <NamedIndividual IRI="Emma"/>
+        <NamedIndividual IRI="Charles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasWife"/>
+        <NamedIndividual IRI="Eric"/>
+        <NamedIndividual IRI="Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fatherOf"/>
+        <NamedIndividual IRI="Frank"/>
+        <NamedIndividual IRI="Harry"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFather"/>
+        <NamedIndividual IRI="Frank"/>
+        <NamedIndividual IRI="David"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMother"/>
+        <NamedIndividual IRI="Frank"/>
+        <NamedIndividual IRI="Dawn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasWife"/>
+        <NamedIndividual IRI="Frank"/>
+        <NamedIndividual IRI="Felicity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="fatherOf"/>
+        <NamedIndividual IRI="George"/>
+        <NamedIndividual IRI="Isabel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMother"/>
+        <NamedIndividual IRI="Glen"/>
+        <NamedIndividual IRI="Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFather"/>
+        <NamedIndividual IRI="Gwen"/>
+        <NamedIndividual IRI="Eric"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasHusband"/>
+        <NamedIndividual IRI="Gwen"/>
+        <NamedIndividual IRI="George"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMother"/>
+        <NamedIndividual IRI="Gwen"/>
+        <NamedIndividual IRI="Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="motherOf"/>
+        <NamedIndividual IRI="Gwen"/>
+        <NamedIndividual IRI="Isabel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sonOf"/>
+        <NamedIndividual IRI="Harry"/>
+        <NamedIndividual IRI="Felicity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="sonOf"/>
+        <NamedIndividual IRI="Harry"/>
+        <NamedIndividual IRI="Frank"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="daughterOf"/>
+        <NamedIndividual IRI="Isabel"/>
+        <NamedIndividual IRI="George"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="daughterOf"/>
+        <NamedIndividual IRI="Isabel"/>
+        <NamedIndividual IRI="Gwen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isGranddaughterOf"/>
+        <NamedIndividual IRI="Isabel"/>
+        <NamedIndividual IRI="Emma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="isGranddaughterOf"/>
+        <NamedIndividual IRI="Isabel"/>
+        <NamedIndividual IRI="Eric"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasFather"/>
+        <NamedIndividual IRI="John"/>
+        <NamedIndividual IRI="Charles"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasMother"/>
+        <NamedIndividual IRI="John"/>
+        <NamedIndividual IRI="Corinda"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="hasSibling"/>
+        <NamedIndividual IRI="John"/>
+        <NamedIndividual IRI="Emma"/>
+    </ObjectPropertyAssertion>
+   
+   
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
