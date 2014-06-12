@@ -22,7 +22,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.w3.org/ns/prov#</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Personal Life Ontology</Literal>
@@ -1507,8 +1506,8 @@
         <ObjectProperty IRI="motherInLawOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasNephew"/>
         <ObjectProperty IRI="nephewOf"/>
+        <ObjectProperty IRI="hasNephew"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="nieceOf"/>
