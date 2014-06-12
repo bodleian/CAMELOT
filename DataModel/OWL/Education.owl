@@ -45,6 +45,9 @@
         <Class IRI="http://purl.org/ontology/bibo/Thesis"/>
     </Declaration>
     <Declaration>
+        <Class IRI="AcademicInstitution"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="AcademicSubject"/>
     </Declaration>
     <Declaration>
@@ -100,12 +103,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Professor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ProfessorExtraordinary"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="ProfessorOrdinary"/>
     </Declaration>
     <Declaration>
         <Class IRI="PromotionToDegree"/>
@@ -267,6 +264,10 @@
         <Class IRI="http://purl.org/ontology/bibo/Document"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="AcademicInstitution"/>
+        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Author"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -349,14 +350,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ProfessorExtraordinary"/>
-        <Class IRI="Professor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="ProfessorOrdinary"/>
-        <Class IRI="Professor"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="PromotionToDegree"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
@@ -390,7 +383,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="TeachingInstitution"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Testifier"/>
@@ -402,7 +395,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="University"/>
-        <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
+        <Class IRI="AcademicInstitution"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="UniversityMatriculation"/>
@@ -647,6 +640,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>AcademicInstitution</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An educational institution dedicated to education and research, which grants academic degrees.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AcademicSubject</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A branch of knowledge studied or taught in a school, college, or university.</Literal>
     </AnnotationAssertion>
@@ -699,7 +697,7 @@ Also see https://en.wikipedia.org/wiki/Praeses#Old_German_academic_use </Literal
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Lecturer</IRI>
-        <Literal datatypeIRI="&xsd;string">A person who gives lectures, especially (Brit.) as an occupation at a university or college of higher education.</Literal>
+        <Literal datatypeIRI="&xsd;string">A person who gives lectures, especially as an occupation at a university or college of higher education.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -756,16 +754,6 @@ source: https://en.wikipedia.org/wiki/Matriculation</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Professor</IRI>
         <Literal datatypeIRI="&xsd;string">A university academic of the highest rank.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>ProfessorExtraordinary</IRI>
-        <Literal datatypeIRI="&xsd;string">In Germany, post of professor without a university chair. </Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>ProfessorOrdinary</IRI>
-        <Literal datatypeIRI="&xsd;string">Post of Professor in Germany</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

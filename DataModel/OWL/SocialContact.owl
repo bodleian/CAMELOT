@@ -22,12 +22,12 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal datatypeIRI="&xsd;string"></Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
         <Literal datatypeIRI="&xsd;string">Social Contact Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
@@ -693,7 +693,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AlbumAmicorum</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The first true autograph books that appeared in German and Dutch linguistic regions (possibly originating in Wittenberg) by the mid-16th century. Known as an album amicorum (&quot;book of friends&quot;) or stammbuch (&quot;friendship book&quot;).</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The first true autograph books that appeared in German and Dutch linguistic regions (possibly originating in Wittenberg) by the mid-16th century. Known as an album amicorum (&quot;book of friends&quot;) or stammbuch (&quot;friendship book&quot;). Mostly kept by students or young people making a Grand Tour, who invited friends and important people they met to contribute.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>

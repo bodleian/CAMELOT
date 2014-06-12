@@ -20,7 +20,9 @@
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="prov" IRI="http://www.w3.org/ns/prov#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.w3.org/ns/prov#</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">Personal Life Ontology</Literal>
@@ -493,7 +495,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Adoption"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+        <Class abbreviatedIRI="prov:Activity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="AdoptiveFather"/>
@@ -509,7 +511,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Ancestor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Aunt"/>
@@ -517,7 +519,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Aunt"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Aunt"/>
@@ -528,7 +530,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Birth"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+        <Class abbreviatedIRI="prov:Activity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="BirthFather"/>
@@ -544,7 +546,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Brother"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Brother"/>
@@ -581,7 +583,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Cousin"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Cousin"/>
@@ -611,11 +613,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Death"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+        <Class abbreviatedIRI="prov:Activity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Deceased"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+        <Class abbreviatedIRI="prov:Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Descendent"/>
@@ -623,7 +625,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Descendent"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DoubleCousin"/>
@@ -631,7 +633,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="FamilyRole"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+        <Class abbreviatedIRI="prov:Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Father"/>
@@ -738,7 +740,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GreatAunt"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GreatGrandParent"/>
@@ -793,7 +795,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GreatUncle"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="HalfCousin"/>
@@ -823,7 +825,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="InLaw"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="InLaw"/>
@@ -834,7 +836,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Marriage"/>
-        <Class IRI="http://www.w3.org/ns/prov#Activity"/>
+        <Class abbreviatedIRI="prov:Activity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MaternalCousin"/>
@@ -886,7 +888,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Nephew"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Nephew"/>
@@ -908,7 +910,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Niece"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Niece"/>
@@ -960,7 +962,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Sibling"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Sister"/>
@@ -968,7 +970,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Sister"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Sister"/>
@@ -1002,7 +1004,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Spouse"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Spouse"/>
@@ -1025,7 +1027,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Uncle"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Uncle"/>
@@ -1690,11 +1692,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasAncestor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasAunt"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasBiologicalFather"/>
@@ -1726,11 +1728,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasDeath"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasDescendent"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasDoubleCousin"/>
@@ -1754,7 +1756,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGrandParent"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGrandchild"/>
@@ -1766,11 +1768,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGrandfather"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGrandmother"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGrandson"/>
@@ -1778,11 +1780,11 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGreatAunt"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGreatGrandParent"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGreatGrandchild"/>
@@ -1790,15 +1792,15 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGreatGrandfather"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGreatGrandmother"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGreatUncle"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasHusband"/>
@@ -1814,7 +1816,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasMother"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasNephew"/>
@@ -1840,7 +1842,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasRelation"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasSecondCousin"/>
@@ -1872,7 +1874,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasUncle"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasWife"/>
@@ -1884,7 +1886,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="isBloodRelationOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="isChildOf"/>
@@ -1952,7 +1954,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="ancestorOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="auntOf"/>
@@ -1979,11 +1981,11 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="deathOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="descendentOf"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="fatherOf"/>
@@ -2023,7 +2025,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAncestor"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAunt"/>
@@ -2095,7 +2097,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGrandParent"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGrandchild"/>
@@ -2123,7 +2125,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGreatGrandParent"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGreatGrandchild"/>
@@ -2147,7 +2149,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasInLaw"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMaternalCousin"/>
@@ -2179,7 +2181,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasRelation"/>
-        <Class IRI="http://www.w3.org/ns/prov#Person"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasSecondCousin"/>
@@ -2775,7 +2777,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FamilyRole</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: Role of an individual within a family unit. </Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Role of an individual within a family unit. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

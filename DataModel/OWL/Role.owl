@@ -55,9 +55,6 @@
         <Class IRI="Author"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Backer"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Buyer"/>
     </Declaration>
     <Declaration>
@@ -92,6 +89,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Counsellor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Courtier"/>
     </Declaration>
     <Declaration>
         <Class IRI="Creator"/>
@@ -175,6 +175,9 @@
         <Class IRI="Immigrant"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Inhabitant"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Inscriber"/>
     </Declaration>
     <Declaration>
@@ -233,9 +236,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Researcher"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Resident"/>
     </Declaration>
     <Declaration>
         <Class IRI="Reviewer"/>
@@ -616,8 +616,6 @@
         <Class IRI="Conrector"/>
         <Class IRI="Subrector"/>
     </EquivalentClasses>
-    
-    
     <SubClassOf>
         <Class IRI="AcademicSupervisor"/>
         <Class IRI="Supervisor"/>
@@ -651,10 +649,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Author"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Backer"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -725,6 +719,10 @@
     <SubClassOf>
         <Class IRI="Counsellor"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Courtier"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Creator"/>
@@ -817,7 +815,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Funder"/>
-        <Class IRI="Backer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="FundsRecipient"/>
@@ -881,6 +879,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Immigrant"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Inhabitant"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -966,7 +968,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Patron"/>
-        <Class IRI="Backer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Printer"/>
@@ -990,10 +992,6 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Researcher"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Resident"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -1063,8 +1061,6 @@
         <Class IRI="Witness"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
-   
-   
     <DisjointClasses>
         <Class IRI="Guest"/>
         <Class IRI="Host"/>
@@ -1410,10 +1406,6 @@
         <Class IRI="Author"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="backerOf"/>
-        <Class IRI="Backer"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="buyerOf"/>
         <Class IRI="Buyer"/>
     </ObjectPropertyDomain>
@@ -1634,10 +1626,6 @@
         <Class IRI="Refugee"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="residentOf"/>
-        <Class IRI="Resident"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="residesWith"/>
         <Class IRI="Housemate"/>
     </ObjectPropertyDomain>
@@ -1752,10 +1740,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAuthor"/>
         <Class IRI="Author"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasBacker"/>
-        <Class IRI="Backer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasBuyer"/>
@@ -1970,7 +1954,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Acquaintance</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person one knows slightly, but who is not a close friend.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who knows another person somehow. They may or may not be friends, maybe just have met by various occasions or simply knew each other living in the same city sharing other acquaintances. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1986,11 +1970,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Author</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of someone who writes a book, article, or document.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Backer</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A person, institution, or country that supports someone or something, especially financially.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2051,6 +2030,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Counsellor</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person trained to give guidance on personal or psychological problems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Courtier</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who attends a royal court as a companion or adviser to the king or queen.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2186,6 +2170,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Inhabitant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person living in a general place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Inscriber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who writes or carves (words or symbols) on something, especially as a formal or permanent record.</Literal>
     </AnnotationAssertion>
@@ -2268,11 +2257,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Researcher</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who undertakes a systematic investigation into and study of materials and sources in order to establish facts and reach new conclusion.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Resident</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A person who lives somewhere permanently or on a long-term basis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2379,7 +2363,6 @@
         <IRI>http://www.w3.org/ns/prov#Contributor</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that contributes something, in particular.</Literal>
     </AnnotationAssertion>
-   
 </Ontology>
 
 

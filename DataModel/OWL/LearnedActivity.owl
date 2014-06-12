@@ -103,6 +103,9 @@
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ilustrator"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Member"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Printer"/>
     </Declaration>
     <Declaration>
@@ -112,10 +115,10 @@
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Researcher"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Translator"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Translator"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
@@ -204,15 +207,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#President"/>
-        <Class IRI="OfficeLearnedOrganisation"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#Office"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#Secretary"/>
-        <Class IRI="OfficeLearnedOrganisation"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#Office"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#Treasurer"/>
-        <Class IRI="OfficeLearnedOrganisation"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#Office"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
@@ -247,6 +250,10 @@
         <Class IRI="LearnedActivityRole"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Member"/>
+        <Class IRI="LearnedActivityRole"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Printer"/>
         <Class IRI="LearnedActivityRole"/>
     </SubClassOf>
@@ -259,11 +266,11 @@
         <Class IRI="LearnedActivityRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Translator"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
         <Class IRI="LearnedActivityRole"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Translator"/>
         <Class IRI="LearnedActivityRole"/>
     </SubClassOf>
     <DisjointUnion>

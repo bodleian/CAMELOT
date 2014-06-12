@@ -26,15 +26,18 @@
         <Literal datatypeIRI="&xsd;string"></Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal datatypeIRI="&xsd;string">Political Activity Ontology</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
         <Literal datatypeIRI="&xsd;dateTime"></Literal>
     </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Political Activity Ontology</Literal>
+    </Annotation>
     <Declaration>
         <Class IRI="HoldPoliticalOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MembershipOfPoliticalGroup"/>
     </Declaration>
     <Declaration>
         <Class IRI="RepresentativeAssembly"/>
@@ -42,6 +45,10 @@
     <SubClassOf>
         <Class IRI="HoldPoliticalOffice"/>
         <Class IRI="http://vocab.ox.ac.uk/camelot/Occupation#HoldOffice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MembershipOfPoliticalGroup"/>
+        <Class IRI="http://www.w3.org/ns/org#Membership"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="RepresentativeAssembly"/>

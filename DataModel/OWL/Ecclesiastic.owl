@@ -73,6 +73,9 @@
         <Class IRI="Council"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Courtier"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="DisqualifiedFromEcclesiasticalOffice"/>
     </Declaration>
     <Declaration>
@@ -341,6 +344,10 @@
     <SubClassOf>
         <Class IRI="Council"/>
         <Class IRI="EcclesiasticalOrganisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Courtier"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DisqualifiedFromEcclesiasticalOffice"/>
