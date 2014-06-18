@@ -21,7 +21,6 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.w3.org/ns/org#</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
         <Literal datatypeIRI="&xsd;dateTime">30/04/2014</Literal>
@@ -47,9 +46,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="BaptismalCandidate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Bishop"/>
     </Declaration>
     <Declaration>
         <Class IRI="Chapter"/>
@@ -82,7 +78,10 @@
         <Class IRI="DisqualifiedFromOffice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="EcclesiasticalAdministrativeOffice"/>
+        <Class IRI="EcclesiasticalGoverningOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EcclesiasticalMinisteringOffice"/>
     </Declaration>
     <Declaration>
         <Class IRI="EcclesiasticalOffice"/>
@@ -112,9 +111,6 @@
         <Class IRI="MembershipEcclesiasticalBody"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Minister"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="MonasticOffice"/>
     </Declaration>
     <Declaration>
@@ -128,9 +124,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Preach"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Priest"/>
     </Declaration>
     <Declaration>
         <Class IRI="Religion"/>
@@ -314,10 +307,6 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Bishop"/>
-        <Class IRI="EcclesiasticalOffice"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Chapter"/>
         <Class IRI="EcclesiasticalOrganisation"/>
     </SubClassOf>
@@ -358,7 +347,11 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="EcclesiasticalAdministrativeOffice"/>
+        <Class IRI="EcclesiasticalGoverningOffice"/>
+        <Class IRI="EcclesiasticalOffice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EcclesiasticalMinisteringOffice"/>
         <Class IRI="EcclesiasticalOffice"/>
     </SubClassOf>
     <SubClassOf>
@@ -398,12 +391,8 @@
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Minister"/>
-        <Class IRI="Office"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="MonasticOffice"/>
-        <Class IRI="Office"/>
+        <Class IRI="EcclesiasticalOffice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Office"/>
@@ -420,10 +409,6 @@
     <SubClassOf>
         <Class IRI="Preach"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Priest"/>
-        <Class IRI="EcclesiasticalOffice"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ReligiousConfession"/>
@@ -713,11 +698,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Bishop</IRI>
-        <Literal datatypeIRI="&xsd;string">A senior member of the Christian clergy, usually in charge of a diocese and empowered to confer holy orders.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Chapter</IRI>
         <Literal datatypeIRI="&xsd;string">The governing body of a religious community</Literal>
     </AnnotationAssertion>
@@ -763,13 +743,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>EcclesiasticalAdministrativeOffice</IRI>
-        <Literal datatypeIRI="&xsd;string">An administrative position of authority or service in an ecclesiastical organisation.</Literal>
+        <IRI>EcclesiasticalGoverningOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An ecclesiastical office that has a governing role in the ecclesiastical organisation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>EcclesiasticalMinisteringOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An ecclesiastical office that is authorized to perform certain rites and administer certain sacraments.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EcclesiasticalOffice</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A position of authority or service in an ecclesiastical organisation.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A position of authority or service in an ecclesiastical organisation, i.e.  the Christian Church.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -813,13 +798,8 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Minister</IRI>
-        <Literal datatypeIRI="&xsd;string">A member of the clergy, especially in the Presbyterian and Nonconformist Churches.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>MonasticOffice</IRI>
-        <Literal datatypeIRI="&xsd;string">A position of authority or service in a monastic organisation.</Literal>
+        <Literal datatypeIRI="&xsd;string">An ecclesiastical office in a monastic organisation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -840,11 +820,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Preach</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Deliver a sermon or religious address to an assembled group of people, typically in church.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Priest</IRI>
-        <Literal datatypeIRI="&xsd;string">An ordained minister of the Catholic, Orthodox, or Anglican Church, authorized to perform certain rites and administer certain sacraments. http://www.oxforddictionaries.com/definition/english/priest</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
