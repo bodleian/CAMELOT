@@ -241,7 +241,7 @@
         <Class IRI="Librettist"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Licenseer"/>
+        <Class IRI="Licenser"/>
     </Declaration>
     <Declaration>
         <Class IRI="Member"/>
@@ -1040,7 +1040,7 @@
         <Class IRI="Author"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Licenseer"/>
+        <Class IRI="Licenser"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -1413,8 +1413,8 @@
         <ObjectProperty IRI="hasDedicator"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="engraverOf"/>
         <ObjectProperty IRI="hasEngraver"/>
+        <ObjectProperty IRI="engraverOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="exileFrom"/>
@@ -1449,8 +1449,8 @@
         <ObjectProperty IRI="inscriberOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="intermediaryOf"/>
         <ObjectProperty IRI="hasIntermediary"/>
+        <ObjectProperty IRI="intermediaryOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="memberOf"/>
@@ -2344,6 +2344,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Librettist</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The author of a libretto. A libretto is the text of a dramatic musical work, such as an opera, and the book that contains it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Licenser</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An offical who can issue a license or give authoritative permission (especially one who licenses publications)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
