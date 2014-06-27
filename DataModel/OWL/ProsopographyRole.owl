@@ -1,0 +1,2527 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://vocab.ox.ac.uk/camelot/ProsopographRole#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://vocab.ox.ac.uk/camelot/ProsopographRole#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal datatypeIRI="&xsd;string">Role Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string"></Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/created"/>
+        <Literal datatypeIRI="&xsd;dateTime"></Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="ProsopographyRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#AcademicSupervisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Acquaintance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Advocate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Attendee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Buyer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#CalledToBar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Collaborator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Colleague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contractee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contributor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#CorrespondenceIntermediary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Correspondent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Courtier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DedicateeOfItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DedicateeOfWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DisplacedPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Disqualified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DisqualifiedFromOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Editor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Emigrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Engraver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#ExiledPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Friend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Funder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#FundsRecipient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Gift"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#GiftGiver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Giver"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Guest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Housemate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ilustrator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Immigrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inhabitant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inscriber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Instigator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Intermediary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterAuthor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterRecipient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterSender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Mother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Owner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Participant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Patron"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Printer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Refugee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Researcher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ruler"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Saloniste"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Seller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Sender"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Signatory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Supervisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Trader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Translator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#TravelCompanion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Witness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#academicSupervisorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#advocateOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#attendeeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#authorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#backerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#buyerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#buysFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#chairOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#childOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#collaboratorOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#contributorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#creatorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#dedicateeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#dedicatorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#disqualifiedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#emigrantFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#engraverOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#exileFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#fatherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#friendOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#funderOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#giverOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#givesGiftTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#guestOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAcademicSupervisor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAcquaintance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAdvocate"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAttendee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAuthor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasBacker"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasBuyer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasChair"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasChild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCollaborator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasColleague"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasContributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCorrespondent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCreator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicatee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEmployee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEmployer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEngraver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasExiledPerson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasFunder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasGiver"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasGuest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasHost"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasIllustrator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasInscriber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasIntermediary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasLetterRecipient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasOwner"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPatron"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPrinter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPublisher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasRecipient"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasReviewer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasSeller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasSupervisor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasTransmissionWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasVisitor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasWitness"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hostOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#illustratorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#immigrantTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#inscriberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#intermediaryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#interviewedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#interviews"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#memberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#motherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#movesTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#ownerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#parentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#participantOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#patronOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#printerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#publisherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesGiftFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfFunds"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfGift"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfLetter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#refugeeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#residentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#residesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#reviewerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sellerOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sellsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#senderOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#senderOfLetter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sendsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#supervisorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#traderOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#tradesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#visitorTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#visits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#witnessOf"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="ProsopographyRole"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#AcademicSupervisor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Supervisor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#AcademicSupervisor"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#academicSupervisorOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Student"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Acquaintance"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Acquaintance"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Advocate"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Advocate"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Attendee"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Participant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Buyer"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Trader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#CalledToBar"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#CalledToBar"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Chair"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Chair"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#childOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Collaborator"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Collaborator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Collaborator"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCollaborator"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Collaborator"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Colleague"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Colleague"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Colleague"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasColleague"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Colleague"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contractee"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contractee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contributor"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contributor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#CorrespondenceIntermediary"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Intermediary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Correspondent"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Correspondent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Courtier"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Courtier"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Creator"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Creator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DedicateeOfItem"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DedicateeOfWork"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicator"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DisplacedPerson"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DisplacedPerson"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Disqualified"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Disqualified"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#DisqualifiedFromOffice"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Disqualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Editor"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Emigrant"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Emigrant"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employee"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employee"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEmployer"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employer"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employer"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employer"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEmployee"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employee"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Engraver"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Engraver"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#ExiledPerson"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#ExiledPerson"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Father"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Father"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#fatherOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Friend"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Friend"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Funder"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#FundsRecipient"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Gift"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Gift"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#GiftGiver"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Giver"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#GiftGiver"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#giverOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Gift"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Giver"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Giver"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Guest"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Guest"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#guestOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hostOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Guest"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Housemate"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Housemate"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Housemate"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#residesWith"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Housemate"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ilustrator"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ilustrator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Immigrant"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Immigrant"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inhabitant"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inhabitant"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inscriber"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inscriber"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Instigator"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Instigator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Intermediary"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Instigator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewee"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewer"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterAuthor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterRecipient"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Correspondent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterRecipient"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterSender"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Correspondent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterSender"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Sender"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Member"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Member"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Mother"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Mother"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#motherOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Owner"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Owner"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasChild"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#parentOf"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Participant"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Patron"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Patron"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Printer"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Printer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Publisher"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Publisher"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Refugee"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Refugee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Researcher"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Researcher"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ruler"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ruler"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Saloniste"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Attendee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Seller"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Trader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Sender"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Sender"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Signatory"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Signatory"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Student"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Student"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Supervisor"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Supervisor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Trader"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Trader"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Translator"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Translator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#TravelCompanion"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#TravelCompanion"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsWith"/>
+            <Class IRI="http://vocab.ox.ac.uk/camelot/Role#TravelCompanion"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Witness"/>
+        <Class IRI="ProsopographyRole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Witness"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Guest"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+    </DisjointClasses>
+    <DisjointUnion>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Father"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Mother"/>
+    </DisjointUnion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasContributor"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#childOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParent"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasChild"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#parentOf"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#academicSupervisorOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#supervisorOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#attendeeOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#participantOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#buyerOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#traderOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#buysFrom"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#tradesWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#fatherOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#parentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#funderOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#backerOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#giverOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#givesGiftTo"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasTransmissionWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAcademicSupervisor"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasSupervisor"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAttendee"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParticipant"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEmployee"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasFather"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasFunder"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasBacker"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasGiver"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasLetterRecipient"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasMother"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPatron"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasBacker"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasRecipient"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#motherOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#parentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#patronOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#backerOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesFrom"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasTransmissionWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesGiftFrom"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfFunds"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfGift"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfLetter"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sellerOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#traderOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sellsTo"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#tradesWith"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#senderOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#senderOfLetter"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#senderOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sendsTo"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasTransmissionWith"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAcademicSupervisor"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#academicSupervisorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAdvocate"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#advocateOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#attendeeOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAttendee"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#authorOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAuthor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#backerOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasBacker"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#buyerOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasBuyer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sellsTo"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#buysFrom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasChair"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#chairOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasChild"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#childOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasContributor"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#contributorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCreator"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#creatorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#dedicateeOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicatee"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#dedicatorOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicator"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#engraverOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEngraver"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#exileFrom"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasExiledPerson"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasFather"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#fatherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#funderOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasFunder"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasGiver"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#giverOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasGuest"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#guestOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasHost"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hostOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasIllustrator"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#illustratorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasInscriber"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#inscriberOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#intermediaryOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasIntermediary"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#memberOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasMember"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#motherOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasMother"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasOwner"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#ownerOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#parentOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#participantOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParticipant"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPatron"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#patronOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#printerOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPrinter"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#publisherOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPublisher"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasRecipient"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#reviewerOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasReviewer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sellerOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasSeller"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#supervisorOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasSupervisor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#visits"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasVisitor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#witnessOf"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasWitness"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#interviewedBy"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#interviews"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sendsTo"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesFrom"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#friendOf"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAcquaintance"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCollaborator"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasColleague"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCorrespondent"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasTransmissionWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#residesWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#tradesWith"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsWith"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#academicSupervisorOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#AcademicSupervisor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#advocateOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Advocate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#attendeeOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Attendee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#authorOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#buyerOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Buyer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#buysFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Buyer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#chairOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Chair"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#childOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#collaboratorOn"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Collaborator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#contributorOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contributor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#creatorOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Creator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#dedicateeOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#dedicatorOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#disqualifiedFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Disqualified"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#emigrantFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Emigrant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#engraverOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Engraver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#exileFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#ExiledPerson"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#fatherOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Father"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#friendOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Friend"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#funderOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Funder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#giverOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Giver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#givesGiftTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#GiftGiver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#guestOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Guest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAcademicSupervisor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAcquaintance"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Acquaintance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasChild"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCollaborator"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Collaborator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasColleague"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Colleague"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCorrespondent"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Correspondent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEmployee"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEmployer"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasFather"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasFunder"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasGuest"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasHost"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Guest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasMother"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParent"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hostOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#illustratorOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ilustrator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#immigrantTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Immigrant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#inscriberOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inscriber"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#intermediaryOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Intermediary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#interviewedBy"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#interviews"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#memberOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Member"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#motherOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Mother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#ownerOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Owner"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#parentOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#participantOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Participant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#patronOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Patron"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#printerOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Printer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#publisherOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Publisher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesGiftFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfFunds"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#FundsRecipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfGift"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfLetter"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterRecipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#refugeeOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#residesWith"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Housemate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#reviewerOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sellerOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Seller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sellsTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Seller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#senderOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Sender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#senderOfLetter"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterSender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sendsTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Sender"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#traderOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Trader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#tradesWith"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Trader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Traveller"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsWith"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#TravelCompanion"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#visitorTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#visits"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#witnessOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Witness"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contributor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#academicSupervisorOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#buysFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Seller"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#childOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#fatherOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#friendOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Friend"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#funderOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#givesGiftTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#guestOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAcademicSupervisor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#AcademicSupervisor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAcquaintance"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Acquaintance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAdvocate"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Advocate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAttendee"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Attendee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasAuthor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasBuyer"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Buyer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasChair"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Chair"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasChild"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCollaborator"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Collaborator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasColleague"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Colleague"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasContributor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Contributor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCorrespondent"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Correspondent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasCreator"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Creator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicatee"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicatee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasDedicator"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Dedicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEmployee"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEmployer"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Employer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasEngraver"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Engraver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasExiledPerson"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#ExiledPerson"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasFunder"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Funder"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasGiver"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Giver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasGuest"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Guest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasHost"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Host"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasIllustrator"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Ilustrator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasInscriber"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Inscriber"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasIntermediary"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Intermediary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasLetterRecipient"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#LetterRecipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasMember"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Member"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasMother"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Mother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasOwner"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Owner"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParent"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Parent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasParticipant"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Participant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPatron"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Patron"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPrinter"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Printer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasPublisher"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Printer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasRecipient"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasReviewer"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Reviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasSeller"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Seller"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasSupervisor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Supervisor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasVisitor"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Visitor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hasWitness"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Witness"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#hostOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Guest"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#interviewedBy"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#interviews"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Interviewee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#motherOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#parentOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Child"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Giver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#receivesGiftFrom"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#GiftGiver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#recipientOfGift"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Gift"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#residesWith"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Housemate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#sellsTo"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Buyer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#supervisorOf"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Supervisor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#tradesWith"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#Trader"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsWith"/>
+        <Class IRI="http://vocab.ox.ac.uk/camelot/Role#TravelCompanion"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsFrom"/>
+        <ObjectProperty IRI="http://vocab.ox.ac.uk/camelot/Role#travelsTo"/>
+    </DisjointObjectProperties>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#AcademicSupervisor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a senior scientist or scholar who, along with their own responsibilities, aids and guides a postgraduate research student, or undergraduate student, in their research project; offering both moral support and scientific insight and guidance. The term is used in several countries for the doctoral advisor of a graduate student.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#AcademicSupervisor</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Supervisor#Academia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Acquaintance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who knows another person somehow. They may or may not be friends, maybe just have met by various occasions or simply knew each other living in the same city sharing other acquaintances. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Advocate</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who publicly supports or recommends a particular cause or policy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Attendee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who participates and is present at a conference or other gathering.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Author</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of someone who writes a book, article, or document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Buyer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who makes a purchase.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#CalledToBar</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who is qualified to be allowed to argue in court on behalf of another party</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Chair</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who acts as chairperson of who presides over (an organization, meeting, or public event).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Child</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person in relation to his/her parents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Collaborator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who works jointly on an activity or project; an associate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Colleague</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person in relation to another person, who are both working within the same institution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Contractee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A party to a contract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Contributor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person or thing that contributes something, in particular.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#CorrespondenceIntermediary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who delivers or forwards a letter to the addressee on behalf of the author of the letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Correspondent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who writes letters on a regular basis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Courtier</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who attends a royal court as a companion or adviser to the king or queen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Creator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that brings something into existence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Dedicatee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of an entity to whom something is dedicated</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#DedicateeOfItem</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of an entity to whom an item is dedicated.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#DedicateeOfWork</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of an entity to whom a creative work is dedicated.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Dedicator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who dedicates something to someone or something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#DisplacedPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person that participated in the enforced departure from his/her home, typically because of war, persecution, or natural disaster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Disqualified</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person that is declared ineligible for an office, activity or competition because of an offence or infringement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#DisqualifiedFromOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person that is declared ineligible for an office because of an offence or infringement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Editor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is in charge of and determines the final content of a newspaper, magazine, or multi-author book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Emigrant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who leaves their own country in order to settle permanently in another country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Employee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person employed for wages or salary, especially at non-executive level.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Employer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person or organization that employs people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Engraver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a skilled worker who can inscribe designs or writing onto a surface by carving or etching</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#ExiledPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who lives away from their native country, either from choice or compulsion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Father</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The family role of a man in relation to his child or children</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Friend</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person with whom one has a bond of mutual affection, typically one exclusive of sexual or family relations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Funder</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or organization who provide a person or organization with money for a particular purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#FundsRecipient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of something that receives funds</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Gift</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a thing given willingly to someone without payment; a present.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#GiftGiver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who gives a gift.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Giver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who gives something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Guest</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who is invited to visit someone&apos;s home or attend a particular social occasion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Host</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who receives or entertains other people as guests.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Housemate</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">A person who shares a house with others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Ilustrator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person who draws or creates pictures for magazines, books, advertising, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Immigrant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who comes to live permanently in a country that is not the person&apos;s native country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Inhabitant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person living in a general place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Inscriber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who writes or carves (words or symbols) on something, especially as a formal or permanent record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Instigator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who brings about or initiates something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Intermediary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who acts as a link between people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Interviewee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is interviewed by an interviewer in an interview ie who is questioned, consulted or evaluated by another person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Interviewer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who conducts an interview</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#LetterAuthor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who writes a letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#LetterRecipient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that receives a letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#LetterSender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person that sends a letter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Member</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person, country, or organization that has joined a group, society, or team.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Mother</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The family role of a woman in relation to her child or children</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Owner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who owns something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Parent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">a person&apos;s father or mother.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Participant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who takes part in something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Patron</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who gives financial or other support to a person, organization, or cause.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Recipient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that receives or is awarded something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Refugee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who has been forced to leave their country in order to escape war, persecution, or natural disaster.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Researcher</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who undertakes a systematic investigation into and study of materials and sources in order to establish facts and reach new conclusion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Reviewer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who writes critical appraisals of books, plays, films, etc. for publication.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Ruler</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person exercising government or dominion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Saloniste</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who attends a salon (social gathering).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Seller</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who sells something.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Sender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who sends something, especially a letter by post</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Signatory</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a party that has signed an agreement, especially a state that has signed a treaty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Student</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">A person who is studying at a university or other place of higher education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Supervisor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who supervises a person or an activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Trader</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who buys and sells goods, currency, or shares.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Translator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who translates from one language into another, especially as a profession.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#TravelCompanion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who actively travels together with at least one other person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Traveller</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who is travelling or who often travels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Visitor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person visiting someone or somewhere, especially socially or as a tourist.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#Witness</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who sees an event.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#friendOf</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/vocab/relationship/friendOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#givesGiftTo</IRI>
+        <Literal datatypeIRI="&xsd;string">Freely transfer the possession of a gift to (someone)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#hasAcquaintance</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/vocab/relationship/acquaintanceOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#hasCollaborator</IRI>
+        <Literal datatypeIRI="&xsd;string">Relationship linking two people who are collaborating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#hasCollaborator</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/cerif/frapo/collaboratesWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://vocab.ox.ac.uk/camelot/Role#hasColleague</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Relationship between two people who are working within the same organisation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/prov#Contributor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that contributes something, in particular.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
