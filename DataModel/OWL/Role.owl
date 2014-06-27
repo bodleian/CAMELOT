@@ -352,9 +352,6 @@
         <Class IRI="Witness"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </Declaration>
     <Declaration>
@@ -702,10 +699,6 @@
         <Class IRI="AdministratorOfInstitution"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="AdministratorOfInstitution"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Advertiser"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -820,7 +813,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Counsellor"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Courtier"/>
@@ -864,7 +857,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Editor"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Emigrant"/>
