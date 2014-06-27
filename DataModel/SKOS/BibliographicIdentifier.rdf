@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#"
+     xml:base="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;altLabel">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="&skos;definition">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+    <owl:AnnotationProperty rdf:about="&skos;editorialNote">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="&skos;example">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="&skos;prefLabel">
+        <rdfs:subPropertyOf rdf:resource="&rdfs;label"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#broader -->
+
+    <owl:ObjectProperty rdf:about="&skos;broader"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#narrower -->
+
+    <owl:ObjectProperty rdf:about="&skos;narrower"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#BodIncNumber -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#BodIncNumber">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Bodleian Incunables number</skos:altLabel>
+        <skos:definition rdf:datatype="&xsd;string">Unique identifier for a record in the Bodleian Incunables collection</skos:definition>
+        <skos:prefLabel>BodIncNumber</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#DOI -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#DOI">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">A character string (a &quot;digital identifier&quot;) used to uniquely identify an object such as an electronic document. Metadata about the object is stored in association with the DOI name and this metadata may include a location, such as a URL, where the object can be found. The DOI for a document remains fixed over the lifetime of the document, whereas its location and other metadata may change.</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="&xsd;string">Digital Object Identifier</skos:altLabel>
+        <skos:example rdf:datatype="&xsd;anyURI">http://dx.doi.org/10.1002/jcc.1087</skos:example>
+        <skos:prefLabel>DOI</skos:prefLabel>
+        <skos:example>doi:10.1000/182</skos:example>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition>A unique numeric commercial book identifier.</skos:definition>
+        <skos:example>978-3-16-148410-0</skos:example>
+        <skos:prefLabel>ISBN</skos:prefLabel>
+        <skos:altLabel>International Standard Book Number</skos:altLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN10">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition>An ISBN with 10 digits, assigned before 2007.</skos:definition>
+        <skos:altLabel>International Standard Book Number 10</skos:altLabel>
+        <skos:prefLabel>ISBN10</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN13">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:altLabel>International Standard Book Number 13</skos:altLabel>
+        <skos:definition>An ISBN with 13 digits, assigned after 1 January 2007.</skos:definition>
+        <skos:prefLabel>ISBN13</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISSN -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISSN">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:editorialNote>Regular expression: \d{4}\-\d{3}[\dX]</skos:editorialNote>
+        <skos:prefLabel>ISSN</skos:prefLabel>
+        <skos:definition>A unique eight-digit number used to identify a periodical publication at a specific media type.  It is internationally accepted as a fundamental identifier for distinguishing between identical serial titles and facilitating checking and ordering procedures, collection management, legal deposit, interlibrary loans etc.
+
+When a periodical is published, with the same content, in two or more different media, a different ISSN is assigned to each media type – in particular the print and electronic media types, named print ISSN (p-ISSN) and electronic ISSN (e-ISSN or eISSN).</skos:definition>
+        <skos:altLabel>International Standard Serial Number</skos:altLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:narrower rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#DOI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#LCC -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#LCC">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://media.wix.com/ugd/bff7bc_3a584da4bf0bbd6ce60a0d84ebf120fc.pdf</rdfs:seeAlso>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://www.linkedcontentcoalition.org/</rdfs:seeAlso>
+        <skos:prefLabel>LCC</skos:prefLabel>
+        <skos:altLabel>Linked Content Coalition identifier</skos:altLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#LCSH -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#LCSH">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition rdf:datatype="&xsd;string">Identifer for a Library of Congress Subject Heading (LCSH). 
+
+LCSH has been actively maintained since 1898 to catalog materials held at the Library of Congress.</skos:definition>
+        <skos:altLabel rdf:datatype="&xsd;string">Library of Congress Subject Heading identifier</skos:altLabel>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://id.loc.gov/authorities/subjects.html</rdfs:seeAlso>
+        <skos:prefLabel>LCSH</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#LocalIdentifier -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#LocalIdentifier">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#MESH -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#MESH">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:altLabel rdf:datatype="&xsd;string">Medical Subject Heading identifier</skos:altLabel>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">Unique identifier for a Medical Subject Heading.
+
+Medical Subject Headings (MeSH) is a comprehensive controlled vocabulary for the purpose of indexing journal articles and books in the life sciences; it can also serve as a thesaurus that facilitates searching. Created and updated by the United States National Library of Medicine (NLM), it is used by the MEDLINE/PubMed article database and by NLM&apos;s catalog of book holdings.</rdfs:seeAlso>
+        <skos:definition rdf:datatype="&xsd;string">Unique identifier for a Medical Subject Heading.
+
+Medical Subject Headings (MeSH) is a comprehensive controlled vocabulary for the purpose of indexing journal articles and books in the life sciences; it can also serve as a thesaurus that facilitates searching. Created and updated by the United States National Library of Medicine (NLM), it is used by the MEDLINE/PubMed article database and by NLM&apos;s catalog of book holdings.</skos:definition>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">https://www.nlm.nih.gov/mesh/</rdfs:seeAlso>
+        <skos:prefLabel>MeSH identifier</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#NLM -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#NLM">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:altLabel rdf:datatype="&xsd;string">US National Library of Medicine identifier</skos:altLabel>
+        <skos:definition rdf:datatype="&xsd;string">Unique identifier for a record in the United States&apos; National Library of Medicine (NLM) Catalogue.
+
+The NLM Catalogue provides access to NLM bibliographic data for over 1.4 million journals, books, audiovisuals, computer software, electronic resources, and other materials. Updated every weekday, the NLM Catalog is an alternative search interface to the bibliographic records in LocatorPlus.</skos:definition>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://www.ncbi.nlm.nih.gov/nlmcatalog</rdfs:seeAlso>
+        <skos:prefLabel>NLM identifier</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#PMID -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#PMID">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;string">PubMed Identifier</rdfs:seeAlso>
+        <skos:altLabel rdf:datatype="&xsd;string">PubMed Identifier</skos:altLabel>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">https://www.ncbi.nlm.nih.gov/pubmed/</rdfs:seeAlso>
+        <skos:prefLabel>PMID</skos:prefLabel>
+        <skos:definition>A unique number assigned to each record in PubMed, a free search engine accessing primarily the MEDLINE database of references and abstracts on life sciences and biomedical topics. 
+
+The United States National Library of Medicine (NLM) at the National Institutes of Health maintains the database as part of the Entrez system of information retrieval.</skos:definition>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#UUID -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#UUID">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:definition rdf:datatype="&xsd;string">An identifier that conforms to a standard used in software construction, standardized by the Open Software Foundation (OSF) as part of the Distributed Computing Environment (DCE.)</skos:definition>
+        <skos:altLabel rdf:datatype="&xsd;string">Universally unique identifier </skos:altLabel>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://en.wikipedia.org/wiki/Uuid</rdfs:seeAlso>
+        <skos:prefLabel>UUID</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#eISSN -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#eISSN">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel>eISSN</skos:prefLabel>
+        <skos:altLabel>Electronic International Standard Serial Number</skos:altLabel>
+        <skos:definition>An ISSN for a periodical that is published in an electronic media type.</skos:definition>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISSN"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
