@@ -63,17 +63,33 @@
     <Declaration>
         <ObjectProperty IRI="themeOf"/>
     </Declaration>
+    <SubClassOf>
+        <Class IRI="CreativeWork"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Instance"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Manifestation"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Theme"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasInstance"/>
         <ObjectProperty IRI="instanceOf"/>
+        <ObjectProperty IRI="hasInstance"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasManifestation"/>
         <ObjectProperty IRI="manifestationOf"/>
+        <ObjectProperty IRI="hasManifestation"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="themeOf"/>
         <ObjectProperty IRI="hasTheme"/>
+        <ObjectProperty IRI="themeOf"/>
     </InverseObjectProperties>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasInstance"/>

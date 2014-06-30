@@ -1,0 +1,938 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://vocab.ox.ac.uk/camelot/Instance#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://vocab.ox.ac.uk/camelot/Instance#">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://vocab.ox.ac.uk/camelot/CreativeWorkInstance#</Import>
+    <Import>http://www.w3.org/ns/prov#</Import>
+    <Declaration>
+        <Class IRI="Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Addition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Annotation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="AuthorName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BalladText"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BookCover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Colophon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Contents"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Continuation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Decoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Dedication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Document"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DocumentPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EditionStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="EndMatter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Entrance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Entry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Epigraph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Excipit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FirstLine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="FirstLineRefrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Gloss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Heading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="HeadingNumber"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Illumination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Illustration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Imprint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Incipit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LastLine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LastLineRefrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="LicenseStatement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ManuscriptAddition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MusicalScore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Ornament"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Pagination"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Performance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Prefatory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Prose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Quote"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Refrain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Repository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Series"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TextBody"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TextualEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="TuneName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Verse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="boundWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="exemplarOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="follows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCopy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCurrentVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDigitalImage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDocumentPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasFacsimile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPublisherVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isCopyOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDifferentFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isDigitalImageOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="isFacsimileOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="precedes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="relatedTo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="balladsSheet"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="edition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="extent"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="identifier"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="issue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="linesPage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="pageEnd"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="pageRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="pageStart"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="pages"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="price"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="volume"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="volumes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BalladSheet"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BookChapter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="BookReview"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="CaseReport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ConferencePaper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ConferencePoster"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="DiscussionPaper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="JournalArticle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PolicyBriefing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="PressArticle"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ResearchPaper"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="ResearchReport"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="StationersRegister"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="TechnicalReport"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="Abstract"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Addition"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Annotation"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AuthorName"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BalladText"/>
+        <Class IRI="TextualEntity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BookCover"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Colophon"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Contents"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Continuation"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Date"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Decoration"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Dedication"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Document"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DocumentPart"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EditionStatement"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="EndMatter"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Entrance"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Entry"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Epigraph"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Excipit"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FirstLine"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="FirstLineRefrain"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Gloss"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Heading"/>
+        <Class IRI="Title"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="HeadingNumber"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Illumination"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Illustration"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Imprint"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Incipit"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LastLine"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LastLineRefrain"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="LicenseStatement"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ManuscriptAddition"/>
+        <Class IRI="Addition"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MusicalScore"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Ornament"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Pagination"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Performance"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Prefatory"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Prose"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Quote"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Reference"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Refrain"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Repository"/>
+        <Class IRI="http://www.w3.org/ns/prov#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Series"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TextBody"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TextualEntity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Title"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="TuneName"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Verse"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCurrentVersion"/>
+        <ObjectProperty IRI="hasVersion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasDigitalImage"/>
+        <ObjectProperty IRI="hasCopy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasFacsimile"/>
+        <ObjectProperty IRI="hasCopy"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasPublisherVersion"/>
+        <ObjectProperty IRI="hasVersion"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isDigitalImageOf"/>
+        <ObjectProperty IRI="isCopyOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="isFacsimileOf"/>
+        <ObjectProperty IRI="isCopyOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="follows"/>
+        <ObjectProperty IRI="precedes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasCopy"/>
+        <ObjectProperty IRI="isCopyOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasDigitalImage"/>
+        <ObjectProperty IRI="isDigitalImageOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasFacsimile"/>
+        <ObjectProperty IRI="isFacsimileOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDocumentPart"/>
+        <Class IRI="DocumentPart"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Abstract</IRI>
+        <Literal datatypeIRI="&xsd;string">A document part containing a summary of the contents of a book, article, or speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Addition</IRI>
+        <Literal datatypeIRI="&xsd;string">A document part that is added or joined</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Annotation</IRI>
+        <Literal datatypeIRI="&xsd;string">A note by way of explanation or comment added to a text or diagram.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>AuthorName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing name of author, not as attributed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BalladSheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: Ballads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BalladSheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: A single printed item: the ballad in hand.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BalladText</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: The ballad as a lyric, made up of an aggregation of text elements and associated elements e.g. Author Element.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BookChapter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BookChapter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: one of the main divisions of a book. Chapters can be numbered or titled or both.
+
+source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>BookCover</IRI>
+        <Literal datatypeIRI="&xsd;string">Protective covering used to bind together the pages of a book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BookReview</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BookReview</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: a critical appraisal of a book published in a newspaper or magazine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Colophon</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Colophon</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing technical information such as edition dates, copyrights, typefaces and the name and address of the printer. In modern books usually on the verso of the title page, but in some books placed at the end.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConferencePaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConferencePaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: an essay or dissertation, read at a conference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConferencePoster</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConferencePoster</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: a poster that has the purpose of presenting research information by an individual or representatives of research teams at a conference with an academic or professional focus. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Contents</IRI>
+        <Literal datatypeIRI="&xsd;string">A list of the chapters or sections given at the front of a book or periodical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Continuation</IRI>
+        <Literal datatypeIRI="&xsd;string">A document part that is attached to and is an extension of an earlier version of a document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Date</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Dedication</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing an inscription or form of words dedicating a building, book, etc. to a person or deity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DiscussionPaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DiscussionPaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: A report about a particular subject that is written in order to provide information for a discussion, rather than one that provides information that will not change.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Document</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A piece of written, printed, or electronic matter that provides information or evidence or that serves as an official record.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DocumentPart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A part of a document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>EditionStatement</IRI>
+        <Literal datatypeIRI="&xsd;string">A document part that contains a statement describing the edition of a book, newspaper or other published material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>EndMatter</IRI>
+        <Literal datatypeIRI="&xsd;string">Document part that follows the main content of the book. This may include any one of the following: epilogue, afterword, conclusion, postscript, glossary, bibliography, index, or colophon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>EndMatter</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Entrance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing the opening text of a written work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Entry</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part that is an item written or printed in a diary, list, account book, or reference book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Epigraph</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Epigraph_(literature)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Epigraph</IRI>
+        <Literal datatypeIRI="&xsd;string">Document part containing a phrase, quotation, or poem. The epigraph may serve as a preface, as a summary, as a counter-example, or to link the work to a wider literary canon, either to invite comparison, or to enlist a conventional context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>FirstLineRefrain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the first line of the refrain in a musical creative work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Gloss</IRI>
+        <Literal datatypeIRI="&xsd;string">A document part that contains an explanation, interpretation, or paraphrase of a text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Heading</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing a title at the head of a page or section of a book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>HeadingNumber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing the number associated with a heading, that is, a title at the head of a page or section of a book</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Illumination</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing an illumination.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Illustration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing an illustration (pictorial content).
+
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Imprint</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the text of the imprint. Imprints may list printer, publisher, place of publication and sale.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Incipit</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Incipit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Incipit</IRI>
+        <Literal datatypeIRI="&xsd;string">Document part containing the first few words of the opening line of a text, such as a poem, song, or book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>JournalArticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>JournalArticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: a piece of writing included with others in a journal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>LastLine</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing the last line of a creative work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>LastLineRefrain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the last line of the refrain in a musical creative work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>LicenseStatement</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the license statement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>MusicalScore</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing musical score of a tune.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Ornament</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing a printer&apos;s ornament.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Pagination</IRI>
+        <Literal datatypeIRI="&xsd;string">The sequence of numbers assigned to pages in a book or periodical.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Performance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing description of performance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Prefatory</IRI>
+        <Literal datatypeIRI="&xsd;string">Document part serving as an introduction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>PressArticle</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: a piece of writing included with others in the news media e.g. a newspaper.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Prose</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part that contains text that does not form the principal text body of the document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Quote</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing a quotation from a text or speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Reference</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing a source of information cited in a book or article.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Refrain</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the line or lines that are repeated in music or in verse.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Repository</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A place where things are or may be stored.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ResearchPaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ResearchPaper</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: A paper that is an academic work and that is usually published in an academic journal. It contains original research results or reviews existing results.
+
+source: https://en.wikipedia.org/wiki/Research_papers#Scholarly_paper</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Series</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing publisher&apos;s series name and/or number as printed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>StationersRegister</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: Ballads</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>StationersRegister</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: The Stationers’ Register was a record book maintained by the Stationers&apos; Company of London. The company is a trade guild given a royal charter in 1557 to regulate the various professions associated with the publishing industry, including printers, bookbinders, booksellers, and publishers in England
+
+For entrance of ballads, see Hyder E. Rollins, ‘An Analytical
+ Index to the Ballad-Entries (1557-1709) in the Registers of the Company of Stationers of London’, Studies in Philology, vol. 21, (1924); and R.S. Thomson, ‘The Development of the Broadside Ballad Trade and its Influence upon the Transmission of English Ballads’, (unpublished doctoral thesis, University of Cambridge, 1974)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TechnicalReport</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>TechnicalReport</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: a report that describes the process, progress, or results of technical or scientific research or the state of a technical or scientific research problem.
+
+source: https://en.wikipedia.org/wiki/Technical_report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>TextBody</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing main text of the document.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Title</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the title.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>TuneName</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the title of a tune.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Verse</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing verse, that is, writing arranged with a metrical rhythm, typically having a rhyme.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>balladsSheet</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Number of ballads on a sheet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>linesPage</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Total number of lines on a page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>pageEnd</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Number of last page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>pageStart</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Number of starting page</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>pages</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Number of pages</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>volume</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Identifier for volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>volumes</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Total number of volumes</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

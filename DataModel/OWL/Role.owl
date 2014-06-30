@@ -355,34 +355,16 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="academicSupervisorOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="advocateOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="attendeeOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="authorOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="backerOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="buyerOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="buysFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="chairOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="childOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="collaboratorOn"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="contributorOf"/>
@@ -397,25 +379,7 @@
         <ObjectProperty IRI="dedicatorOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="disqualifiedFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="emigrantFrom"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="engraverOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="exileFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="fatherOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="friendOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="funderOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="giverOf"/>
@@ -424,16 +388,7 @@
         <ObjectProperty IRI="givesGiftTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="guestOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="hasAcademicSupervisor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasAcquaintance"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasAdvocate"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasAttendee"/>
@@ -448,22 +403,10 @@
         <ObjectProperty IRI="hasBuyer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasChair"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasChild"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="hasCollaborator"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasColleague"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="hasContributor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasCorrespondent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasCreator"/>
@@ -484,12 +427,6 @@
         <ObjectProperty IRI="hasEngraver"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasExiledPerson"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasFather"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="hasFunder"/>
     </Declaration>
     <Declaration>
@@ -497,9 +434,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasGuest"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasHost"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasIllustrator"/>
@@ -517,13 +451,7 @@
         <ObjectProperty IRI="hasMember"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasMother"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="hasOwner"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasParent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasParticipant"/>
@@ -553,12 +481,6 @@
         <ObjectProperty IRI="hasTransmissionWith"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasVisitor"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="hasWitness"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="hostOf"/>
     </Declaration>
     <Declaration>
@@ -583,22 +505,13 @@
         <ObjectProperty IRI="memberOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="motherOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="movesTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="ownerOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="parentOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="participantOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="patronOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="printerOf"/>
@@ -625,9 +538,6 @@
         <ObjectProperty IRI="recipientOfLetter"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="refugeeOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="residentOf"/>
     </Declaration>
     <Declaration>
@@ -652,31 +562,10 @@
         <ObjectProperty IRI="sendsTo"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="supervisorOf"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="traderOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="tradesWith"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="travelsFrom"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="travelsTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="travelsWith"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="visitorTo"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="visits"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="witnessOf"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="Conrector"/>
@@ -747,13 +636,6 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Child"/>
-        <ObjectMinCardinality cardinality="2">
-            <ObjectProperty IRI="childOf"/>
-            <Class IRI="Parent"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Collaborator"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -767,13 +649,6 @@
     <SubClassOf>
         <Class IRI="Colleague"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Colleague"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="hasColleague"/>
-            <Class IRI="Colleague"/>
-        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Commentator"/>
@@ -906,13 +781,6 @@
         <Class IRI="Parent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Father"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="fatherOf"/>
-            <Class IRI="Child"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Friend"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -950,13 +818,6 @@
     <SubClassOf>
         <Class IRI="Guest"/>
         <Class IRI="Visitor"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Guest"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="guestOf"/>
-            <Class IRI="Host"/>
-        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Host"/>
@@ -1045,13 +906,6 @@
         <Class IRI="Parent"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Mother"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="motherOf"/>
-            <Class IRI="Child"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="MusicComposer"/>
         <Class IRI="Composer"/>
     </SubClassOf>
@@ -1062,20 +916,6 @@
     <SubClassOf>
         <Class IRI="Parent"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Parent"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="hasChild"/>
-            <Class IRI="Child"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Parent"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="parentOf"/>
-            <Class IRI="Child"/>
-        </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Participant"/>
@@ -1182,13 +1022,6 @@
         <Class IRI="Traveller"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="TravelCompanion"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="travelsWith"/>
-            <Class IRI="TravelCompanion"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Traveller"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -1221,18 +1054,6 @@
         <ObjectProperty IRI="http://purl.org/dc/terms/contributor"/>
         <ObjectProperty IRI="hasContributor"/>
     </EquivalentObjectProperties>
-    <EquivalentObjectProperties>
-        <ObjectProperty IRI="childOf"/>
-        <ObjectProperty IRI="hasParent"/>
-    </EquivalentObjectProperties>
-    <EquivalentObjectProperties>
-        <ObjectProperty IRI="hasChild"/>
-        <ObjectProperty IRI="parentOf"/>
-    </EquivalentObjectProperties>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="academicSupervisorOf"/>
-        <ObjectProperty IRI="supervisorOf"/>
-    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="attendeeOf"/>
         <ObjectProperty IRI="participantOf"/>
@@ -1244,14 +1065,6 @@
     <SubObjectPropertyOf>
         <ObjectProperty IRI="buysFrom"/>
         <ObjectProperty IRI="tradesWith"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="fatherOf"/>
-        <ObjectProperty IRI="parentOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="funderOf"/>
-        <ObjectProperty IRI="backerOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="giverOf"/>
@@ -1274,10 +1087,6 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasFather"/>
-        <ObjectProperty IRI="hasParent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="hasFunder"/>
         <ObjectProperty IRI="hasBacker"/>
     </SubObjectPropertyOf>
@@ -1290,24 +1099,12 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasMother"/>
-        <ObjectProperty IRI="hasParent"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="hasPatron"/>
         <ObjectProperty IRI="hasBacker"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasRecipient"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="motherOf"/>
-        <ObjectProperty IRI="parentOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="patronOf"/>
-        <ObjectProperty IRI="backerOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="receivesFrom"/>
@@ -1354,14 +1151,6 @@
         <ObjectProperty IRI="hasTransmissionWith"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasAcademicSupervisor"/>
-        <ObjectProperty IRI="academicSupervisorOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="hasAdvocate"/>
-        <ObjectProperty IRI="advocateOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="attendeeOf"/>
         <ObjectProperty IRI="hasAttendee"/>
     </InverseObjectProperties>
@@ -1370,24 +1159,12 @@
         <ObjectProperty IRI="hasAuthor"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="backerOf"/>
-        <ObjectProperty IRI="hasBacker"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="buyerOf"/>
         <ObjectProperty IRI="hasBuyer"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="sellsTo"/>
         <ObjectProperty IRI="buysFrom"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="hasChair"/>
-        <ObjectProperty IRI="chairOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="hasChild"/>
-        <ObjectProperty IRI="childOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasContributor"/>
@@ -1406,32 +1183,12 @@
         <ObjectProperty IRI="hasDedicator"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasEngraver"/>
         <ObjectProperty IRI="engraverOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="exileFrom"/>
-        <ObjectProperty IRI="hasExiledPerson"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="hasFather"/>
-        <ObjectProperty IRI="fatherOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="funderOf"/>
-        <ObjectProperty IRI="hasFunder"/>
+        <ObjectProperty IRI="hasEngraver"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasGiver"/>
         <ObjectProperty IRI="giverOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="hasGuest"/>
-        <ObjectProperty IRI="guestOf"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="hasHost"/>
-        <ObjectProperty IRI="hostOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasIllustrator"/>
@@ -1442,32 +1199,20 @@
         <ObjectProperty IRI="inscriberOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasIntermediary"/>
         <ObjectProperty IRI="intermediaryOf"/>
+        <ObjectProperty IRI="hasIntermediary"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="memberOf"/>
         <ObjectProperty IRI="hasMember"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="motherOf"/>
-        <ObjectProperty IRI="hasMother"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="hasOwner"/>
         <ObjectProperty IRI="ownerOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="parentOf"/>
-        <ObjectProperty IRI="hasParent"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="participantOf"/>
         <ObjectProperty IRI="hasParticipant"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="hasPatron"/>
-        <ObjectProperty IRI="patronOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="printerOf"/>
@@ -1490,18 +1235,6 @@
         <ObjectProperty IRI="hasSeller"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="supervisorOf"/>
-        <ObjectProperty IRI="hasSupervisor"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="visits"/>
-        <ObjectProperty IRI="hasVisitor"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="witnessOf"/>
-        <ObjectProperty IRI="hasWitness"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
         <ObjectProperty IRI="interviewedBy"/>
         <ObjectProperty IRI="interviews"/>
     </InverseObjectProperties>
@@ -1510,19 +1243,7 @@
         <ObjectProperty IRI="receivesFrom"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
-        <ObjectProperty IRI="friendOf"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="hasAcquaintance"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
         <ObjectProperty IRI="hasCollaborator"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="hasColleague"/>
-    </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="hasCorrespondent"/>
     </SymmetricObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="hasTransmissionWith"/>
@@ -1533,17 +1254,6 @@
     <SymmetricObjectProperty>
         <ObjectProperty IRI="tradesWith"/>
     </SymmetricObjectProperty>
-    <SymmetricObjectProperty>
-        <ObjectProperty IRI="travelsWith"/>
-    </SymmetricObjectProperty>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="academicSupervisorOf"/>
-        <Class IRI="AcademicSupervisor"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="advocateOf"/>
-        <Class IRI="Advocate"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="attendeeOf"/>
         <Class IRI="Attendee"/>
@@ -1557,44 +1267,8 @@
         <Class IRI="Buyer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="chairOf"/>
-        <Class IRI="Chair"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="childOf"/>
-        <Class IRI="Child"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="collaboratorOn"/>
-        <Class IRI="Collaborator"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="dedicatorOf"/>
         <Class IRI="Dedicator"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="disqualifiedFrom"/>
-        <Class IRI="Disqualified"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="emigrantFrom"/>
-        <Class IRI="Emigrant"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="exileFrom"/>
-        <Class IRI="ExiledPerson"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="fatherOf"/>
-        <Class IRI="Father"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="friendOf"/>
-        <Class IRI="Friend"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="funderOf"/>
-        <Class IRI="Funder"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="giverOf"/>
@@ -1605,28 +1279,8 @@
         <Class IRI="GiftGiver"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="guestOf"/>
-        <Class IRI="Guest"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasAcquaintance"/>
-        <Class IRI="Acquaintance"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasChild"/>
-        <Class IRI="Parent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasCollaborator"/>
         <Class IRI="Collaborator"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasColleague"/>
-        <Class IRI="Colleague"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasCorrespondent"/>
-        <Class IRI="Correspondent"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasEmployee"/>
@@ -1637,28 +1291,12 @@
         <Class IRI="Employee"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasFather"/>
-        <Class IRI="Child"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="hasFunder"/>
         <Class IRI="Recipient"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGuest"/>
         <Class IRI="Host"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasHost"/>
-        <Class IRI="Guest"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasMother"/>
-        <Class IRI="Child"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasParent"/>
-        <Class IRI="Child"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hostOf"/>
@@ -1693,14 +1331,6 @@
         <Class IRI="Member"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="motherOf"/>
-        <Class IRI="Mother"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="parentOf"/>
-        <Class IRI="Parent"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="printerOf"/>
         <Class IRI="Printer"/>
     </ObjectPropertyDomain>
@@ -1727,10 +1357,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="recipientOfLetter"/>
         <Class IRI="LetterRecipient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="refugeeOf"/>
-        <Class IRI="Refugee"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="residesWith"/>
@@ -1768,69 +1394,17 @@
         <ObjectProperty IRI="tradesWith"/>
         <Class IRI="Trader"/>
     </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="travelsFrom"/>
-        <Class IRI="Traveller"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="travelsTo"/>
-        <Class IRI="Traveller"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="travelsWith"/>
-        <Class IRI="TravelCompanion"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="visitorTo"/>
-        <Class IRI="Visitor"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="visits"/>
-        <Class IRI="Visitor"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="witnessOf"/>
-        <Class IRI="Witness"/>
-    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="buysFrom"/>
         <Class IRI="Seller"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="childOf"/>
-        <Class IRI="Parent"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="fatherOf"/>
-        <Class IRI="Child"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="friendOf"/>
-        <Class IRI="Friend"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="funderOf"/>
-        <Class IRI="Recipient"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="givesGiftTo"/>
         <Class IRI="Recipient"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="guestOf"/>
-        <Class IRI="Host"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="hasAcademicSupervisor"/>
         <Class IRI="AcademicSupervisor"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasAcquaintance"/>
-        <Class IRI="Acquaintance"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasAdvocate"/>
-        <Class IRI="Advocate"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAttendee"/>
@@ -1841,24 +1415,8 @@
         <Class IRI="Buyer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasChair"/>
-        <Class IRI="Chair"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasChild"/>
-        <Class IRI="Child"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="hasCollaborator"/>
         <Class IRI="Collaborator"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasColleague"/>
-        <Class IRI="Colleague"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasCorrespondent"/>
-        <Class IRI="Correspondent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasDedicator"/>
@@ -1873,10 +1431,6 @@
         <Class IRI="Employer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasExiledPerson"/>
-        <Class IRI="ExiledPerson"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="hasFunder"/>
         <Class IRI="Funder"/>
     </ObjectPropertyRange>
@@ -1887,10 +1441,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGuest"/>
         <Class IRI="Guest"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasHost"/>
-        <Class IRI="Host"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasIllustrator"/>
@@ -1911,14 +1461,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasMember"/>
         <Class IRI="Member"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasMother"/>
-        <Class IRI="Mother"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasParent"/>
-        <Class IRI="Parent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasPrinter"/>
@@ -1945,14 +1487,6 @@
         <Class IRI="Supervisor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasVisitor"/>
-        <Class IRI="Visitor"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="hasWitness"/>
-        <Class IRI="Witness"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="hostOf"/>
         <Class IRI="Guest"/>
     </ObjectPropertyRange>
@@ -1963,14 +1497,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="interviews"/>
         <Class IRI="Interviewee"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="motherOf"/>
-        <Class IRI="Child"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="parentOf"/>
-        <Class IRI="Child"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="receivesFrom"/>
@@ -1993,21 +1519,9 @@
         <Class IRI="Buyer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="supervisorOf"/>
-        <Class IRI="Supervisor"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="tradesWith"/>
         <Class IRI="Trader"/>
     </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="travelsWith"/>
-        <Class IRI="TravelCompanion"/>
-    </ObjectPropertyRange>
-    <DisjointObjectProperties>
-        <ObjectProperty IRI="travelsFrom"/>
-        <ObjectProperty IRI="travelsTo"/>
-    </DisjointObjectProperties>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AcademicSupervisor</IRI>
@@ -2499,19 +2013,9 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who sees an event.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>friendOf</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/vocab/relationship/friendOf</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>givesGiftTo</IRI>
         <Literal datatypeIRI="&xsd;string">Freely transfer the possession of a gift to (someone)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>hasAcquaintance</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://purl.org/vocab/relationship/acquaintanceOf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2522,11 +2026,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>hasCollaborator</IRI>
         <Literal datatypeIRI="&xsd;anyURI">http://purl.org/cerif/frapo/collaboratesWith</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>hasColleague</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Relationship between two people who are working within the same organisation.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

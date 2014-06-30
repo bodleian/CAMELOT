@@ -148,6 +148,16 @@
     
 
 
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ESTC -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ESTC">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel>ESTC number</skos:prefLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN -->
 
     <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISBN">
@@ -190,11 +200,21 @@
     <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISSN">
         <rdf:type rdf:resource="&skos;Concept"/>
         <skos:editorialNote>Regular expression: \d{4}\-\d{3}[\dX]</skos:editorialNote>
-        <skos:prefLabel>ISSN</skos:prefLabel>
         <skos:definition>A unique eight-digit number used to identify a periodical publication at a specific media type.  It is internationally accepted as a fundamental identifier for distinguishing between identical serial titles and facilitating checking and ordering procedures, collection management, legal deposit, interlibrary loans etc.
 
 When a periodical is published, with the same content, in two or more different media, a different ISSN is assigned to each media type – in particular the print and electronic media types, named print ISSN (p-ISSN) and electronic ISSN (e-ISSN or eISSN).</skos:definition>
+        <skos:prefLabel>ISSN</skos:prefLabel>
         <skos:altLabel>International Standard Serial Number</skos:altLabel>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISTC -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISTC">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:prefLabel>ISTC number</skos:prefLabel>
         <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
     </owl:NamedIndividual>
     
@@ -308,6 +328,24 @@ The United States National Library of Medicine (NLM) at the National Institutes 
     
 
 
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#barcode -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#barcode">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#catalogueNumber -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#catalogueNumber">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#eISSN -->
 
     <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#eISSN">
@@ -316,6 +354,24 @@ The United States National Library of Medicine (NLM) at the National Institutes 
         <skos:altLabel>Electronic International Standard Serial Number</skos:altLabel>
         <skos:definition>An ISSN for a periodical that is published in an electronic media type.</skos:definition>
         <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#ISSN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#formerShelfmark -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#formerShelfmark">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#shelfmark -->
+
+    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#shelfmark">
+        <rdf:type rdf:resource="&skos;Concept"/>
+        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#Identifier"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
