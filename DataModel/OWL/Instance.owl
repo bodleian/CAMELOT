@@ -534,7 +534,7 @@
         <Literal datatypeIRI="&xsd;string">A document part that is added or joined</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Annotation</IRI>
         <Literal datatypeIRI="&xsd;string">A document part that contains a note by way of explanation or comment added to a text or diagram.</Literal>
     </AnnotationAssertion>
@@ -571,7 +571,7 @@
 source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>BookCover</IRI>
         <Literal datatypeIRI="&xsd;string">Document part that consists of the protective covering used to bind together the pages of a book.</Literal>
     </AnnotationAssertion>
@@ -591,7 +591,7 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Colophon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing technical information such as edition dates, copyrights, typefaces and the name and address of the printer. In modern books usually on the verso of the title page, but in some books placed at the end.</Literal>
     </AnnotationAssertion>
@@ -616,27 +616,27 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Definition: a poster that has the purpose of presenting research information by an individual or representatives of research teams at a conference with an academic or professional focus. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Contents</IRI>
         <Literal datatypeIRI="&xsd;string">Document part containing a list of the chapters or sections given at the front of a book or periodical.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Continuation</IRI>
         <Literal datatypeIRI="&xsd;string">A document part that is attached to and is an extension of an earlier version of a document.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Date</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing a date.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Decoration</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing a decoration.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Dedication</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing an inscription or form of words dedicating a building, book, etc. to a person or deity.</Literal>
     </AnnotationAssertion>
@@ -661,7 +661,7 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">A part of a document</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EditionStatement</IRI>
         <Literal datatypeIRI="&xsd;string">A document part that contains a statement describing the edition of a book, newspaper or other published material.</Literal>
     </AnnotationAssertion>
@@ -671,17 +671,17 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EndMatter</IRI>
         <Literal datatypeIRI="&xsd;string">Document part that follows the main content of the book. This may include any one of the following: epilogue, afterword, conclusion, postscript, glossary, bibliography, index, or colophon.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Entrance</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing the opening text of a written work.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Entry</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part that is an item written or printed in a diary, list, account book, or reference book.</Literal>
     </AnnotationAssertion>
@@ -691,44 +691,44 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Epigraph_(literature)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Epigraph</IRI>
         <Literal datatypeIRI="&xsd;string">Document part containing a phrase, quotation, or poem. The epigraph may serve as a preface, as a summary, as a counter-example, or to link the work to a wider literary canon, either to invite comparison, or to enlist a conventional context.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>FirstLineRefrain</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the first line of the refrain in a musical creative work.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Gloss</IRI>
         <Literal datatypeIRI="&xsd;string">A document part that contains an explanation, interpretation, or paraphrase of a text.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Heading</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing a title at the head of a page or section of a book.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>HeadingNumber</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing the number associated with a heading, that is, a title at the head of a page or section of a book</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Illumination</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing an illumination.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Illustration</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing an illustration (pictorial content).
 
 </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Imprint</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the text of the imprint. Imprints may list printer, publisher, place of publication and sale.</Literal>
     </AnnotationAssertion>
@@ -738,7 +738,7 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Incipit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Incipit</IRI>
         <Literal datatypeIRI="&xsd;string">Document part containing the first few words of the opening line of a text, such as a poem, song, or book.</Literal>
     </AnnotationAssertion>
@@ -753,42 +753,42 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Definition: a piece of writing included with others in a journal.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>LastLine</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing the last line of a creative work.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>LastLineRefrain</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the last line of the refrain in a musical creative work.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>LicenseStatement</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the license statement.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>MusicalScore</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing musical score of a tune.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Ornament</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing a printer&apos;s ornament.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Pagination</IRI>
         <Literal datatypeIRI="&xsd;string">The sequence of numbers assigned to pages in a book or periodical.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Performance</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing description of performance</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Prefatory</IRI>
         <Literal datatypeIRI="&xsd;string">Document part serving as an introduction</Literal>
     </AnnotationAssertion>
@@ -798,7 +798,7 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Definition: a piece of writing included with others in the news media e.g. a newspaper.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Prose</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part that contains text that does not form the principal text body of the document.</Literal>
     </AnnotationAssertion>
@@ -808,17 +808,17 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing a quotation from a text or speech.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Reference</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing a source of information cited in a book or article.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Refrain</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the line or lines that are repeated in music or in verse.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Repository</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A place where things are or may be stored.</Literal>
     </AnnotationAssertion>
@@ -835,7 +835,7 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
 source: https://en.wikipedia.org/wiki/Research_papers#Scholarly_paper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Series</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing publisher&apos;s series name and/or number as printed.</Literal>
     </AnnotationAssertion>
@@ -865,17 +865,17 @@ For entrance of ballads, see Hyder E. Rollins, ‘An Analytical
 source: https://en.wikipedia.org/wiki/Technical_report</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>TextBody</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the main text of the document.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Title</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the title.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>TuneName</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the title of a tune.</Literal>
     </AnnotationAssertion>
@@ -885,37 +885,37 @@ source: https://en.wikipedia.org/wiki/Technical_report</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">A document part containing verse, that is, writing arranged with a metrical rhythm, typically having a rhyme.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>balladsSheet</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Number of ballads on a sheet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>linesPage</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Total number of lines on a page</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>pageEnd</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Number of last page</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>pageStart</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Number of starting page</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>pages</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Number of pages</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>volume</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Identifier for volume</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>volumes</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Total number of volumes</Literal>
     </AnnotationAssertion>

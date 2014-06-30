@@ -511,7 +511,7 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">A written work published in a print or electronic medium. It may be for the purpose of propagating the news, research results, academic analysis or debate.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>BalladSheetWork</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A creative work corresponding to the printer&apos;s forme, stereotype plate or other printing-surface for a ballad sheet from which invariant copies (ballad sheet items) were produced.</Literal>
     </AnnotationAssertion>
@@ -585,12 +585,12 @@ source: http://en.wikipedia.org/wiki/Edited_volume </Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">A short piece of writing on a particular subject.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Ijaza</IRI>
         <Literal datatypeIRI="&xsd;string">The grant of permission or authority usually represented by a certificate used primarily by Sunni Muslims to indicate that one has been authorized by a higher authority to transmit a certain subject or text of Islamic knowledge.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Illustration</IRI>
         <Literal datatypeIRI="&xsd;string">A creative work that consists of a picture illustrating a book, newspaper, etc.</Literal>
     </AnnotationAssertion>
@@ -625,7 +625,7 @@ source: http://en.wikipedia.org/wiki/Edited_volume </Literal>
         <Literal datatypeIRI="&xsd;anyURI">https://en.wikipedia.org/wiki/Monograph</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Monograph</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A detailed written study in the form of an essay or book, of a single specialized subject or an aspect of it, usually by a single author.
 
@@ -663,7 +663,7 @@ Librarians consider a monograph to be a nonserial publication complete in one vo
         <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>PatentDocument</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A document relating to a patent, the government authority or licence conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.</Literal>
     </AnnotationAssertion>
@@ -684,7 +684,7 @@ Policy briefs can take different formats. A typical format is a single A4 sheet 
 source: http://www.fao.org/docrep/014/i2195e/i2195e03.pdf</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Poster</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A piece of printed paper designed to be attached to a wall or vertical surface.</Literal>
     </AnnotationAssertion>
@@ -726,7 +726,7 @@ source: http://www.oxforddictionaries.com/definition/english/report</Literal>
         <Literal datatypeIRI="&xsd;string">A representation of the external form of a person or thing in art</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Text</IRI>
         <Literal datatypeIRI="&xsd;string">A written creative work, that may be handwritten or printed, but that primarily contains textual content.
 </Literal>
@@ -747,7 +747,7 @@ source: http://www.oxforddictionaries.com/definition/english/report</Literal>
         <Literal datatypeIRI="&xsd;string">A written work that is the conversion of written work from one language to another.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Tune</IRI>
         <Literal datatypeIRI="&xsd;string">A creative work that consists of a melody, especially one which characterizes a certain piece of music.</Literal>
     </AnnotationAssertion>
@@ -757,17 +757,17 @@ source: http://www.oxforddictionaries.com/definition/english/report</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">link to a classification scheme.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>hasGenre</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A style or category of art, music, or literature.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>hasSubject</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A thing that is being discussed, described, or dealt with.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>hasTheme</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">An idea that recurs in or pervades a work of art or literature.</Literal>
     </AnnotationAssertion>
@@ -782,17 +782,17 @@ source: http://www.oxforddictionaries.com/definition/english/report</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">A publication that forms part of a regular series of publications</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>subtitle</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A subordinate title of a published work or article giving additional information about its content.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>title</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The name of a book, composition, or other artistic work.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="rdfs:comment"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://vocab.ox.ac.uk/camelot/CreativeWorkInstance#CreativeWork</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A work that is a distinct intellectual or artistic creation and is the product of creative effort.</Literal>
     </AnnotationAssertion>
