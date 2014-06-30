@@ -49,9 +49,6 @@
         <Class IRI="Antiquary"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Apothecary"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Architect"/>
     </Declaration>
     <Declaration>
@@ -67,9 +64,6 @@
         <Class IRI="Astronomer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Barrister"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Biographer"/>
     </Declaration>
     <Declaration>
@@ -82,16 +76,10 @@
         <Class IRI="Classicist"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CourtPhysician"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Diplomat"/>
     </Declaration>
     <Declaration>
         <Class IRI="DisqualificationFromOffice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Doctor"/>
     </Declaration>
     <Declaration>
         <Class IRI="Dramatist"/>
@@ -112,16 +100,10 @@
         <Class IRI="GovernmentOfficial"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Herbalist"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Historian"/>
     </Declaration>
     <Declaration>
         <Class IRI="HoldOffice"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Iatrochemist"/>
     </Declaration>
     <Declaration>
         <Class IRI="Illustrator"/>
@@ -136,9 +118,6 @@
         <Class IRI="Judge"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Juror"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Keeper"/>
     </Declaration>
     <Declaration>
@@ -148,10 +127,7 @@
         <Class IRI="LearnedOrganization"/>
     </Declaration>
     <Declaration>
-        <Class IRI="LegalAdvocate"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="LegalPost"/>
+        <Class IRI="LegalProfession"/>
     </Declaration>
     <Declaration>
         <Class IRI="LetterCarrier"/>
@@ -169,10 +145,10 @@
         <Class IRI="Mathematician"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MedicalPost"/>
+        <Class IRI="MedicalPractitioner"/>
     </Declaration>
     <Declaration>
-        <Class IRI="MedicalPractitioner"/>
+        <Class IRI="MedicalProfession"/>
     </Declaration>
     <Declaration>
         <Class IRI="MembershipProfessionalBody"/>
@@ -245,12 +221,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Soldier"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Solicitor"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Surgeon"/>
     </Declaration>
     <Declaration>
         <Class IRI="Theologian"/>
@@ -288,10 +258,6 @@
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Apothecary"/>
-        <Class IRI="MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Architect"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
@@ -312,10 +278,6 @@
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Barrister"/>
-        <Class IRI="LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Biographer"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
@@ -332,20 +294,12 @@
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="CourtPhysician"/>
-        <Class IRI="MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Diplomat"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DisqualificationFromOffice"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Doctor"/>
-        <Class IRI="MedicalPost"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Dramatist"/>
@@ -372,20 +326,12 @@
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Herbalist"/>
-        <Class IRI="MedicalPost"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Historian"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="HoldOffice"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Iatrochemist"/>
-        <Class IRI="MedicalPost"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Illustrator"/>
@@ -401,11 +347,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Judge"/>
-        <Class IRI="LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Juror"/>
-        <Class IRI="LegalPost"/>
+        <Class IRI="LegalProfession"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Keeper"/>
@@ -413,18 +355,14 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Lawyer"/>
-        <Class IRI="LegalPost"/>
+        <Class IRI="LegalProfession"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="LearnedOrganization"/>
         <Class IRI="http://www.w3.org/ns/org#FormalOrganization"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="LegalAdvocate"/>
-        <Class IRI="LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="LegalPost"/>
+        <Class IRI="LegalProfession"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
@@ -448,12 +386,12 @@
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="MedicalPost"/>
-        <Class IRI="http://www.w3.org/ns/org#Post"/>
+        <Class IRI="MedicalPractitioner"/>
+        <Class IRI="MedicalProfession"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="MedicalPractitioner"/>
-        <Class IRI="MedicalPost"/>
+        <Class IRI="MedicalProfession"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="MembershipProfessionalBody"/>
@@ -485,7 +423,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Notary"/>
-        <Class IRI="LegalPost"/>
+        <Class IRI="LegalProfession"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Office"/>
@@ -505,7 +443,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Physician"/>
-        <Class IRI="MedicalPost"/>
+        <Class IRI="MedicalProfession"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Poet"/>
@@ -554,14 +492,6 @@
     <SubClassOf>
         <Class IRI="Soldier"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Solicitor"/>
-        <Class IRI="LegalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Surgeon"/>
-        <Class IRI="MedicalPost"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Theologian"/>

@@ -138,9 +138,6 @@
         <Class IRI="Tutor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="University"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="UniversityMatriculation"/>
     </Declaration>
     <Declaration>
@@ -208,13 +205,6 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="authorOf"/>
             <Class IRI="http://purl.org/ontology/bibo/Document"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="Graduate"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="graduateOf"/>
-            <Class IRI="University"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -292,13 +282,6 @@
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="EducationalPost"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.w3.org/ns/org#postIn"/>
-            <Class IRI="University"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Entry"/>
         <Class IRI="http://purl.org/ontology/bibo/DocumentPart"/>
     </SubClassOf>
@@ -341,13 +324,6 @@
     <SubClassOf>
         <Class IRI="Professor"/>
         <Class IRI="EducationalPost"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Professor"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://www.w3.org/ns/org#postIn"/>
-            <Class IRI="University"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="PromotionToDegree"/>
@@ -394,10 +370,6 @@
         <Class IRI="Teacher"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="University"/>
-        <Class IRI="AcademicInstitution"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="UniversityMatriculation"/>
         <Class IRI="Matriculation"/>
     </SubClassOf>
@@ -434,8 +406,8 @@
         <ObjectProperty IRI="graduateOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasRespondent"/>
         <ObjectProperty IRI="hasPraeses"/>
+        <ObjectProperty IRI="hasRespondent"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="registerOf"/>
@@ -472,10 +444,6 @@
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasEntryIn"/>
         <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="hasGraduate"/>
-        <Class IRI="University"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasPraeses"/>
@@ -540,10 +508,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="authorOf"/>
         <Class IRI="http://purl.org/ontology/bibo/Document"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="graduateOf"/>
-        <Class IRI="University"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAuthor"/>
@@ -814,11 +778,6 @@ source: https://en.wikipedia.org/wiki/Matriculation</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Tutor</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A private teacher, typically one who teaches a single pupil or a very small group</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>University</IRI>
-        <Literal datatypeIRI="&xsd;string">A high-level educational institution in which students study for degrees and academic research is done.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

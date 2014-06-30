@@ -76,9 +76,6 @@
         <Class IRI="Buyer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="CalledToBar"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Chair"/>
     </Declaration>
     <Declaration>
@@ -176,9 +173,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="Father"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Friend"/>
     </Declaration>
     <Declaration>
         <Class IRI="Funder"/>
@@ -624,10 +618,6 @@
         <Class IRI="Trader"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="CalledToBar"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Chair"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -779,10 +769,6 @@
     <SubClassOf>
         <Class IRI="Father"/>
         <Class IRI="Parent"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Friend"/>
-        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Funder"/>
@@ -1183,8 +1169,8 @@
         <ObjectProperty IRI="hasDedicator"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="engraverOf"/>
         <ObjectProperty IRI="hasEngraver"/>
+        <ObjectProperty IRI="engraverOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasGiver"/>
@@ -1199,8 +1185,8 @@
         <ObjectProperty IRI="inscriberOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="intermediaryOf"/>
         <ObjectProperty IRI="hasIntermediary"/>
+        <ObjectProperty IRI="intermediaryOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="memberOf"/>
@@ -1589,11 +1575,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>CalledToBar</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who is qualified to be allowed to argue in court on behalf of another party</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Chair</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who acts as chairperson of who presides over (an organization, meeting, or public event).</Literal>
     </AnnotationAssertion>
@@ -1746,11 +1727,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Father</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The family role of a man in relation to his child or children</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Friend</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A person with whom one has a bond of mutual affection, typically one exclusive of sexual or family relations.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
