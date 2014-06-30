@@ -17,9 +17,14 @@ Vocabularies:
 
 CREATIVE WORK
 
+Creative Work and its Instantiation Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/CreativeWorkInstance.owl">documentation</a>
+
 Creative Work Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/CreativeWork.owl">documentation</a> 
 
-Creative Work and its Instantiation Ontology - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/CreativeWorkInstance.owl">documentation</a>
+Instance Ontology  - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/Instance.owl">documentation</a> 
+
+Bibliographic Role Ontology  - <a href="http://www.essepuntato.it/lode/owlapi/reasoner/https://raw.githubusercontent.com/BDLSS/CAMELOT/master/DataModel/OWL/BibliographicRole.owl">documentation</a> 
+
 
 SOCIAL ACTIVITY
 
