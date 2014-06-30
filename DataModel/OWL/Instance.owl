@@ -21,8 +21,6 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://vocab.ox.ac.uk/camelot/CreativeWorkInstance#</Import>
-    <Import>http://www.w3.org/ns/prov#</Import>
     <Declaration>
         <Class IRI="Abstract"/>
     </Declaration>
@@ -120,9 +118,6 @@
         <Class IRI="LicenseStatement"/>
     </Declaration>
     <Declaration>
-        <Class IRI="ManuscriptAddition"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="MusicalScore"/>
     </Declaration>
     <Declaration>
@@ -157,9 +152,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="TextBody"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="TextualEntity"/>
     </Declaration>
     <Declaration>
         <Class IRI="Title"/>
@@ -317,7 +309,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="BalladText"/>
-        <Class IRI="TextualEntity"/>
+        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="BookCover"/>
@@ -428,10 +420,6 @@
         <Class IRI="DocumentPart"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="ManuscriptAddition"/>
-        <Class IRI="Addition"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="MusicalScore"/>
         <Class IRI="DocumentPart"/>
     </SubClassOf>
@@ -480,10 +468,6 @@
         <Class IRI="DocumentPart"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="TextualEntity"/>
-        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Title"/>
         <Class IRI="DocumentPart"/>
     </SubClassOf>
@@ -520,8 +504,8 @@
         <ObjectProperty IRI="isCopyOf"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="follows"/>
         <ObjectProperty IRI="precedes"/>
+        <ObjectProperty IRI="follows"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasCopy"/>
@@ -532,8 +516,8 @@
         <ObjectProperty IRI="isDigitalImageOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasFacsimile"/>
         <ObjectProperty IRI="isFacsimileOf"/>
+        <ObjectProperty IRI="hasFacsimile"/>
     </InverseObjectProperties>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasDocumentPart"/>
@@ -552,7 +536,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
         <IRI>Annotation</IRI>
-        <Literal datatypeIRI="&xsd;string">A note by way of explanation or comment added to a text or diagram.</Literal>
+        <Literal datatypeIRI="&xsd;string">A document part that contains a note by way of explanation or comment added to a text or diagram.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
@@ -589,7 +573,7 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
         <IRI>BookCover</IRI>
-        <Literal datatypeIRI="&xsd;string">Protective covering used to bind together the pages of a book.</Literal>
+        <Literal datatypeIRI="&xsd;string">Document part that consists of the protective covering used to bind together the pages of a book.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -634,7 +618,7 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
         <IRI>Contents</IRI>
-        <Literal datatypeIRI="&xsd;string">A list of the chapters or sections given at the front of a book or periodical.</Literal>
+        <Literal datatypeIRI="&xsd;string">Document part containing a list of the chapters or sections given at the front of a book or periodical.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
@@ -644,7 +628,12 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
         <IRI>Date</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing date</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing a date.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
+        <IRI>Decoration</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing a decoration.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
@@ -679,12 +668,12 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>EndMatter</IRI>
-        <Literal datatypeIRI="&xsd;string">Document part that follows the main content of the book. This may include any one of the following: epilogue, afterword, conclusion, postscript, glossary, bibliography, index, or colophon.</Literal>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
         <IRI>EndMatter</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
+        <Literal datatypeIRI="&xsd;string">Document part that follows the main content of the book. This may include any one of the following: epilogue, afterword, conclusion, postscript, glossary, bibliography, index, or colophon.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
@@ -878,7 +867,7 @@ source: https://en.wikipedia.org/wiki/Technical_report</Literal>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>
         <IRI>TextBody</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing main text of the document.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the main text of the document.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://www.w3.org/ns/prov#definition"/>

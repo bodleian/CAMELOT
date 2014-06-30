@@ -21,7 +21,6 @@
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>http://www.w3.org/ns/prov#</Import>
     <Declaration>
         <Class IRI="http://purl.org/dc/dcmitype/Collection"/>
     </Declaration>
