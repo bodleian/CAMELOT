@@ -223,6 +223,9 @@
         <Class IRI="Soldier"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Steward"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Theologian"/>
     </Declaration>
     <Declaration>
@@ -490,7 +493,15 @@
         <Class IRI="Office"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Secretary"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Soldier"/>
+        <Class IRI="http://www.w3.org/ns/org#Post"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Steward"/>
         <Class IRI="http://www.w3.org/ns/org#Post"/>
     </SubClassOf>
     <SubClassOf>
@@ -513,6 +524,12 @@
         <Class IRI="http://www.w3.org/ns/org#Membership"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Assistant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person whose job is to help another person to do work.
+</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DisqualificationFromOffice</IRI>
@@ -545,6 +562,12 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Physician</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person qualified to practice medicine, especially one who specializes in diagnosis and medical treatment as distinct from surgery.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>PoliticalGroup</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A formal organization that has a common political purpose.</Literal>
     </AnnotationAssertion>
@@ -552,6 +575,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ProfessionalBody</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A nonprofit formal organization seeking to further a particular profession, the interests of individuals engaged in that profession, and the public interest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Secretary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person whose job is to handle records, letters, etc., for another person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Steward</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who manages the property or affairs for another entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

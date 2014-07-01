@@ -61,7 +61,13 @@
         <Class IRI="Annotator"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Apprentice"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Assistant"/>
     </Declaration>
     <Declaration>
         <Class IRI="Attendee"/>
@@ -80,6 +86,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Child"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Client"/>
     </Declaration>
     <Declaration>
         <Class IRI="Collaborator"/>
@@ -172,6 +181,9 @@
         <Class IRI="ExiledPerson"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Factor"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Father"/>
     </Declaration>
     <Declaration>
@@ -238,7 +250,13 @@
         <Class IRI="Licenser"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Master"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Member"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Merchant"/>
     </Declaration>
     <Declaration>
         <Class IRI="Mother"/>
@@ -254,6 +272,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Participant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Patient"/>
     </Declaration>
     <Declaration>
         <Class IRI="Patron"/>
@@ -305,6 +326,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Signatory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Steward"/>
     </Declaration>
     <Declaration>
         <Class IRI="Student"/>
@@ -598,8 +622,16 @@
         <Class IRI="Commentator"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Apprentice"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Artist"/>
         <Class IRI="Creator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Assistant"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Attendee"/>
@@ -623,6 +655,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Child"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Client"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -767,6 +803,10 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Factor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Father"/>
         <Class IRI="Parent"/>
     </SubClassOf>
@@ -884,7 +924,15 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Master"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Member"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Merchant"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -905,6 +953,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Participant"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Patient"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -973,6 +1025,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Signatory"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Steward"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -1169,8 +1225,8 @@
         <ObjectProperty IRI="hasDedicator"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasEngraver"/>
         <ObjectProperty IRI="engraverOf"/>
+        <ObjectProperty IRI="hasEngraver"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasGiver"/>
@@ -1185,8 +1241,8 @@
         <ObjectProperty IRI="inscriberOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasIntermediary"/>
         <ObjectProperty IRI="intermediaryOf"/>
+        <ObjectProperty IRI="hasIntermediary"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="memberOf"/>
@@ -1550,8 +1606,19 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Apprentice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">One who is bound by indentures or by legal agreement to serve a tradesperson, or other person, for a certain time, with a view to learn the art, or trade, in which his master is bound to instruct him.
+</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Artist</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who creates paintings or drawings as a profession or hobby.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Assistant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person whose job is to help another person to do work.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1582,6 +1649,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Child</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person in relation to his/her parents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Client</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An individual who receives support, encouragement, privilege, or financial aid from an individual or organization.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1641,12 +1713,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Counsellor</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A person trained to give guidance on personal or psychological problems.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who gives advice on a specified subject</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Courtier</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A person who attends a royal court as a companion or adviser to the king or queen.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who attends a royal or other court as an office holder, companion or adviser to the ruler</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1701,12 +1773,12 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Employee</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">a person employed for wages or salary, especially at non-executive level.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person employed for wages or salary, especially at non-executive level.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Employer</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">a person or organization that employs people.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person or organisation that pays for or hires the services of another person or organisation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1722,6 +1794,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>ExiledPerson</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who lives away from their native country, either from choice or compulsion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Factor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who acts for another, notably a mercantile and colonial agent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1835,8 +1912,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Master</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A tradesman who is qualified to teach apprentices.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Member</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person, country, or organization that has joined a group, society, or team.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Merchant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A businessperson who trades in commodities produced by others, in order to earn a profit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1860,8 +1947,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Patient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person receiving or registered to receive medical treatment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Patron</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A person who gives money and support to an artist, organization, etc.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">An organization or individual who bestows support, encouragement, privilege, or financial aid to another</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1937,6 +2029,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Signatory</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a party that has signed an agreement, especially a state that has signed a treaty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Steward</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who manages the property or affairs for another entity.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

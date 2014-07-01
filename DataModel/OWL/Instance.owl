@@ -37,7 +37,16 @@
         <Class IRI="BalladText"/>
     </Declaration>
     <Declaration>
+        <Class IRI="BookChapter"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="BookCover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="BookSection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Chapter"/>
     </Declaration>
     <Declaration>
         <Class IRI="Colophon"/>
@@ -187,6 +196,9 @@
         <ObjectProperty IRI="hasFacsimile"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasPart"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasPublisherVersion"/>
     </Declaration>
     <Declaration>
@@ -312,7 +324,23 @@
         <Class IRI="http://www.w3.org/ns/prov#Entity"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="BookChapter"/>
+        <Class IRI="BookSection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BookChapter"/>
+        <Class IRI="Chapter"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="BookCover"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="BookSection"/>
+        <Class IRI="DocumentPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Chapter"/>
         <Class IRI="DocumentPart"/>
     </SubClassOf>
     <SubClassOf>
@@ -519,8 +547,16 @@
         <ObjectProperty IRI="isFacsimileOf"/>
         <ObjectProperty IRI="hasFacsimile"/>
     </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPart"/>
+        <Class IRI="Document"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasDocumentPart"/>
+        <Class IRI="DocumentPart"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPart"/>
         <Class IRI="DocumentPart"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
@@ -561,14 +597,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>BookChapter</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>BookChapter</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Definition: one of the main divisions of a book. Chapters can be numbered or titled or both.
-
-source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">One of the main divisions of a book. Chapters can be numbered or titled or both.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -586,14 +615,24 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Definition: a critical appraisal of a book published in a newspaper or magazine.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Colophon</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BookSection</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Any of the more or less distinct parts into which a book is or may be divided or from which it is made up.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Chapter</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">One of the main divisions of a piece of writing of relative length, such as a book of prose, poetry, or law. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Colophon</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing technical information such as edition dates, copyrights, typefaces and the name and address of the printer. In modern books usually on the verso of the title page, but in some books placed at the end.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Colophon</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -666,14 +705,14 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&xsd;string">A document part that contains a statement describing the edition of a book, newspaper or other published material.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>EndMatter</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>EndMatter</IRI>
         <Literal datatypeIRI="&xsd;string">Document part that follows the main content of the book. This may include any one of the following: epilogue, afterword, conclusion, postscript, glossary, bibliography, index, or colophon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>EndMatter</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Book_design</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -686,14 +725,14 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part that is an item written or printed in a diary, list, account book, or reference book.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Epigraph</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Epigraph_(literature)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Epigraph</IRI>
         <Literal datatypeIRI="&xsd;string">Document part containing a phrase, quotation, or poem. The epigraph may serve as a preface, as a summary, as a counter-example, or to link the work to a wider literary canon, either to invite comparison, or to enlist a conventional context.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Epigraph</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Epigraph_(literature)</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -733,14 +772,14 @@ source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">Document part containing the text of the imprint. Imprints may list printer, publisher, place of publication and sale.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Incipit</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Incipit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Incipit</IRI>
         <Literal datatypeIRI="&xsd;string">Document part containing the first few words of the opening line of a text, such as a poem, song, or book.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Incipit</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">http://en.wikipedia.org/wiki/Incipit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>

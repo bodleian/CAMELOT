@@ -37,20 +37,25 @@
         <Class IRI="Ennoble"/>
     </Declaration>
     <Declaration>
-        <Class IRI="LossOfTitle"/>
+        <Class IRI="LossOfNobleStatus"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="Ennoble"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="LossOfTitle"/>
+        <Class IRI="LossOfNobleStatus"/>
         <Class IRI="http://www.w3.org/ns/prov#Activity"/>
     </SubClassOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Ennoble</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The activity of making someone a member of the nobility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>LossOfNobleStatus</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Activity of someone being stripped of noble privileges or title because of committing a criminal offense, loss of land, or being engaged in activities that are not in accordance with the social code of the group.</Literal>
     </AnnotationAssertion>
 </Ontology>
 

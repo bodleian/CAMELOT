@@ -34,19 +34,10 @@
         <Class IRI="Book"/>
     </Declaration>
     <Declaration>
-        <Class IRI="BookChapter"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="BookReview"/>
     </Declaration>
     <Declaration>
-        <Class IRI="BookSection"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Booklet"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="Chapter"/>
     </Declaration>
     <Declaration>
         <Class IRI="ClassificationScheme"/>
@@ -250,28 +241,12 @@
         <Class IRI="Text"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="BookChapter"/>
-        <Class IRI="BookSection"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="BookChapter"/>
-        <Class IRI="Chapter"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="BookReview"/>
         <Class IRI="Review"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="BookSection"/>
-        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Booklet"/>
         <Class IRI="Book"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="Chapter"/>
-        <Class IRI="http://www.w3.org/ns/prov#Entity"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="ClassificationScheme"/>
@@ -522,30 +497,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>BookChapter</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">One of the main divisions of a book. Chapters can be numbered or titled or both.
-
-source: https://en.wikipedia.org/wiki/Chapter_(books)</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>BookReview</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A critical appraisal of a book published in a newspaper or magazine.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>BookSection</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Any of the more or less distinct parts into which a book is or may be divided or from which it is made up.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Booklet</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A small, thin book with paper covers, typically giving information on a particular subject.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Chapter</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">One of the main divisions of a piece of writing of relative length, such as a book of prose, poetry, or law. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -620,17 +578,17 @@ source: http://en.wikipedia.org/wiki/Edited_volume </Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">A periodical publication containing articles and illustrations, often on a particular subject or aimed at a particular readership.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>Monograph</IRI>
-        <Literal datatypeIRI="&xsd;anyURI">https://en.wikipedia.org/wiki/Monograph</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Monograph</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A detailed written study in the form of an essay or book, of a single specialized subject or an aspect of it, usually by a single author.
 
 Librarians consider a monograph to be a nonserial publication complete in one volume (book) or a finite number of volumes.
 </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>Monograph</IRI>
+        <Literal datatypeIRI="&xsd;anyURI">https://en.wikipedia.org/wiki/Monograph</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -660,12 +618,12 @@ Librarians consider a monograph to be a nonserial publication complete in one vo
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>PatentDocument</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A document relating to a patent, the government authority or licence conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>PatentDocument</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A document relating to a patent, the government authority or licence conferring a right or title for a set period, especially the sole right to exclude others from making, using, or selling an invention.</Literal>
+        <Literal datatypeIRI="&rdf;PlainLiteral">BDLSS System: ORA</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
