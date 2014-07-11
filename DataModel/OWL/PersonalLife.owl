@@ -483,7 +483,7 @@
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
-        <Class IRI="Descendent"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.vocab.ox.ac.uk/camelot/Person#Child"/>
@@ -685,11 +685,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GrandParent"/>
-        <Class IRI="Ancestor"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Grandchild"/>
-        <Class IRI="Descendent"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Granddaughter"/>
@@ -743,11 +743,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GreatGrandParent"/>
-        <Class IRI="Ancestor"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GreatGrandchild"/>
-        <Class IRI="Descendent"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="GreatGranddaughter"/>
@@ -934,7 +934,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Parent"/>
-        <Class IRI="Ancestor"/>
+        <Class abbreviatedIRI="prov:Person"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Parent"/>
@@ -1131,7 +1131,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="grandParentOf"/>
-        <ObjectProperty IRI="ancestorOf"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="grandfatherOf"/>
@@ -1143,7 +1143,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="greatGrandParentOf"/>
-        <ObjectProperty IRI="ancestorOf"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="greatGrandfatherOf"/>
@@ -1187,7 +1187,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasChild"/>
-        <ObjectProperty IRI="hasDescendent"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasCousin"/>
@@ -1231,11 +1231,11 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasGrandParent"/>
-        <ObjectProperty IRI="hasAncestor"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasGrandchild"/>
-        <ObjectProperty IRI="hasDescendent"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasGranddaughter"/>
@@ -1259,11 +1259,11 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasGreatGrandParent"/>
-        <ObjectProperty IRI="hasAncestor"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasGreatGrandchild"/>
-        <ObjectProperty IRI="hasDescendent"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasGreatGrandfather"/>
@@ -1307,7 +1307,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasParent"/>
-        <ObjectProperty IRI="hasAncestor"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasPaternalCousin"/>
@@ -1363,11 +1363,11 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="isChildOf"/>
-        <ObjectProperty IRI="descendentOf"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="isGrandchildOf"/>
-        <ObjectProperty IRI="descendentOf"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="isGranddaughterOf"/>
@@ -1395,7 +1395,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="parentOf"/>
-        <ObjectProperty IRI="ancestorOf"/>
+        <ObjectProperty IRI="hasRelation"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="sisterInLawOf"/>
@@ -2296,27 +2296,6 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
-            <ObjectProperty IRI="brotherOf"/>
-            <ObjectProperty IRI="isChildOf"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="uncleOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="daughterOf"/>
-            <ObjectProperty IRI="parentOf"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="isGranddaughterOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="daughterOf"/>
-            <ObjectProperty IRI="hasSibling"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="nieceOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
             <ObjectProperty IRI="fatherOf"/>
             <ObjectProperty IRI="hasSpouse"/>
         </ObjectPropertyChain>
@@ -2359,6 +2338,14 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+            <ObjectProperty IRI="hasChild"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasGreatGrandchild"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
             <ObjectProperty IRI="hasFather"/>
             <ObjectProperty IRI="hasFather"/>
         </ObjectPropertyChain>
@@ -2379,6 +2366,13 @@
             <ObjectProperty IRI="hasChild"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="hasPaternalCousin"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="hasHusband"/>
+            <ObjectProperty IRI="hasFather"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="hasFatherinLaw"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -2683,10 +2677,10 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
-            <ObjectProperty IRI="isChildOf"/>
-            <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="hasWife"/>
+            <ObjectProperty IRI="hasFather"/>
         </ObjectPropertyChain>
-        <ObjectProperty IRI="isGrandchildOf"/>
+        <ObjectProperty IRI="hasFatherinLaw"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -2705,6 +2699,36 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="fatherOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="grandfatherOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="motherOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="grandmotherOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="fatherOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="greatGrandfatherOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="parentOf"/>
+            <ObjectProperty IRI="motherOf"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="greatGrandmotherOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="parentOf"/>
             <ObjectProperty IRI="parentOf"/>
             <ObjectProperty IRI="parentOf"/>
         </ObjectPropertyChain>
@@ -2713,30 +2737,9 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="sisterOf"/>
-            <ObjectProperty IRI="isChildOf"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="auntOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="sisterOf"/>
             <ObjectProperty IRI="hasSpouse"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="sisterInLawOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="sonOf"/>
-            <ObjectProperty IRI="parentOf"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="isGrandsonOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="sonOf"/>
-            <ObjectProperty IRI="hasSibling"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="nephewOf"/>
     </SubObjectPropertyOf>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
