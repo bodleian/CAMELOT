@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
+    vc:minVersion="1.1">
+    <xs:simpleType name="Barcode">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="CharityNumber">
+        <xs:restriction base="xs:integer"/>
+    </xs:simpleType>
+    <xs:simpleType name="CompanyNumber">
+        <xs:restriction base="xs:integer"/>
+    </xs:simpleType>
+    <xs:simpleType name="UKCharityNumber">
+        <xs:restriction base="CharityNumber"/>
+    </xs:simpleType>
+    <xs:simpleType name="DOI">
+        <xs:restriction base="xs:anyURI"/>
+    </xs:simpleType>
+    <xs:simpleType name="ESTCNumber">
+        <xs:restriction base="xs:integer"/>
+    </xs:simpleType>
+    <xs:simpleType name="ISBN">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="ISBN10">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="ISBN13">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="ISSN">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="eISSN">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="ISTCNumber">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="LCC">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="LCSH">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="LocalIdentifier">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="MeSHIdentifier">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="NLMIdentifier">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="OxfordSSOUsername">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="PatentNumber">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="BritishPatentNumber">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="PMID">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="Shelfmark">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="UUID">
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+</xs:schema>
