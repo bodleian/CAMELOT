@@ -123,20 +123,6 @@
     
 
 
-    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#formerShelfmark -->
-
-    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#formerShelfmark">
-        <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#shelfmark"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#shelfmark -->
-
-    <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/BibliographicIdentifier#shelfmark"/>
-    
-
-
     <!-- http://www.vocab.ox.ac.uk/CAMELOT/SKOS/Identifier#Barcode -->
 
     <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/SKOS/Identifier#Barcode">
