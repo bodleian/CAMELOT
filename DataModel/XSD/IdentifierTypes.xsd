@@ -3,72 +3,157 @@
     xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified"
     vc:minVersion="1.1">
     <xs:simpleType name="Barcode">
+        <xs:annotation>
+            <xs:documentation>A machine-readable code in the form of numbers and a pattern of parallel lines of varying widths, printed on a commodity and used especially for stock control.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="CharityNumber">
+        <xs:annotation>
+            <xs:documentation>A unique identifier for a charity issued by an authority on charities.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:integer"/>
     </xs:simpleType>
     <xs:simpleType name="CompanyNumber">
+        <xs:annotation>
+            <xs:documentation>Unique identifier for an incorporated company issued by the relevant authority such as UK Companies House.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:integer"/>
     </xs:simpleType>
     <xs:simpleType name="UKCharityNumber">
         <xs:restriction base="CharityNumber"/>
     </xs:simpleType>
     <xs:simpleType name="DOI">
+        <xs:annotation>
+            <xs:documentation>A digital object identifier (DOI) is a character string (a "digital identifier") used to uniquely identify an object such as an electronic document. Metadata about the object is stored in association with the DOI name and this metadata may include a location, such as a URL, where the object can be found.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:anyURI"/>
     </xs:simpleType>
     <xs:simpleType name="ESTCNumber">
+        <xs:annotation>
+            <xs:documentation>Unique identifier for an item in the English Short Title Catalogue (ESTC). See http://estc.bl.uk/</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:integer"/>
     </xs:simpleType>
     <xs:simpleType name="ISBN">
-        <xs:restriction base="xs:string"/>
+        <xs:annotation>
+            <xs:documentation>A unique numeric commercial book identifier.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer"/>
     </xs:simpleType>
     <xs:simpleType name="ISBN10">
-        <xs:restriction base="xs:string"/>
+        <xs:annotation>
+            <xs:documentation>An ISBN with 10 digits, assigned before 2007.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer"/>
     </xs:simpleType>
     <xs:simpleType name="ISBN13">
-        <xs:restriction base="xs:string"/>
+        <xs:annotation>
+            <xs:documentation>An ISBN with 13 digits, assigned after 1 January 2007.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:integer"/>
     </xs:simpleType>
     <xs:simpleType name="ISSN">
+        <xs:annotation>
+            <xs:documentation>A unique eight-digit number used to identify a periodical publication at a specific media type.  It is internationally accepted as a fundamental identifier for distinguishing between identical serial titles and facilitating checking and ordering procedures, collection management, legal deposit, interlibrary loans etc.
+
+When a periodical is published, with the same content, in two or more different media, a different ISSN is assigned to each media type – in particular the print and electronic media types, named print ISSN (p-ISSN) and electronic ISSN (e-ISSN or eISSN).</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="eISSN">
+        <xs:annotation>
+            <xs:documentation>Electronic International Standard Serial Number. An ISSN for a periodical that is published in an electronic media type.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="ISTCNumber">
+        <xs:annotation>
+            <xs:documentation>A unique identifier for a text-based work, issued by a registration agency mandated by the International Standard Text Code organisation.  
+
+The term "work" can refer to any content appearing in conventional printed books, audio-books, static e-books or enhanced digital books, as well as content which might appear in a newspaper or journal.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="LCC">
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="LCSH">
+        <xs:annotation>
+            <xs:documentation>Identifer for a Library of Congress Subject Heading (LCSH). 
+
+LCSH has been actively maintained since 1898 to catalog materials held at the Library of Congress.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="LocalIdentifier">
+        <xs:annotation>
+            <xs:documentation>An identifier in use in a local system.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="MeSHIdentifier">
+        <xs:annotation>
+            <xs:documentation>Unique identifier for a Medical Subject Heading.
+
+Medical Subject Headings (MeSH) is a comprehensive controlled vocabulary for the purpose of indexing journal articles and books in the life sciences; it can also serve as a thesaurus that facilitates searching. Created and updated by the United States National Library of Medicine (NLM), it is used by the MEDLINE/PubMed article database and by NLM's catalog of book holdings.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="NLMIdentifier">
+        <xs:annotation>
+            <xs:documentation>Unique identifier for a record in the United States' National Library of Medicine (NLM) Catalogue.
+
+The NLM Catalogue provides access to NLM bibliographic data for over 1.4 million journals, books, audiovisuals, computer software, electronic resources, and other materials. Updated every weekday, the NLM Catalog is an alternative search interface to the bibliographic records in LocatorPlus.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="OxfordSSOUsername">
+        <xs:annotation>
+            <xs:documentation>A person's Webauth system identifier.
+
+Webauth is the system that underlies Oxford University's Single Sign-On (SSO) service. Single Sign-On means that after your initial login, a person can use associated services without having to re-enter a username and password. 
+
+The Webauth system identifier is also known as an SSO username, Oxford username,SSO account or Webauth account.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="PatentNumber">
+        <xs:annotation>
+            <xs:documentation>A unique identifier for a patent, issued by a patent authority such as the UK Intellectual Property Office.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="BritishPatentNumber">
+        <xs:annotation>
+            <xs:documentation>Patent number issued by an authority in Great Britain.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="PMID">
+        <xs:annotation>
+            <xs:documentation>A unique number assigned to each record in PubMed, a free search engine accessing primarily the MEDLINE database of references and abstracts on life sciences and biomedical topics. 
+
+The United States National Library of Medicine (NLM) at the National Institutes of Health maintains the database as part of the Entrez system of information retrieval.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="Shelfmark">
+        <xs:annotation>
+            <xs:documentation>A notation on a book showing its place in a library.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
     <xs:simpleType name="UUID">
+        <xs:annotation>
+            <xs:documentation>An identifier that conforms to a standard used in software construction, standardized by the Open Software Foundation (OSF) as part of the Distributed Computing Environment (DCE.)</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+    <xs:simpleType name="EmployeeNumber">
+        <xs:annotation>
+            <xs:documentation>Unique number identifying an employee in a database system.</xs:documentation>
+        </xs:annotation>
         <xs:restriction base="xs:string"/>
     </xs:simpleType>
 </xs:schema>

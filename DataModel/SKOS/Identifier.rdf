@@ -190,7 +190,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.vocab.ox.ac.uk/CAMELOT/SKOS/Identifier#ESTC">
         <rdf:type rdf:resource="&skos;Concept"/>
+        <rdfs:seeAlso rdf:datatype="&xsd;anyURI">http://estc.bl.uk/</rdfs:seeAlso>
         <skos:prefLabel>ESTC number</skos:prefLabel>
+        <skos:definition>Unique identifier for an item in the English Short Title Catalogue (ESTC).</skos:definition>
+        <skos:altLabel>English Short Title Catalogue Number</skos:altLabel>
         <skos:broader rdf:resource="http://www.vocab.ox.ac.uk/CAMELOT/SKOS/Identifier#Identifier"/>
     </owl:NamedIndividual>
     
