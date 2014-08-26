@@ -43,6 +43,9 @@
         <Class IRI="Addressee"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Administrator"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="AdministratorOfAcademicInstitution"/>
     </Declaration>
     <Declaration>
@@ -82,10 +85,10 @@
         <Class IRI="Buyer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Chair"/>
+        <Class IRI="CauseOfDeath"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Child"/>
+        <Class IRI="Chair"/>
     </Declaration>
     <Declaration>
         <Class IRI="Client"/>
@@ -136,6 +139,9 @@
         <Class IRI="Criminal"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Deceased"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Dedicatee"/>
     </Declaration>
     <Declaration>
@@ -146,6 +152,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="DisplacedPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="DisputationRespondent"/>
     </Declaration>
     <Declaration>
         <Class IRI="Disqualified"/>
@@ -184,9 +193,6 @@
         <Class IRI="Factor"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Father"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="Funder"/>
     </Declaration>
     <Declaration>
@@ -214,7 +220,7 @@
         <Class IRI="Housemate"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Ilustrator"/>
+        <Class IRI="Illustrator"/>
     </Declaration>
     <Declaration>
         <Class IRI="Immigrant"/>
@@ -259,16 +265,13 @@
         <Class IRI="Merchant"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Mother"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="MusicComposer"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Owner"/>
+        <Class IRI="OfficeHolder"/>
     </Declaration>
     <Declaration>
-        <Class IRI="Parent"/>
+        <Class IRI="Owner"/>
     </Declaration>
     <Declaration>
         <Class IRI="Participant"/>
@@ -284,6 +287,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="Photographer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Praeses"/>
     </Declaration>
     <Declaration>
         <Class IRI="Printer"/>
@@ -349,6 +355,9 @@
         <Class IRI="Trader"/>
     </Declaration>
     <Declaration>
+        <Class IRI="Transcriber"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="Translator"/>
     </Declaration>
     <Declaration>
@@ -359,6 +368,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="TuneAuthor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Tutor"/>
     </Declaration>
     <Declaration>
         <Class IRI="Victim"/>
@@ -373,6 +385,12 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="acquaintanceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="addresseeOf"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="attendeeOf"/>
     </Declaration>
     <Declaration>
@@ -383,6 +401,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="buysFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="causedDeathOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="contributorOf"/>
@@ -397,13 +418,19 @@
         <ObjectProperty IRI="dedicatorOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="displacedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="displacedTo"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="engraverOf"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="giverOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="givesGiftTo"/>
+        <ObjectProperty IRI="givesTo"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasAcademicSupervisor"/>
@@ -415,16 +442,22 @@
         <ObjectProperty IRI="hasAuthor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasBacker"/>
+        <ObjectProperty IRI="hasBuyer"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasBuyer"/>
+        <ObjectProperty IRI="hasCauseOfDeath"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasCollaborator"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasColleague"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasContributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasCorrespondent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasCreator"/>
@@ -434,6 +467,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasDedicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasDisputationRespondent"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasEmployee"/>
@@ -451,6 +487,12 @@
         <ObjectProperty IRI="hasGiver"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasGodchild"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasGodparent"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasGuest"/>
     </Declaration>
     <Declaration>
@@ -463,10 +505,10 @@
         <ObjectProperty IRI="hasIntermediary"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasLetterRecipient"/>
+        <ObjectProperty IRI="hasMember"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasMember"/>
+        <ObjectProperty IRI="hasOffice"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasOwner"/>
@@ -476,6 +518,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasPatron"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasPraeses"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hasPrinter"/>
@@ -493,10 +538,19 @@
         <ObjectProperty IRI="hasSeller"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="hasStudent"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="hasSupervisor"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="hasTransmissionWith"/>
+        <ObjectProperty IRI="hasTeacher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTranscriber"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="hasTutor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="hostOf"/>
@@ -532,6 +586,9 @@
         <ObjectProperty IRI="participantOf"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="preachedAt"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="printerOf"/>
     </Declaration>
     <Declaration>
@@ -541,19 +598,7 @@
         <ObjectProperty IRI="receivesFrom"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="receivesGiftFrom"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="recipientOf"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="recipientOfFunds"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="recipientOfGift"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="recipientOfLetter"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="residentOf"/>
@@ -574,9 +619,6 @@
         <ObjectProperty IRI="senderOf"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="senderOfLetter"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="sendsTo"/>
     </Declaration>
     <Declaration>
@@ -584,6 +626,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="tradesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="transcriberOf"/>
     </Declaration>
     <EquivalentClasses>
         <Class IRI="Conrector"/>
@@ -602,8 +647,16 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Administrator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="AdministratorOfAcademicInstitution"/>
         <Class IRI="AdministratorOfInstitution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="AdministratorOfInstitution"/>
+        <Class IRI="Administrator"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Advertiser"/>
@@ -642,6 +695,10 @@
         <Class IRI="Creator"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="BaptismalCandidate"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Bookseller"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -650,11 +707,11 @@
         <Class IRI="Trader"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Chair"/>
+        <Class IRI="CauseOfDeath"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Child"/>
+        <Class IRI="Chair"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -687,6 +744,18 @@
     <SubClassOf>
         <Class IRI="Composer"/>
         <Class IRI="Creator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Confessee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Confessor"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ConfirmationCandidate"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Conrector"/>
@@ -729,6 +798,10 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Deceased"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Dedicatee"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -745,12 +818,20 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="DisputationRespondent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Disqualified"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="DisqualifiedFromOffice"/>
         <Class IRI="Disqualified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="DisqualifiedFromOffice"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Donor"/>
@@ -807,10 +888,6 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Father"/>
-        <Class IRI="Parent"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="Funder"/>
         <Class IRI="Giver"/>
     </SubClassOf>
@@ -842,6 +919,22 @@
         <Class IRI="Author"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Godchild"/>
+        <Class IRI="BaptismalCandidate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Godfather"/>
+        <Class IRI="Godparent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Godmother"/>
+        <Class IRI="Godparent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Godparent"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Guest"/>
         <Class IRI="Visitor"/>
     </SubClassOf>
@@ -866,6 +959,10 @@
             <ObjectProperty IRI="residesWith"/>
             <Class IRI="Housemate"/>
         </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Illustrator"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Ilustrator"/>
@@ -936,19 +1033,19 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Mother"/>
-        <Class IRI="Parent"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="MusicComposer"/>
         <Class IRI="Composer"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Owner"/>
+        <Class IRI="OfficeHolder"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="Parent"/>
+        <Class IRI="Officiant"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Owner"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -972,6 +1069,10 @@
         <Class IRI="Creator"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Praeses"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Printer"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -993,6 +1094,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Refugee"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ReligiousConvert"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
@@ -1056,6 +1161,10 @@
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="Transcriber"/>
+        <Class IRI="http://www.w3.org/ns/prov#Role"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="Translator"/>
         <Class IRI="http://www.w3.org/ns/prov#Role"/>
     </SubClassOf>
@@ -1070,6 +1179,10 @@
     <SubClassOf>
         <Class IRI="TuneAuthor"/>
         <Class IRI="Author"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Tutor"/>
+        <Class IRI="Teacher"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="Victim"/>
@@ -1087,15 +1200,14 @@
         <Class IRI="Guest"/>
         <Class IRI="Host"/>
     </DisjointClasses>
-    <DisjointUnion>
-        <Class IRI="Parent"/>
-        <Class IRI="Father"/>
-        <Class IRI="Mother"/>
-    </DisjointUnion>
     <EquivalentObjectProperties>
         <ObjectProperty IRI="http://purl.org/dc/terms/contributor"/>
         <ObjectProperty IRI="hasContributor"/>
     </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="addresseeOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="attendeeOf"/>
         <ObjectProperty IRI="participantOf"/>
@@ -1109,12 +1221,24 @@
         <ObjectProperty IRI="tradesWith"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="disqualifiedFromOffice"/>
+        <ObjectProperty IRI="disqualifiedFrom"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="giverOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="givesGiftTo"/>
-        <ObjectProperty IRI="hasTransmissionWith"/>
+        <ObjectProperty IRI="givesTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="godfatherOf"/>
+        <ObjectProperty IRI="godparentOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="godmotherOf"/>
+        <ObjectProperty IRI="godparentOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasAcademicSupervisor"/>
@@ -1125,52 +1249,52 @@
         <ObjectProperty IRI="hasParticipant"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasCauseOfDeath"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="hasEmployee"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasFunder"/>
-        <ObjectProperty IRI="hasBacker"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasGiver"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="hasLetterRecipient"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectProperty IRI="hasGodfather"/>
+        <ObjectProperty IRI="hasGodparent"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="hasGodmother"/>
+        <ObjectProperty IRI="hasGodparent"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasPatron"/>
-        <ObjectProperty IRI="hasBacker"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="hasRecipient"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="receivesFrom"/>
-        <ObjectProperty IRI="hasTransmissionWith"/>
+        <ObjectProperty IRI="hasTeacher"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="receivesGiftFrom"/>
+        <ObjectProperty IRI="hasTutor"/>
+        <ObjectProperty IRI="hasTeacher"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="receivesFrom"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="recipientOf"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="recipientOfFunds"/>
-        <ObjectProperty IRI="recipientOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="recipientOfGift"/>
-        <ObjectProperty IRI="recipientOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="recipientOfLetter"/>
-        <ObjectProperty IRI="recipientOf"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="sellerOf"/>
@@ -1185,12 +1309,8 @@
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
-        <ObjectProperty IRI="senderOfLetter"/>
-        <ObjectProperty IRI="senderOf"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
         <ObjectProperty IRI="sendsTo"/>
-        <ObjectProperty IRI="hasTransmissionWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="attendeeOf"/>
@@ -1201,12 +1321,28 @@
         <ObjectProperty IRI="hasAuthor"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="baptisedBy"/>
+        <ObjectProperty IRI="baptised"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="buyerOf"/>
         <ObjectProperty IRI="hasBuyer"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="sellsTo"/>
         <ObjectProperty IRI="buysFrom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasCauseOfDeath"/>
+        <ObjectProperty IRI="causedDeathOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="confessedTo"/>
+        <ObjectProperty IRI="receivedConfessionFrom"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="confirmedBy"/>
+        <ObjectProperty IRI="confirmed"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasContributor"/>
@@ -1225,12 +1361,40 @@
         <ObjectProperty IRI="hasDedicator"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="engraverOf"/>
         <ObjectProperty IRI="hasEngraver"/>
+        <ObjectProperty IRI="engraverOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasGiver"/>
         <ObjectProperty IRI="giverOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="receivesFrom"/>
+        <ObjectProperty IRI="givesTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGodfather"/>
+        <ObjectProperty IRI="godfatherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="godmotherOf"/>
+        <ObjectProperty IRI="hasGodmother"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="godparentOf"/>
+        <ObjectProperty IRI="hasGodparent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasDisputationRespondent"/>
+        <ObjectProperty IRI="hasPraeses"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasEmployer"/>
+        <ObjectProperty IRI="hasEmployee"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="hasGodchild"/>
+        <ObjectProperty IRI="hasGodparent"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasIllustrator"/>
@@ -1241,8 +1405,8 @@
         <ObjectProperty IRI="inscriberOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="intermediaryOf"/>
         <ObjectProperty IRI="hasIntermediary"/>
+        <ObjectProperty IRI="intermediaryOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="memberOf"/>
@@ -1277,6 +1441,10 @@
         <ObjectProperty IRI="hasSeller"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
+        <ObjectProperty IRI="transcriberOf"/>
+        <ObjectProperty IRI="hasTranscriber"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
         <ObjectProperty IRI="interviewedBy"/>
         <ObjectProperty IRI="interviews"/>
     </InverseObjectProperties>
@@ -1285,10 +1453,16 @@
         <ObjectProperty IRI="receivesFrom"/>
     </InverseObjectProperties>
     <SymmetricObjectProperty>
+        <ObjectProperty IRI="acquaintanceOf"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
         <ObjectProperty IRI="hasCollaborator"/>
     </SymmetricObjectProperty>
     <SymmetricObjectProperty>
-        <ObjectProperty IRI="hasTransmissionWith"/>
+        <ObjectProperty IRI="hasColleague"/>
+    </SymmetricObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="hasCorrespondent"/>
     </SymmetricObjectProperty>
     <SymmetricObjectProperty>
         <ObjectProperty IRI="residesWith"/>
@@ -1297,8 +1471,28 @@
         <ObjectProperty IRI="tradesWith"/>
     </SymmetricObjectProperty>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="acquaintanceOf"/>
+        <Class IRI="Acquaintance"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="addresseeOf"/>
+        <Class IRI="Addressee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="attendeeOf"/>
         <Class IRI="Attendee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="authorOf"/>
+        <Class IRI="Author"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="baptised"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="baptisedBy"/>
+        <Class IRI="BaptismalCandidate"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="buyerOf"/>
@@ -1309,20 +1503,104 @@
         <Class IRI="Buyer"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="causedDeathOf"/>
+        <Class IRI="CauseOfDeath"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="confessedTo"/>
+        <Class IRI="Confessee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="confirmed"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="confirmedBy"/>
+        <Class IRI="ConfirmationCandidate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="contributorOf"/>
+        <Class IRI="Contributor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="convertFromChurch"/>
+        <Class IRI="ReligiousConvert"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="convertToChurch"/>
+        <Class IRI="ReligiousConvert"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="creatorOf"/>
+        <Class IRI="Creator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="dedicateeOf"/>
+        <Class IRI="Dedicatee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="dedicatorOf"/>
         <Class IRI="Dedicator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="displacedFrom"/>
+        <Class IRI="Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="displacedTo"/>
+        <Class IRI="Refugee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="disqualifiedFrom"/>
+        <Class IRI="DisqualifiedFromOffice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="disqualifiedFromOffice"/>
+        <Class IRI="DisqualifiedFromOffice"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="engraverOf"/>
+        <Class IRI="Engraver"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="giverOf"/>
         <Class IRI="Giver"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="givesGiftTo"/>
-        <Class IRI="GiftGiver"/>
+        <ObjectProperty IRI="givesTo"/>
+        <Class IRI="Giver"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="godfatherOf"/>
+        <Class IRI="Godfather"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="godmotherOf"/>
+        <Class IRI="Godmother"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="godparentOf"/>
+        <Class IRI="Godparent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCauseOfDeath"/>
+        <Class IRI="Deceased"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasCollaborator"/>
         <Class IRI="Collaborator"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasColleague"/>
+        <Class IRI="Colleague"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasCorrespondent"/>
+        <Class IRI="Correspondent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasDisputationRespondent"/>
+        <Class IRI="Praeses"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasEmployee"/>
@@ -1334,11 +1612,55 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasFunder"/>
-        <Class IRI="Recipient"/>
+        <Class IRI="FundsRecipient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGodchild"/>
+        <Class IRI="Godparent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGodfather"/>
+        <Class IRI="Godchild"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGodmother"/>
+        <Class IRI="Godchild"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGodparent"/>
+        <Class IRI="BaptismalCandidate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasGodparent"/>
+        <Class IRI="Godchild"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hasGuest"/>
         <Class IRI="Host"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasOffice"/>
+        <Class IRI="OfficeHolder"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasPraeses"/>
+        <Class IRI="DisputationRespondent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasStudent"/>
+        <Class IRI="Teacher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasStudent"/>
+        <Class IRI="Tutor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTeacher"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="hasTutor"/>
+        <Class IRI="Student"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="hostOf"/>
@@ -1373,32 +1695,24 @@
         <Class IRI="Member"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="preachedAt"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="printerOf"/>
         <Class IRI="Printer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="receivedConfessionFrom"/>
+        <Class IRI="Confessor"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="receivesFrom"/>
         <Class IRI="Recipient"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="receivesGiftFrom"/>
-        <Class IRI="Recipient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="recipientOf"/>
         <Class IRI="Recipient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="recipientOfFunds"/>
-        <Class IRI="FundsRecipient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="recipientOfGift"/>
-        <Class IRI="Recipient"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="recipientOfLetter"/>
-        <Class IRI="LetterRecipient"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="residesWith"/>
@@ -1421,10 +1735,6 @@
         <Class IRI="Sender"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="senderOfLetter"/>
-        <Class IRI="LetterSender"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="sendsTo"/>
         <Class IRI="Sender"/>
     </ObjectPropertyDomain>
@@ -1436,13 +1746,69 @@
         <ObjectProperty IRI="tradesWith"/>
         <Class IRI="Trader"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="transcriberOf"/>
+        <Class IRI="Transcriber"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="acquaintanceOf"/>
+        <Class IRI="Acquaintance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="baptised"/>
+        <Class IRI="BaptismalCandidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="baptisedBy"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="buysFrom"/>
         <Class IRI="Seller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="givesGiftTo"/>
+        <ObjectProperty IRI="causedDeathOf"/>
+        <Class IRI="Deceased"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="confessedTo"/>
+        <Class IRI="Confessor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="confirmed"/>
+        <Class IRI="ConfirmationCandidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="confirmedBy"/>
+        <Class IRI="Officiant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="givesTo"/>
         <Class IRI="Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="godfatherOf"/>
+        <Class IRI="BaptismalCandidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="godfatherOf"/>
+        <Class IRI="Godchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="godmotherOf"/>
+        <Class IRI="BaptismalCandidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="godmotherOf"/>
+        <Class IRI="Godchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="godparentOf"/>
+        <Class IRI="BaptismalCandidate"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="godparentOf"/>
+        <Class IRI="Godchild"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasAcademicSupervisor"/>
@@ -1453,16 +1819,48 @@
         <Class IRI="Attendee"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasAuthor"/>
+        <Class IRI="Author"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasBuyer"/>
         <Class IRI="Buyer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCauseOfDeath"/>
+        <Class IRI="CauseOfDeath"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasCollaborator"/>
         <Class IRI="Collaborator"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasColleague"/>
+        <Class IRI="Colleague"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasContributor"/>
+        <Class IRI="Contributor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCorrespondent"/>
+        <Class IRI="Correspondent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasCreator"/>
+        <Class IRI="Creator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDedicatee"/>
+        <Class IRI="Dedicatee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasDedicator"/>
         <Class IRI="Dedicator"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasDisputationRespondent"/>
+        <Class IRI="DisputationRespondent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasEmployee"/>
@@ -1473,12 +1871,32 @@
         <Class IRI="Employer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasEngraver"/>
+        <Class IRI="Engraver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasFunder"/>
         <Class IRI="Funder"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGiver"/>
         <Class IRI="Giver"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGodchild"/>
+        <Class IRI="Godchild"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGodfather"/>
+        <Class IRI="Godfather"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGodmother"/>
+        <Class IRI="Godmother"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasGodparent"/>
+        <Class IRI="Godparent"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasGuest"/>
@@ -1497,12 +1915,16 @@
         <Class IRI="Intermediary"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="hasLetterRecipient"/>
-        <Class IRI="LetterRecipient"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="hasMember"/>
         <Class IRI="Member"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPatron"/>
+        <Class IRI="Patron"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasPraeses"/>
+        <Class IRI="Praeses"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hasPrinter"/>
@@ -1525,8 +1947,20 @@
         <Class IRI="Seller"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="hasStudent"/>
+        <Class IRI="Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="hasSupervisor"/>
         <Class IRI="Supervisor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTeacher"/>
+        <Class IRI="Teacher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="hasTutor"/>
+        <Class IRI="Tutor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="hostOf"/>
@@ -1541,16 +1975,12 @@
         <Class IRI="Interviewee"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="receivedConfessionFrom"/>
+        <Class IRI="Confessee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="receivesFrom"/>
         <Class IRI="Giver"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="receivesGiftFrom"/>
-        <Class IRI="GiftGiver"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="recipientOfGift"/>
-        <Class IRI="Gift"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="residesWith"/>
@@ -1561,6 +1991,10 @@
         <Class IRI="Buyer"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="sendsTo"/>
+        <Class IRI="Recipient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="tradesWith"/>
         <Class IRI="Trader"/>
     </ObjectPropertyRange>
@@ -1568,6 +2002,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>AcademicSupervisor</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a senior scientist or scholar who, along with their own responsibilities, aids and guides a postgraduate research student, or undergraduate student, in their research project; offering both moral support and scientific insight and guidance. The term is used in several countries for the doctoral advisor of a graduate student.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>AcademicSupervisor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Academic Supervisor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
@@ -1580,9 +2019,19 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who knows another person somehow. They may or may not be friends, maybe just have met by various occasions or simply knew each other living in the same city sharing other acquaintances. </Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Acquaintance</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Acquaintance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Addressee</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The person to whom something is addressed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Addressee</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Addressee</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1632,6 +2081,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>BaptismalCandidate</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who is admitted to membership of a Christian church.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Bookseller</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person or organisation that sells books</Literal>
     </AnnotationAssertion>
@@ -1644,11 +2098,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Chair</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who acts as chairperson of who presides over (an organization, meeting, or public event).</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Child</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person in relation to his/her parents.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1676,9 +2125,29 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">An organisation that has authority to give permission for an activity to occur.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>CommissioningBody</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Commissioning Body</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Composer</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person or machines that creates something by putting together parts or elements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Confessee</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who repents their sins and (in the Christian Church) seeks forgiveness from God.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Confessor</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a priest who hears confessions and gives absolution and spiritual counsel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ConfirmationCandidate</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who is confirmed during the religious rite or sacrament of confirmation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1704,6 +2173,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>CorrespondenceIntermediary</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who delivers or forwards a letter to the addressee on behalf of the author of the letter.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>CorrespondenceIntermediary</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Correspondence Intermediary</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1752,8 +2226,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DisqualifiedFromEcclesiasticalOffice</IRI>
+        <Literal datatypeIRI="&xsd;string">Activity where a person is disqualified ie declared ineligible for an ecclesiastical office.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>DisqualifiedFromOffice</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person that is declared ineligible for an office because of an offence or infringement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>DisqualifiedFromOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who has been declared ineligible for an office because of an offence or infringement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>DisqualifiedFromOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Disqualified From Office</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1796,14 +2285,14 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who lives away from their native country, either from choice or compulsion.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Factor</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A person who acts for another, notably a mercantile and colonial agent</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>ExiledPerson</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Exiled Person</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Father</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The family role of a man in relation to his child or children</Literal>
+        <IRI>Factor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who acts for another, notably a mercantile and colonial agent</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1816,6 +2305,11 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of something that receives funds</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>FundsRecipient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Funds Recipient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Gift</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a thing given willingly to someone without payment; a present.</Literal>
@@ -1826,6 +2320,11 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who gives a gift.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>GiftGiver</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Gift Giver</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Giver</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">An agent who gives something.</Literal>
@@ -1834,6 +2333,26 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Glossist</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A writer of comments or glosses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Godchild</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who is presented at baptism by a godparent who promises to take responsibility for their religious education.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Godfather</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A male godparent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Godmother</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A female godparent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Godparent</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who presents a person at baptism and promises to take responsibility for their religious education.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1849,6 +2368,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>Housemate</IRI>
         <Literal datatypeIRI="&xsd;anyURI">A person who shares a house with others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Illustrator</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who draws or creates pictures for magazines, books, advertising, etc.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1896,9 +2420,19 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person or thing that receives a letter.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LetterRecipient</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Letter Recipient</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>LetterSender</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person that sends a letter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>LetterSender</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Letter Sender</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1922,13 +2456,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Merchant</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">A businessperson who trades in commodities produced by others, in order to earn a profit</Literal>
+        <IRI>Member</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of an agent belonging to a particular group</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Mother</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">The family role of a woman in relation to her child or children</Literal>
+        <IRI>Merchant</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A businessperson who trades in commodities produced by others, in order to earn a profit</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1936,9 +2470,14 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who composes music</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>MusicComposer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Music Composer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>Parent</IRI>
-        <Literal datatypeIRI="&rdf;PlainLiteral">a person&apos;s father or mother.</Literal>
+        <IRI>Officiant</IRI>
+        <Literal datatypeIRI="&xsd;string">The role of a person who performs a religious rite or presides over a religious service or ceremony.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1992,6 +2531,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>ReligiousConvert</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who participates in a conversion of religious identity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Researcher</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The role of a person who undertakes a systematic investigation into and study of materials and sources in order to establish facts and reach new conclusion.</Literal>
     </AnnotationAssertion>
@@ -2014,6 +2558,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>SceneryDesigner</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who plans the look or workings of scenery prior to it being made, by preparing drawings or plans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>SceneryDesigner</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Scenery Designer</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2046,9 +2595,19 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">A person or machine that composes anything, especially type for printing</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TextComposer</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Text Composer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Trader</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who buys and sells goods, currency, or shares.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Transcriber</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A person who makes a transcript, that is, a written or printed version of material originally presented in another medium.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2061,6 +2620,11 @@
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who actively travels together with at least one other person.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TravelCompanion</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Travel Companion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Traveller</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">A person who is travelling or who often travels.</Literal>
@@ -2069,6 +2633,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>TuneAuthor</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The writer of a tune in its written form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>TuneAuthor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Tune Author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Tutor</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">A private teacher, typically one who teaches a single pupil or a very small group.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2087,8 +2661,48 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>givesGiftTo</IRI>
-        <Literal datatypeIRI="&xsd;string">Freely transfer the possession of a gift to (someone)</Literal>
+        <IRI>baptised</IRI>
+        <Literal datatypeIRI="&xsd;string">Associates an officiant with the baptismal candidate that he/she baptised.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>baptisedBy</IRI>
+        <Literal datatypeIRI="&xsd;string">Associates a baptismal candidate with the officiant who conducted the baptism.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>confessedTo</IRI>
+        <Literal datatypeIRI="&xsd;string">Associates a penitent with a person that the penitent confessed to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>confirmed</IRI>
+        <Literal datatypeIRI="&xsd;string">Associates an officiant with the confirmation candidate that he confirmed in a religious confirmation activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>confirmedBy</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifies the officiant of a confirmation candidate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>convertFromChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Association between a religious convert and the church that he/she converted from.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>convertToChurch</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Association between a religious convert and the church that he/she converted to.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>disqualifiedFrom</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifiying an office, activity or competition for which a person has been declared ineligible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>disqualifiedFromOffice</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Identifiying an office for which a person has been declared ineligible.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2099,6 +2713,31 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>hasCollaborator</IRI>
         <Literal datatypeIRI="&xsd;anyURI">http://purl.org/cerif/frapo/collaboratesWith</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGodchild</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifies the godchild of a godparent.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasGodparent</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifies the godparent of a godchild</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>hasReligiousIdentity</IRI>
+        <Literal datatypeIRI="&xsd;string">Identifies the religious identity of a person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>preachedAt</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Linking a person who preached with the location where he/she preached.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>receivedConfessionFrom</IRI>
+        <Literal datatypeIRI="&xsd;string">This property is used to associate a priest who in the role of confessor receives a confession from a penitent.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
