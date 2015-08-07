@@ -22,10 +22,6 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
-        <Literal datatypeIRI="&xsd;string">Role Ontology</Literal>
-    </Annotation>
-    <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <Literal datatypeIRI="&xsd;string"></Literal>
     </Annotation>
@@ -1361,8 +1357,8 @@
         <ObjectProperty IRI="hasDedicator"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasEngraver"/>
         <ObjectProperty IRI="engraverOf"/>
+        <ObjectProperty IRI="hasEngraver"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="hasGiver"/>
@@ -1405,8 +1401,8 @@
         <ObjectProperty IRI="inscriberOf"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
-        <ObjectProperty IRI="hasIntermediary"/>
         <ObjectProperty IRI="intermediaryOf"/>
+        <ObjectProperty IRI="hasIntermediary"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="memberOf"/>
